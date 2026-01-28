@@ -16,6 +16,8 @@ import { BroadcastValuationModal } from '@/components/seller/BroadcastValuationM
 import { Button } from '@/components/ui/button';
 import { ValuePropCards } from '@/components/seller/ValuePropCards';
 import { SellerFAQs } from '@/components/seller/SellerFAQs';
+import { DataMethodology } from '@/components/seller/DataMethodology';
+import { PrintPlaybookButton } from '@/components/seller/PrintPlaybookButton';
 
 // Inside the component return:
 
@@ -100,9 +102,16 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                     })
                 }}
             />
-            {/* Navigation Back */}
-            <div className="fixed top-24 left-4 z-40 hidden xl:block">
-                <Link href="/sell-house" className="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-slate-900 bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-sm transition-all border border-slate-200">
+            {/* Mobile-Friendly Navigation Back - Visible on all devices */}
+            <div className="fixed top-20 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-stone-200 py-2 px-4 md:hidden">
+                <Link href="/sell-house/sandton" className="flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-amber-700 transition-colors">
+                    <ArrowLeft className="h-4 w-4" />
+                    <span>All Sandton Suburbs</span>
+                </Link>
+            </div>
+            {/* Desktop Navigation - Floating style */}
+            <div className="fixed top-24 left-4 z-40 hidden md:block">
+                <Link href="/sell-house/sandton" className="flex items-center gap-2 text-sm font-medium text-stone-500 hover:text-stone-900 bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-sm transition-all border border-stone-200">
                     <ArrowLeft className="h-4 w-4" />
                     All Suburbs
                 </Link>
@@ -120,20 +129,24 @@ export default async function SuburbSellerPage({ params }: PageProps) {
             </div>
 
             {/* E-E-A-T Signal Bar */}
-            <div className="bg-slate-900 text-white relative z-20 -mt-20 py-4 border-b border-slate-800/50">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-6 items-center text-sm text-slate-400">
+            <div className="bg-stone-900 text-white relative z-20 -mt-20 py-4 border-b border-stone-800/50">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-6 items-center text-sm text-stone-400">
                     <div className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-emerald-500" />
                         <span>Researched by <strong className="text-white">{sellerData.author.name}</strong></span>
                     </div>
-                    <div className="hidden sm:block w-1 h-1 bg-slate-700 rounded-full" />
+                    <div className="hidden sm:block w-1 h-1 bg-stone-700 rounded-full" />
                     <div>
                         Last Verified: <strong className="text-white">{sellerData.lastUpdated}</strong>
                     </div>
-                    <div className="hidden sm:block w-1 h-1 bg-slate-700 rounded-full" />
+                    <div className="hidden sm:block w-1 h-1 bg-stone-700 rounded-full" />
                     <div className="flex items-center gap-2">
                         <Users className="h-4 w-4 text-indigo-400" />
                         <span>{sellerData.supplyDemand.salesPerYear} verified sales analyzed</span>
+                    </div>
+                    {/* Print/Download Button */}
+                    <div className="ml-auto">
+                        <PrintPlaybookButton suburbName={suburb.name} />
                     </div>
                 </div>
             </div>
@@ -147,14 +160,14 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         {/* SEO Intro Paragraph */}
                         {/* SEO Intro Paragraph */}
                         <div className="text-center max-w-3xl mx-auto">
-                            <p className="text-lg text-slate-700 leading-relaxed">
+                            <p className="text-lg text-stone-700 leading-relaxed">
                                 {sellerData.description ? (
                                     <>
                                         {sellerData.description}
                                     </>
                                 ) : (
                                     <>
-                                        Looking to <strong className="text-slate-900">sell your house in {suburb.name}</strong>? Our data shows homes here <strong className="text-emerald-700">sell 40% faster</strong> than the Sandton average.
+                                        Looking to <strong className="text-stone-900">sell your house in {suburb.name}</strong>? Our data shows homes here <strong className="text-amber-700">sell 40% faster</strong> than the Sandton average.
                                     </>
                                 )}
                             </p>
@@ -210,17 +223,17 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                                 {/* Days to Sell Card */}
                                 <div className="text-center p-6 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors">
                                     <div className="text-xs uppercase tracking-wider text-slate-500 mb-2 font-semibold">Avg Days to Sell</div>
-                                    <div className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
+                                    <div className="text-3xl md:text-4xl font-bold text-stone-900 mb-2">
                                         {sellerData.supplyDemand.estDaysOnMarket}
                                     </div>
-                                    <div className="text-xs text-emerald-600 font-medium bg-emerald-50 inline-block px-2 py-1 rounded">
+                                    <div className="text-xs text-amber-600 font-medium bg-amber-50 inline-block px-2 py-1 rounded">
                                         Well-priced
                                     </div>
                                 </div>
                             </div>
 
                             {/* Insight */}
-                            <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-600 italic mb-8 border-l-4 border-emerald-500">
+                            <div className="bg-stone-50 p-4 rounded-lg text-sm text-stone-600 italic mb-8 border-l-4 border-amber-500">
                                 "{sellerData.pricing.insight}"
                             </div>
 
@@ -292,13 +305,13 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         {/* Recommended Agents */}
                         <section>
                             <div className="flex justify-between items-end mb-6">
-                                <h2 className="text-2xl font-serif font-bold text-slate-900">Top {suburb.name} Real Estate Agents</h2>
-                                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Curated Selection ({agents.length})</span>
+                                <h2 className="text-2xl font-serif font-bold text-stone-900">Top {suburb.name} Real Estate Agents</h2>
+                                <span className="text-xs font-semibold uppercase tracking-wider text-stone-400">Curated Selection ({agents.length})</span>
                             </div>
 
                             {/* Primary CTA - Broadcast to All */}
                             <BroadcastValuationModal suburbName={suburb.name} agents={agents}>
-                                <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white h-14 text-base font-bold mb-8 shadow-lg shadow-emerald-200/50 hover:shadow-xl hover:shadow-emerald-200/60 transition-all">
+                                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white h-14 text-base font-bold mb-8 shadow-lg shadow-amber-200/50 hover:shadow-xl hover:shadow-amber-200/60 transition-all">
                                     🎯 Request Quotes from All {agents.length} Agents
                                 </Button>
                             </BroadcastValuationModal>
@@ -310,7 +323,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                                     </StaggerItem>
                                 ))}
                             </StaggerContainer>
-                            <p className="text-xs text-slate-400 mt-6 text-center">
+                            <p className="text-xs text-stone-400 mt-6 text-center">
                                 Disclaimer: We recommend these agents based on their proven track record in {suburb.name}, consistent sales performance, and client satisfaction. We are not employed by any specific agency.
                             </p>
                         </section>
@@ -334,6 +347,15 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                     </div>
 
                 </div>
+            </div>
+
+            {/* Data Methodology Section - E-E-A-T Trust Signal */}
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+                <DataMethodology
+                    suburbName={suburb.name}
+                    salesAnalyzed={sellerData.supplyDemand.salesPerYear ?? 0}
+                    lastUpdated={sellerData.lastUpdated}
+                />
             </div>
 
             {/* FAQ Section */}

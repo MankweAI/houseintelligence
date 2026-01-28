@@ -30,8 +30,8 @@ export function Header() {
                             <span className="font-serif font-bold text-xl leading-none tracking-tight text-stone-900">
                                 HouseIntelligence
                             </span>
-                            <span className="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-medium">
-                                Sandton
+                            <span className="text-[10px] uppercase tracking-[0.15em] text-stone-500 font-medium">
+                                by <a href="https://www.bigdataquery.co.za" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700">BigDataQuery</a>
                             </span>
                         </div>
                     </Link>
@@ -49,6 +49,12 @@ export function Header() {
                             className="text-sm font-medium transition-colors text-amber-700 font-bold uppercase tracking-wide"
                         >
                             Sell in Sandton
+                        </Link>
+                        <Link
+                            href="/about"
+                            className="text-sm font-medium transition-colors text-stone-600 hover:text-stone-900 uppercase tracking-wide"
+                        >
+                            About
                         </Link>
                     </nav>
 

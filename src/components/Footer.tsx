@@ -83,7 +83,7 @@ export function Footer() {
                 {/* Bottom bar */}
                 <div className="mt-12 pt-8 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
                     <p>
-                        Property data sourced from public listings. Prices are indicative only.
+                        Research and data validation by <a href="https://www.bigdataquery.co.za" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:text-amber-400">BigDataQuery</a>. Prices are indicative only.
                     </p>
                     <div className="flex gap-6">
                         <Link href="/privacy" className="hover:text-stone-300 transition-colors">

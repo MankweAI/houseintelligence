@@ -12,7 +12,16 @@ export function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
     // 1. Get related suburbs
     const neighbors = currentSuburb.relatedSuburbs
         .map(slug => getSuburbBySlug(slug))
-        .filter((s): s is Suburb => s !== undefined);
+        .filter((s): s is Suburb => s !== undefined)
+        // Strategic SEO: Prioritize Tier 1 suburbs (those with live seller data)
+        // This creates topic clusters for better topical authority
+        .sort((a, b) => {
+            const aLive = hasSellerData(a.slug);
+            const bLive = hasSellerData(b.slug);
+            if (aLive && !bLive) return -1;
+            if (!aLive && bLive) return 1;
+            return 0;
+        });
 
     if (neighbors.length === 0) return null;
 
@@ -49,7 +58,7 @@ export function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
                                         alt={neighbor.name}
                                         className={`object-cover w-full h-full transition-transform duration-700 ${isLive ? "group-hover:scale-105" : "grayscale"}`}
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent" />
 
                                     <div className="absolute bottom-4 left-4 right-4">
                                         <h3 className="text-white font-bold text-lg flex items-center gap-2">
