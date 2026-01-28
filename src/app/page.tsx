@@ -19,7 +19,7 @@ export default function AppHome() {
             <section className="relative h-[600px] bg-stone-900 flex items-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/images/hero-images/app-dashboard-hero.png"
+                        src="/images/hero-images/app-dashboard-hero.webp"
                         alt="HouseIntelligence Market Dashboard"
                         fill
                         className="object-cover opacity-70"

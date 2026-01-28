@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { BookOpen, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
@@ -22,11 +22,15 @@ export function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="flex items-center justify-between h-20">
                     {/* Brand */}
-                    {/* Brand */}
                     <div className="flex items-center gap-3 group">
                         <Link href="/">
-                            <div className="w-10 h-10 bg-stone-900 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                                <BookOpen className="h-5 w-5 text-amber-500" />
+                            <div className="relative w-10 h-10 shadow-lg group-hover:scale-105 transition-transform rounded-xl overflow-hidden bg-white/10">
+                                {/* Using standard img tag to bypass potential next/image server-cache issues with new files */}
+                                <img
+                                    src="/images/logo/hi-logo.png"
+                                    alt="HouseIntelligence Logo"
+                                    className="object-cover w-full h-full"
+                                />
                             </div>
                         </Link>
                         <div className="flex flex-col">

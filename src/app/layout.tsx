@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import './globals.css';
 
 const playfair = Playfair_Display({
@@ -19,15 +20,25 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://houseintelligence.co.za'),
   title: {
-    default: "HouseIntelligence | Sandton Property Guide",
+    default: "HouseIntelligence | Sandton Property Valuation Tool",
     template: "%s | HouseIntelligence",
   },
   description:
     "Data-driven property insights for Sandton sellers. Compare suburbs, find vetted agents, and maximize your sale price.",
+  applicationName: 'HouseIntelligence',
+  appleWebApp: {
+    capable: true,
+    title: 'HouseIntelligence',
+    statusBarStyle: 'default',
+  },
+  formatDetection: {
+    telephone: false,
+  },
   keywords: [
     'Sandton property',
     'luxury real estate',
     'sell property Sandton',
+    'property valuation tool',
     'Sandown',
     'Hyde Park',
     'Morningside',
@@ -42,20 +53,40 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: '/images/logo/hi-logo.png',
+    apple: '/images/logo/hi-logo.png',
+  },
 };
 
-// WebSite structured data
+// WebSite and SoftwareApplication structured data
 const websiteSchema = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: "HouseIntelligence",
-  url: 'https://houseintelligence.co.za',
-  description: 'Data-driven property insights for Sandton sellers.',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: 'https://houseintelligence.co.za/sandton?q={search_term_string}',
-    'query-input': 'required name=search_term_string',
-  },
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      name: "HouseIntelligence",
+      url: 'https://houseintelligence.co.za',
+      description: 'Data-driven property insights for Sandton sellers.',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://houseintelligence.co.za/sandton?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@type': 'SoftwareApplication',
+      name: 'HouseIntelligence Valuation Tool',
+      applicationCategory: 'RealEstateApplication',
+      operatingSystem: 'Any',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'ZAR',
+      },
+      description: 'A tool for Sandton property sellers to analyze market conditions and estimate property value.',
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -72,6 +103,8 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-stone-50 text-stone-900 min-h-screen flex flex-col">
+        {/* Placeholder for GA Measurement ID - should be environment variable in production */}
+        {/* <GoogleAnalytics GA_MEASUREMENT_ID="G-XXXXXXXXXX" /> */}
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
