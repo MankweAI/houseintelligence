@@ -22,19 +22,24 @@ export function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="flex items-center justify-between h-20">
                     {/* Brand */}
-                    <Link href="/" className="flex items-center gap-3 group">
-                        <div className="w-10 h-10 bg-stone-900 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                            <BookOpen className="h-5 w-5 text-amber-500" />
-                        </div>
+                    {/* Brand */}
+                    <div className="flex items-center gap-3 group">
+                        <Link href="/">
+                            <div className="w-10 h-10 bg-stone-900 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                                <BookOpen className="h-5 w-5 text-amber-500" />
+                            </div>
+                        </Link>
                         <div className="flex flex-col">
-                            <span className="font-serif font-bold text-xl leading-none tracking-tight text-stone-900">
-                                HouseIntelligence
-                            </span>
+                            <Link href="/">
+                                <span className="font-serif font-bold text-xl leading-none tracking-tight text-stone-900">
+                                    HouseIntelligence
+                                </span>
+                            </Link>
                             <span className="text-[10px] uppercase tracking-[0.15em] text-stone-500 font-medium">
                                 by <a href="https://www.bigdataquery.co.za" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700">BigDataQuery</a>
                             </span>
                         </div>
-                    </Link>
+                    </div>
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex items-center gap-8">

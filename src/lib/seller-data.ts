@@ -273,7 +273,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Steady Growth & Strong Rental Demand",
         description: "Bryanston remains South Africa's top transaction suburb with consistent 5% price appreciation and robust sectional title demand. High rental yields (10-15%) and strong professional buyer base create a balanced market favoring well-priced properties.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Senior Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Senior Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "70-90 days",
@@ -404,7 +404,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Young Professional Hub With Strong Rental Yields",
         description: "Sandown has emerged as Johannesburg's premier micro-market for first-time buyers and young professionals, with 44% of buyers aged 18-35. Strong sectional title growth (+1.66% YTD) and proximity to Sandton CBD create a buyer's market offering 8-12% negotiation room on competitively priced units.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Market Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Market Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "90-110 days",
@@ -534,7 +534,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Strong Rental Yields, Buyer-Friendly Apartments",
         description: "Sandton CBD remains Africa's financial hub with resilient rental demand (6% YoY growth, 11-16% yields). However, the sales market is buyer-friendly due to oversupply, with typical negotiation margins of 8-12%.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Market Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Market Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "6%",
@@ -659,7 +659,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Ultra-Luxury Stronghold with Mixed Mid-Market Dynamics",
         description: "Hyde Park remains Johannesburg's premier address for high-net-worth buyers and international investors, with strong demand in the ultra-luxury segment (R15M+) but softer mid-market activity. Younger buyer demographics and growing sectional title demand signal shifting preferences toward lifestyle convenience and security.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Market Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Market Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "55.4%",
@@ -984,7 +984,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Densifying Urban Village With Strong Rental Demand",
         description: "Rivonia has transformed from exclusive residential enclave into a vibrant mixed-use hub with growing sectional title appeal to young professionals and investors. Strong rental demand (estimated 5,000+ unit deficit), Gautrain connectivity, and reverse-traffic commute advantages position the suburb as an attractive value play relative to Sandton CBD and Morningside.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Market Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Market Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "12.8%",
@@ -1114,7 +1114,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Stable Mid-Market with Strong Female Buyer Demand",
         description: "Craighall Park maintains consistent sales momentum with balanced supply-demand dynamics and increasing interest from security-conscious single women buyers. Median prices have risen 13% year-on-year, signaling modest appreciation in a stable, family-oriented market.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Market Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Market Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "70 days",
@@ -1525,7 +1525,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Premium Security, Established Prestige, Steady Rental Demand",
         description: "Benmore Gardens remains a high-demand prestige enclave in Sandton with strong rental fundamentals (11-13% gross yields) and established owner demographics (45% owned 11+ years). Boomed security estates command premium positioning; steady buyer interest offset by longer DOM (108-115 days) in premium segment, indicating balanced seller-buyer dynamics.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Senior Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Senior Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "Balanced",
@@ -1665,7 +1665,7 @@ export const sellerData: Record<string, SuburbSellerData> = {
         headline: "Tranquil Luxury with Proven Investment Returns",
         description: "River Club remains a secure, tree-lined enclave commanding strong pricing across both freehold and sectional title segments. Market sentiment favours well-positioned properties with modern amenities, backed by consistent demand from families and young professionals seeking proximity to Sandton without downtown congestion.",
         lastUpdated: "January 2026",
-        author: { name: "Review Team", role: "Market Analyst", verified: true },
+        author: { name: "BigDataQuery", role: "Market Analyst", verified: true },
         valueProp: {
             fast: {
                 metric: "45%",

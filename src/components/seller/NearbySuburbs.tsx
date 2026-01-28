@@ -43,6 +43,9 @@ export function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
                     {neighbors.map((neighbor) => {
                         const isLive = hasSellerData(neighbor.slug);
 
+                        const heroImage = getSuburbHeroImage(neighbor.slug);
+                        const imgSrc = typeof heroImage === 'string' ? heroImage : heroImage.src;
+
                         return (
                             <div
                                 key={neighbor.slug}
@@ -54,7 +57,7 @@ export function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
                                 {/* Image Overlay */}
                                 <div className="aspect-[4/3] relative overflow-hidden bg-stone-200">
                                     <img
-                                        src={getSuburbHeroImage(neighbor.slug).src}
+                                        src={imgSrc}
                                         alt={neighbor.name}
                                         className={`object-cover w-full h-full transition-transform duration-700 ${isLive ? "group-hover:scale-105" : "grayscale"}`}
                                     />

@@ -9,7 +9,6 @@ import { ValuationForm } from '@/components/seller/ValuationForm';
 import { InteractiveInsights } from '@/components/seller/InteractiveInsights';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
 import { ArrowLeft, CheckCircle, TrendingUp, Users } from 'lucide-react';
-import { getSuburbHeroImage } from '@/lib/images';
 import { SuburbComparator } from '@/components/seller/SuburbComparator';
 import { NearbySuburbs } from '@/components/seller/NearbySuburbs';
 import { BroadcastValuationModal } from '@/components/seller/BroadcastValuationModal';
@@ -18,6 +17,8 @@ import { ValuePropCards } from '@/components/seller/ValuePropCards';
 import { SellerFAQs } from '@/components/seller/SellerFAQs';
 import { DataMethodology } from '@/components/seller/DataMethodology';
 import { PrintPlaybookButton } from '@/components/seller/PrintPlaybookButton';
+import { getSuburbHeroImage, getSuburbMarketingImages } from '@/lib/images';
+import { MarketingCarousel } from '@/components/seller/MarketingCarousel';
 
 // Inside the component return:
 
@@ -47,6 +48,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
     const suburb = getSuburbBySlug(suburbSlug);
     const sellerData = getSellerData(suburbSlug);
     const agents = getAgentsForSuburb(suburbSlug);
+    const marketingImages = getSuburbMarketingImages(suburbSlug);
 
     // 2. Guardrails
     if (!suburb || !sellerData) {
@@ -300,7 +302,8 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         {/* Smart Context Comparator */}
                         <SuburbComparator data={sellerData} suburbName={suburb.name} />
 
-
+                        {/* Marketing Carousel - Visual POV */}
+                        <MarketingCarousel suburbName={suburb.name} images={marketingImages} />
 
                         {/* Recommended Agents */}
                         <section>
@@ -340,14 +343,13 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                             </div>
                         </div>
 
-                        {/* Smart Interlinking Footer */}
-                        <NearbySuburbs currentSuburb={suburb} />
-
-
                     </div>
-
                 </div>
+                {/* End Main Content Wrapper */}
             </div>
+
+            {/* Smart Interlinking Footer - Full Width */}
+            <NearbySuburbs currentSuburb={suburb} />
 
             {/* Data Methodology Section - E-E-A-T Trust Signal */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
