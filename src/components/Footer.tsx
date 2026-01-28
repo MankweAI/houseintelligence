@@ -5,7 +5,7 @@ export function Footer() {
     const suburbs = getAllSuburbs();
 
     return (
-        <footer className="bg-slate-900 text-slate-300">
+        <footer className="bg-stone-900 text-stone-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* About */}
@@ -14,7 +14,7 @@ export function Footer() {
                         <p className="text-sm leading-relaxed mb-4">
                             Data-driven property insights for Sandton sellers. We match discerning sellers to vetted estate agents for maximum value.
                         </p>
-                        <p className="text-xs text-slate-500">
+                        <p className="text-xs text-stone-500">
                             © {new Date().getFullYear()} HouseIntelligence. All rights reserved.
                         </p>
                     </div>
@@ -27,7 +27,7 @@ export function Footer() {
                                 <li key={suburb.slug}>
                                     <Link
                                         href={`/sell-house/sandton/${suburb.slug}`}
-                                        className="hover:text-emerald-400 transition-colors"
+                                        className="hover:text-amber-400 transition-colors"
                                     >
                                         {suburb.name}
                                     </Link>
@@ -36,7 +36,7 @@ export function Footer() {
                             <li>
                                 <Link
                                     href="/sell-house/sandton"
-                                    className="text-emerald-400 hover:text-emerald-300 transition-colors"
+                                    className="text-amber-400 hover:text-amber-300 transition-colors"
                                 >
                                     View all suburbs →
                                 </Link>
@@ -53,7 +53,7 @@ export function Footer() {
                             <li>
                                 <Link
                                     href="/sell-house/sandton"
-                                    className="hover:text-emerald-400 transition-colors"
+                                    className="hover:text-amber-400 transition-colors"
                                 >
                                     Sandton Seller Hub
                                 </Link>
@@ -61,18 +61,18 @@ export function Footer() {
                             <li>
                                 <Link
                                     href="/sell-house/sandton/hurlingham"
-                                    className="hover:text-emerald-400 transition-colors"
+                                    className="hover:text-amber-400 transition-colors"
                                 >
                                     Example: Hurlingham
                                 </Link>
                             </li>
                             <li>
-                                <span className="text-slate-500 cursor-not-allowed">
+                                <span className="text-stone-500 cursor-not-allowed">
                                     Cape Town (Coming Q2 2026)
                                 </span>
                             </li>
                             <li>
-                                <span className="text-slate-500 cursor-not-allowed">
+                                <span className="text-stone-500 cursor-not-allowed">
                                     Johannesburg (Coming Q3 2026)
                                 </span>
                             </li>
@@ -81,15 +81,15 @@ export function Footer() {
                 </div>
 
                 {/* Bottom bar */}
-                <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <div className="mt-12 pt-8 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
                     <p>
                         Property data sourced from public listings. Prices are indicative only.
                     </p>
                     <div className="flex gap-6">
-                        <Link href="/privacy" className="hover:text-slate-300 transition-colors">
+                        <Link href="/privacy" className="hover:text-stone-300 transition-colors">
                             Privacy Policy
                         </Link>
-                        <Link href="/terms" className="hover:text-slate-300 transition-colors">
+                        <Link href="/terms" className="hover:text-stone-300 transition-colors">
                             Terms of Use
                         </Link>
                     </div>

@@ -52,7 +52,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
     }
 
     return (
-        <div className="bg-slate-50 min-h-screen">
+        <div className="bg-stone-50 min-h-screen">
             {/* JSON-LD Schema for SEO */}
             <script
                 type="application/ld+json"

@@ -41,7 +41,7 @@ export function SellerFAQs({ suburbName, avgPrice, daysOnMarket }: SellerFAQsPro
     ];
 
     return (
-        <section className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+        <section className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -61,7 +61,7 @@ export function SellerFAQs({ suburbName, avgPrice, daysOnMarket }: SellerFAQsPro
                 }}
             />
 
-            <h2 className="text-2xl font-serif font-bold text-slate-900 mb-6">
+            <h2 className="text-2xl font-serif font-bold text-stone-900 mb-6">
                 Frequently Asked Questions About Selling in {suburbName}
             </h2>
 
@@ -69,20 +69,20 @@ export function SellerFAQs({ suburbName, avgPrice, daysOnMarket }: SellerFAQsPro
                 {faqs.map((faq, index) => (
                     <div
                         key={index}
-                        className="border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-200 transition-colors"
+                        className="border border-stone-200 rounded-xl overflow-hidden hover:border-amber-200 transition-colors"
                     >
                         <button
                             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                            className="w-full flex items-center justify-between p-4 text-left hover:bg-slate-50 transition-colors"
+                            className="w-full flex items-center justify-between p-4 text-left hover:bg-stone-50 transition-colors"
                         >
-                            <span className="font-semibold text-slate-900 pr-4">{faq.question}</span>
+                            <span className="font-semibold text-stone-900 pr-4">{faq.question}</span>
                             <ChevronDown
-                                className={`h-5 w-5 text-slate-400 shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''
+                                className={`h-5 w-5 text-stone-400 shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''
                                     }`}
                             />
                         </button>
                         {openIndex === index && (
-                            <div className="px-4 pb-4 text-slate-600 leading-relaxed">
+                            <div className="px-4 pb-4 text-stone-600 leading-relaxed">
                                 {faq.answer}
                             </div>
                         )}

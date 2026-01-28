@@ -52,11 +52,11 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
             <DialogContent className="sm:max-w-md bg-white max-h-[90vh] overflow-y-auto">
                 {step === 3 ? (
                     <div className="py-6 text-center">
-                        <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <Sparkles className="h-8 w-8 text-emerald-600" />
+                        <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <Sparkles className="h-8 w-8 text-amber-600" />
                         </div>
-                        <h3 className="text-xl font-bold text-emerald-900 mb-2">Request Sent!</h3>
-                        <p className="text-slate-600 mb-6 text-sm">
+                        <h3 className="text-xl font-bold text-amber-900 mb-2">Request Sent!</h3>
+                        <p className="text-stone-600 mb-6 text-sm">
                             {agentName ? `${agentName} will contact you shortly.` : `An expert in ${suburbName} will be in touch.`}
                         </p>
                         <Button variant="outline" onClick={() => setIsOpen(false)} className="w-full">
@@ -66,34 +66,34 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
                 ) : (
                     <form onSubmit={handleSubmit}>
                         <DialogHeader className="mb-6">
-                            <DialogTitle className="text-2xl font-serif text-slate-900">
+                            <DialogTitle className="text-2xl font-serif text-stone-900">
                                 {agentName ? `Contact ${agentName}` : `Value My Home in ${suburbName}`}
                             </DialogTitle>
-                            <DialogDescription className="text-slate-500">
+                            <DialogDescription className="text-stone-500">
                                 Share a few details to get a clearer valuation estimate.
                             </DialogDescription>
                         </DialogHeader>
 
                         {/* Pre-Qualify Indicators */}
-                        <div className="bg-slate-50 p-4 rounded-xl mb-6 space-y-2 border border-slate-100">
-                            <div className="flex items-start gap-2 text-sm text-slate-700">
-                                <Check className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" />
+                        <div className="bg-stone-50 p-4 rounded-xl mb-6 space-y-2 border border-stone-100">
+                            <div className="flex items-start gap-2 text-sm text-stone-700">
+                                <Check className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
                                 <span>Get a precise valuation range</span>
                             </div>
-                            <div className="flex items-start gap-2 text-sm text-slate-700">
-                                <Check className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" />
+                            <div className="flex items-start gap-2 text-sm text-stone-700">
+                                <Check className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
                                 <span>Receive a seller's checklist</span>
                             </div>
                         </div>
 
                         <div className="space-y-4">
                             <div className="space-y-2">
-                                <Label className="text-slate-700">Street Name</Label>
+                                <Label className="text-stone-700">Street Name</Label>
                                 <Input placeholder="e.g. Woodlands Avenue" required />
                             </div>
 
                             <div className="space-y-2">
-                                <Label className="text-slate-700">Property Type</Label>
+                                <Label className="text-stone-700">Property Type</Label>
                                 <Select required>
                                     <SelectTrigger>
                                         <SelectValue placeholder="Select type" />
@@ -107,7 +107,7 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
                             </div>
 
                             <div className="space-y-2">
-                                <Label className="text-slate-700">Estimated Value (Optional)</Label>
+                                <Label className="text-stone-700">Estimated Value (Optional)</Label>
                                 <Select>
                                     <SelectTrigger>
                                         <SelectValue placeholder="Select range" />
@@ -124,7 +124,7 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
                             {/* Qualification Fields */}
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-2">
-                                    <Label className="text-slate-700">Timeline</Label>
+                                    <Label className="text-stone-700">Timeline</Label>
                                     <Select>
                                         <SelectTrigger>
                                             <SelectValue placeholder="When?" />
@@ -139,7 +139,7 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
                                     </Select>
                                 </div>
                                 <div className="space-y-2">
-                                    <Label className="text-slate-700">Goal</Label>
+                                    <Label className="text-stone-700">Goal</Label>
                                     <Select>
                                         <SelectTrigger>
                                             <SelectValue placeholder="Why?" />
@@ -157,16 +157,16 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-2">
-                                    <Label className="text-slate-700">Name</Label>
+                                    <Label className="text-stone-700">Name</Label>
                                     <Input placeholder="Your name" required />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label className="text-slate-700">WhatsApp</Label>
+                                    <Label className="text-stone-700">WhatsApp</Label>
                                     <Input placeholder="082..." required />
                                 </div>
                             </div>
 
-                            <Button type="submit" className="w-full bg-slate-900 hover:bg-slate-800 mt-2 h-11 text-base font-semibold" disabled={isSubmitting}>
+                            <Button type="submit" className="w-full bg-stone-900 hover:bg-stone-800 mt-2 h-11 text-base font-semibold" disabled={isSubmitting}>
                                 {isSubmitting ? (
                                     <>
                                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />

@@ -23,14 +23,14 @@ export function Header() {
                 <div className="flex items-center justify-between h-20">
                     {/* Brand */}
                     <Link href="/" className="flex items-center gap-3 group">
-                        <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                            <BookOpen className="h-5 w-5 text-emerald-400" />
+                        <div className="w-10 h-10 bg-stone-900 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                            <BookOpen className="h-5 w-5 text-amber-500" />
                         </div>
                         <div className="flex flex-col">
-                            <span className="font-serif font-bold text-xl leading-none tracking-tight text-slate-900">
+                            <span className="font-serif font-bold text-xl leading-none tracking-tight text-stone-900">
                                 HouseIntelligence
                             </span>
-                            <span className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-medium">
+                            <span className="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-medium">
                                 Sandton
                             </span>
                         </div>
@@ -40,13 +40,13 @@ export function Header() {
                     <nav className="hidden md:flex items-center gap-8">
                         <Link
                             href="/"
-                            className="text-sm font-medium transition-colors text-slate-600 hover:text-slate-900 uppercase tracking-wide"
+                            className="text-sm font-medium transition-colors text-stone-600 hover:text-stone-900 uppercase tracking-wide"
                         >
                             Home
                         </Link>
                         <Link
                             href="/sell-house/sandton"
-                            className="text-sm font-medium transition-colors text-emerald-700 font-bold uppercase tracking-wide"
+                            className="text-sm font-medium transition-colors text-amber-700 font-bold uppercase tracking-wide"
                         >
                             Sell in Sandton
                         </Link>
@@ -55,10 +55,10 @@ export function Header() {
                     {/* CTA */}
                     <Link
                         href="/sell-house/sandton"
-                        className="hidden sm:inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-900/20 transition-all group"
+                        className="hidden sm:inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-stone-800 hover:shadow-lg hover:shadow-stone-900/20 transition-all group"
                     >
                         <span>Get Selling Plan</span>
-                        <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform text-emerald-400" />
+                        <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform text-amber-500" />
                     </Link>
                 </div>
             </div>

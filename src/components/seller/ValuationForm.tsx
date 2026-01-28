@@ -48,26 +48,26 @@ export function ValuationForm({ suburbSlug, buyerProfile = "Target Buyers" }: Va
     return (
         <Dialog open={isOpen} onOpenChange={handleOpenChange}>
             <DialogTrigger asChild>
-                <div className="bg-white p-6 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-200 cursor-pointer group hover:border-emerald-500 transition-all duration-300 relative overflow-hidden">
+                <div className="bg-white p-6 rounded-3xl shadow-xl shadow-slate-200/50 border border-stone-200 cursor-pointer group hover:border-amber-500 transition-all duration-300 relative overflow-hidden">
                     {/* Decorative background gradient */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
 
                     <div className="relative z-10">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="p-2 bg-emerald-100 rounded-lg text-emerald-700">
+                            <div className="p-2 bg-amber-100 rounded-lg text-amber-700">
                                 <Sparkles className="h-5 w-5" />
                             </div>
-                            <h3 className="font-serif font-bold text-slate-900 leading-tight text-lg">
+                            <h3 className="font-serif font-bold text-stone-900 leading-tight text-lg">
                                 Get the {suburbSlug} <br /> Seller Strategy
                             </h3>
                         </div>
-                        <p className="text-sm text-slate-600 mb-6 leading-relaxed">
+                        <p className="text-sm text-stone-600 mb-6 leading-relaxed">
                             Unlock the specific data points we can't publish publicly, including street-level pricing and active buyer demands.
                         </p>
-                        <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold group-hover:shadow-lg group-hover:shadow-emerald-200/50 transition-all">
+                        <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold group-hover:shadow-lg group-hover:shadow-amber-200/50 transition-all">
                             Unlock Market Insights <ChevronRight className="ml-2 h-4 w-4" />
                         </Button>
-                        <p className="text-[10px] text-center text-slate-400 mt-3 font-medium uppercase tracking-wider flex items-center justify-center gap-1">
+                        <p className="text-[10px] text-center text-stone-400 mt-3 font-medium uppercase tracking-wider flex items-center justify-center gap-1">
                             <Lock className="h-3 w-3" />
                             Private & Confidential
                         </p>
@@ -79,11 +79,11 @@ export function ValuationForm({ suburbSlug, buyerProfile = "Target Buyers" }: Va
                 {step === 3 ? (
                     // Success View
                     <div className="py-6 text-center">
-                        <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <Sparkles className="h-8 w-8 text-emerald-600" />
+                        <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <Sparkles className="h-8 w-8 text-amber-600" />
                         </div>
-                        <h3 className="text-xl font-bold text-emerald-900 mb-2">Strategy Unlocked!</h3>
-                        <p className="text-slate-600 mb-6 text-sm">
+                        <h3 className="text-xl font-bold text-amber-900 mb-2">Strategy Unlocked!</h3>
+                        <p className="text-stone-600 mb-6 text-sm">
                             We've notified our {suburbSlug} specialist. Expect a WhatsApp shortly to refine these insights based on your property specifics.
                         </p>
                         <Button variant="outline" onClick={() => setIsOpen(false)} className="w-full">
@@ -94,36 +94,36 @@ export function ValuationForm({ suburbSlug, buyerProfile = "Target Buyers" }: Va
                     // Form View
                     <form onSubmit={handleSubmit}>
                         <DialogHeader className="mb-6">
-                            <DialogTitle className="text-2xl font-serif text-slate-900">Unlock {suburbSlug} Insights</DialogTitle>
-                            <DialogDescription className="text-slate-500">
+                            <DialogTitle className="text-2xl font-serif text-stone-900">Unlock {suburbSlug} Insights</DialogTitle>
+                            <DialogDescription className="text-stone-500">
                                 See exactly how to position your property for the {buyerProfile} market.
                             </DialogDescription>
                         </DialogHeader>
 
                         {/* Value Props */}
-                        <div className="bg-slate-50 p-4 rounded-xl mb-6 space-y-2 border border-slate-100">
-                            <div className="flex items-start gap-2 text-sm text-slate-700">
-                                <Check className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" />
+                        <div className="bg-stone-50 p-4 rounded-xl mb-6 space-y-2 border border-stone-100">
+                            <div className="flex items-start gap-2 text-sm text-stone-700">
+                                <Check className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
                                 <span>Street-level valuation band</span>
                             </div>
-                            <div className="flex items-start gap-2 text-sm text-slate-700">
-                                <Check className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" />
+                            <div className="flex items-start gap-2 text-sm text-stone-700">
+                                <Check className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
                                 <span>Active buyer demand profile</span>
                             </div>
-                            <div className="flex items-start gap-2 text-sm text-slate-700">
-                                <Check className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" />
+                            <div className="flex items-start gap-2 text-sm text-stone-700">
+                                <Check className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
                                 <span>Compliance & staging checklist</span>
                             </div>
                         </div>
 
                         <div className="space-y-4">
                             <div className="space-y-2">
-                                <Label className="text-slate-700">Street Name</Label>
+                                <Label className="text-stone-700">Street Name</Label>
                                 <Input placeholder="e.g. Woodlands Avenue" required />
                             </div>
 
                             <div className="space-y-2">
-                                <Label className="text-slate-700">Property Type</Label>
+                                <Label className="text-stone-700">Property Type</Label>
                                 <Select required>
                                     <SelectTrigger>
                                         <SelectValue placeholder="Select type" />
@@ -137,7 +137,7 @@ export function ValuationForm({ suburbSlug, buyerProfile = "Target Buyers" }: Va
                             </div>
 
                             <div className="space-y-2">
-                                <Label className="text-slate-700">Estimated Value (Optional)</Label>
+                                <Label className="text-stone-700">Estimated Value (Optional)</Label>
                                 <Select>
                                     <SelectTrigger>
                                         <SelectValue placeholder="Select range" />
@@ -153,16 +153,16 @@ export function ValuationForm({ suburbSlug, buyerProfile = "Target Buyers" }: Va
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-2">
-                                    <Label className="text-slate-700">Name</Label>
+                                    <Label className="text-stone-700">Name</Label>
                                     <Input placeholder="Your name" required />
                                 </div>
                                 <div className="space-y-2">
-                                    <Label className="text-slate-700">WhatsApp</Label>
+                                    <Label className="text-stone-700">WhatsApp</Label>
                                     <Input placeholder="082..." required />
                                 </div>
                             </div>
 
-                            <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 mt-2 h-11 text-base font-semibold" disabled={isSubmitting}>
+                            <Button type="submit" className="w-full bg-amber-600 hover:bg-amber-700 mt-2 h-11 text-base font-semibold" disabled={isSubmitting}>
                                 {isSubmitting ? (
                                     <>
                                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
