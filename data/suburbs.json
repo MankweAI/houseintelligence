@@ -1,0 +1,1226 @@
+{
+  "city": "sandton",
+  "province": "gauteng",
+  "suburbs": [
+    {
+      "slug": "sandown",
+      "name": "Sandown",
+      "summary": "An upmarket suburb offering a mix of corporate offices and luxury residences, ideal for executives who want to work and live in the same area.",
+      "centroid": {
+        "lat": -26.105,
+        "lng": 28.0572
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 3500000,
+          "max": 8000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "luxury apartments",
+          "penthouses"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (2 min)",
+          "Gautrain Sandton Station (5 min)",
+          "OR Tambo (25 min)"
+        ],
+        "lifestyleTags": [
+          "executive",
+          "corporate",
+          "convenience"
+        ],
+        "schoolsNote": "Close to Crawford College Sandton and Redhill School.",
+        "safetyNote": "Well-patrolled area with 24-hour security in most complexes and estates.",
+        "walkability": "High walkability to Sandton City and Nelson Mandela Square.",
+        "investmentPotential": "Strong rental demand from corporate tenants and expats.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Lifestyle scene in Sandown, Sandton (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "sandton-cbd",
+        "morningside",
+        "hyde-park"
+      ]
+    },
+    {
+      "slug": "sandton-cbd",
+      "name": "Sandton CBD",
+      "summary": "The financial heart of South Africa, home to the JSE and major corporate headquarters. Premium high-rise living with world-class amenities.",
+      "centroid": {
+        "lat": -26.1076,
+        "lng": 28.0567
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 2000000,
+          "max": 15000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "penthouses",
+          "luxury apartments"
+        ],
+        "commuteAnchors": [
+          "Gautrain Sandton Station (2 min walk)",
+          "OR Tambo (25 min)",
+          "Rosebank (10 min)"
+        ],
+        "lifestyleTags": [
+          "urban",
+          "corporate",
+          "luxury",
+          "nightlife"
+        ],
+        "schoolsNote": "Several top schools within 10km including St Stithians and Crawford.",
+        "safetyNote": "High security presence with CCTV coverage and private security patrols.",
+        "walkability": "Excellent - Sandton City, restaurants, and offices all walkable.",
+        "investmentPotential": "Prime investment area with consistent capital growth and high rental yields.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Skyline view of Sandton CBD (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 10,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "sandown",
+        "morningside",
+        "rivonia"
+      ]
+    },
+    {
+      "slug": "hurlingham",
+      "name": "Hurlingham",
+      "summary": "A leafy, established suburb popular with families seeking a quieter lifestyle while remaining close to Sandton amenities.",
+      "centroid": {
+        "lat": -26.1167,
+        "lng": 28.0333
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 3200000,
+          "max": 4470000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "freehold houses",
+          "clusters",
+          "access-controlled avenues"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (8 min)",
+          "Rosebank (10 min)",
+          "Gautrain Rosebank (12 min)"
+        ],
+        "lifestyleTags": [
+          "family",
+          "quiet",
+          "secure",
+          "established"
+        ],
+        "schoolsNote": "Top-tier access: Crawford Sandton, St Stithians, and Montrose Primary nearby.",
+        "safetyNote": "Hurlingham Manor North Association (HMNA) manages 24/7 access control at Woodlands Ave and Pinotage St.",
+        "walkability": "Moderate - Secure walks within the boomed enclave; short drive to Nicolway.",
+        "investmentPotential": "Stable. 2024 avg sale R4.47m. Demand high for security enclaves.",
+        "sourceNotes": [
+          {
+            "label": "Prop24 Hurlingham Trends",
+            "url": "https://www.property24.com/property-values/hurlingham/sandton/gauteng/101"
+          },
+          {
+            "label": "HMNA Security",
+            "url": "https://hmna.co.za/"
+          }
+        ],
+        "amenityHighlights": {
+          "Coffee shops": [
+            {
+              "name": "Tashas Nicolway",
+              "rating": 4.6,
+              "priceLevel": "$$$",
+              "description": "Premium cafe dining with beautiful interiors. 5 min drive.",
+              "distance": "2.5 km"
+            },
+            {
+              "name": "Seattle Coffee Co",
+              "rating": 4.5,
+              "priceLevel": "$$",
+              "description": "Reliable daily brew at the local Pick n Pay. 2 min drive.",
+              "distance": "1 km"
+            },
+            {
+              "name": "Naked Coffee",
+              "rating": 4.8,
+              "priceLevel": "$$$",
+              "description": "Specialty roasters for the serious coffee snob.",
+              "distance": "3.5 km"
+            }
+          ],
+          "Shopping": [
+            {
+              "name": "Nicolway Bryanston",
+              "rating": 4.6,
+              "priceLevel": "$$$",
+              "description": "Upscale mall with Woolworths, Checkers, and boutique fashion.",
+              "distance": "2.5 km"
+            },
+            {
+              "name": "Pick n Pay on Republic",
+              "rating": 4.0,
+              "priceLevel": "$$",
+              "description": "Convenient essentials run. Right on the border.",
+              "distance": "1 km"
+            }
+          ],
+          "Schools": [
+            {
+              "name": "Crawford International Sandton",
+              "rating": 4.9,
+              "description": "Private co-ed. Grade 12 fees ~R211k/yr (2026).",
+              "distance": "2 km"
+            },
+            {
+              "name": "St Stithians College",
+              "rating": 4.9,
+              "description": "World-class Methodist school. Extensive grounds.",
+              "distance": "3 km"
+            }
+          ],
+          "Parks": [
+            {
+              "name": "Hurlingham Park",
+              "rating": 4.3,
+              "description": "Secure community park managed by HMNA. Great for dogs.",
+              "distance": "Within enclave"
+            },
+            {
+              "name": "Sandton Field & Study",
+              "rating": 4.5,
+              "description": "Large open nature reserve with river trails.",
+              "distance": "3 km"
+            }
+          ]
+        }
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Leafy, secure street in Hurlingham Manor (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Schools",
+          "Parks",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "hyde-park",
+        "morningside",
+        "craighall-park"
+      ]
+    },
+    {
+      "slug": "bryanston",
+      "name": "Bryanston",
+      "summary": "One of Sandton's largest suburbs offering spacious properties on large stands, popular with families seeking space and excellent schools.",
+      "centroid": {
+        "lat": -26.0667,
+        "lng": 28.0167
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 3000000,
+          "max": 12000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "estates",
+          "clusters",
+          "smallholdings"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (12 min)",
+          "Fourways Mall (8 min)",
+          "N1 Highway (5 min)"
+        ],
+        "lifestyleTags": [
+          "family",
+          "spacious",
+          "equestrian",
+          "schools"
+        ],
+        "schoolsNote": "Excellent schools including Bryanston High, St Stithians, and Michael Mount.",
+        "safetyNote": "Mix of open stands and security estates. Community security initiatives active.",
+        "walkability": "Low - car-dependent suburb with scattered amenities.",
+        "investmentPotential": "Large properties attract long-term family buyers. Good value retention.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Spacious garden home in Bryanston (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 4,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "fourways",
+        "rivonia",
+        "hyde-park"
+      ]
+    },
+    {
+      "slug": "hyde-park",
+      "name": "Hyde Park",
+      "summary": "An exclusive, prestigious suburb known for luxury homes, top schools, and the upmarket Hyde Park Corner shopping centre.",
+      "centroid": {
+        "lat": -26.1167,
+        "lng": 28.0333
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 5000000,
+          "max": 25000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "luxury houses",
+          "estates"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min)",
+          "Rosebank (8 min)",
+          "Gautrain Sandton (8 min)"
+        ],
+        "lifestyleTags": [
+          "luxury",
+          "exclusive",
+          "prestigious",
+          "family"
+        ],
+        "schoolsNote": "Home to Hyde Park High School and near St Marys, Redhill, and Crawford.",
+        "safetyNote": "One of the best-secured suburbs with boom gates and 24-hour patrols.",
+        "walkability": "Moderate - Hyde Park Corner and Jan Smuts shops accessible.",
+        "investmentPotential": "Blue-chip suburb with strong capital appreciation over decades.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Luxury estate in Hyde Park (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "sandown",
+        "hurlingham",
+        "morningside"
+      ]
+    },
+    {
+      "slug": "morningside",
+      "name": "Morningside",
+      "summary": "A vibrant suburb with excellent shopping, dining, and entertainment options along Rivonia Road, attracting young professionals and families.",
+      "centroid": {
+        "lat": -26.0833,
+        "lng": 28.05
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 2500000,
+          "max": 7000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "townhouses",
+          "houses",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min)",
+          "Gautrain Sandton (8 min)",
+          "Rivonia (5 min)"
+        ],
+        "lifestyleTags": [
+          "trendy",
+          "restaurants",
+          "shopping",
+          "young professionals"
+        ],
+        "schoolsNote": "Close to Redhill School, Crawford College, and Brescia House.",
+        "safetyNote": "Active security presence with community patrols and boom-controlled access.",
+        "walkability": "High - Morningside Shopping Centre and restaurants along Rivonia Road.",
+        "investmentPotential": "Popular rental area for young professionals. Strong rental yields.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Morningside cafe lifestyle (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 9,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "sandton-cbd",
+        "rivonia",
+        "sandown"
+      ]
+    },
+    {
+      "slug": "fourways",
+      "name": "Fourways",
+      "summary": "A rapidly developing hub in northern Johannesburg offering modern estates, excellent malls, and growing infrastructure.",
+      "centroid": {
+        "lat": -26.0167,
+        "lng": 28
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 1800000,
+          "max": 6000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "clusters",
+          "townhouses",
+          "estates"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (15 min)",
+          "N1 Highway (5 min)",
+          "Lanseria Airport (20 min)"
+        ],
+        "lifestyleTags": [
+          "family",
+          "modern",
+          "malls",
+          "growing"
+        ],
+        "schoolsNote": "Dainfern College, Fourways High, and several private schools in the area.",
+        "safetyNote": "Many gated communities and security estates. Variable security on open stands.",
+        "walkability": "Low to moderate - Fourways Mall accessible, otherwise car-dependent.",
+        "investmentPotential": "High growth area with new developments. Good for capital appreciation.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Estate living in Fourways (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "bryanston",
+        "woodmead",
+        "rivonia"
+      ]
+    },
+    {
+      "slug": "rivonia",
+      "name": "Rivonia",
+      "summary": "A well-established commercial and residential suburb known for its village atmosphere, excellent restaurants, and business park.",
+      "centroid": {
+        "lat": -26.05,
+        "lng": 28.06
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 2000000,
+          "max": 8000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "apartments",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (8 min)",
+          "N1 Highway (5 min)",
+          "Gautrain Sandton (12 min)"
+        ],
+        "lifestyleTags": [
+          "village",
+          "restaurants",
+          "business",
+          "established"
+        ],
+        "schoolsNote": "Close to Redhill School and several Montessori and pre-primary options.",
+        "safetyNote": "Community policing active. Mix of secure complexes and open residential areas.",
+        "walkability": "Moderate - Rivonia Village and restaurants accessible on foot.",
+        "investmentPotential": "Stable residential area with commercial uplift from business park.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Rivonia Village atmosphere (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "morningside",
+        "sandton-cbd",
+        "fourways"
+      ]
+    },
+    {
+      "slug": "craighall-park",
+      "name": "Craighall Park",
+      "summary": "A charming, tree-lined suburb with a mix of old Johannesburg character homes and modern developments, close to Rosebank.",
+      "centroid": {
+        "lat": -26.1333,
+        "lng": 28.0167
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 2200000,
+          "max": 5500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "apartments"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (10 min)",
+          "Rosebank (5 min)",
+          "Gautrain Rosebank (8 min)"
+        ],
+        "lifestyleTags": [
+          "charming",
+          "character",
+          "leafy",
+          "artistic"
+        ],
+        "schoolsNote": "Near St Marys School, Auckland Park schools, and UJ.",
+        "safetyNote": "Active residents association with neighbourhood watch programmes.",
+        "walkability": "Moderate - local cafes and shops, Rosebank nearby.",
+        "investmentPotential": "Popular with young buyers seeking character. Steady market.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Character home in Craighall Park (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "hurlingham",
+        "hyde-park",
+        "morningside"
+      ]
+    },
+    {
+      "slug": "inanda",
+      "name": "Inanda",
+      "summary": "An exclusive enclave home to the prestigious Inanda Country Base, offering large properties and a semi-rural lifestyle minutes from Sandton.",
+      "centroid": {
+        "lat": -26.0333,
+        "lng": 28.0333
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 5000000,
+          "max": 20000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "estates",
+          "luxury houses",
+          "equestrian properties"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (12 min)",
+          "Fourways (8 min)",
+          "N1 Highway (10 min)"
+        ],
+        "lifestyleTags": [
+          "exclusive",
+          "equestrian",
+          "country",
+          "luxury"
+        ],
+        "schoolsNote": "St Stithians College is located in Inanda. Close to Dainfern College.",
+        "safetyNote": "Secure estate living with controlled access and 24-hour security.",
+        "walkability": "Low - estate living, car required for all amenities.",
+        "investmentPotential": "Trophy properties with long-term capital appreciation.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Equestrian lifestyle in Inanda (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "bryanston",
+        "fourways",
+        "hyde-park"
+      ]
+    },
+    {
+      "slug": "woodmead",
+      "name": "Woodmead",
+      "summary": "A mixed-use suburb combining residential areas with major office parks and retail centres, offering convenience for work-from-home professionals.",
+      "centroid": {
+        "lat": -26.05,
+        "lng": 28.09
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 1500000,
+          "max": 4500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "townhouses",
+          "clusters",
+          "apartments",
+          "houses"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (10 min)",
+          "N1 Highway (3 min)",
+          "OR Tambo (20 min)"
+        ],
+        "lifestyleTags": [
+          "convenient",
+          "business park",
+          "accessible",
+          "value"
+        ],
+        "schoolsNote": "Close to The Hill School and several pre-primary options.",
+        "safetyNote": "Security estates and complexes offer good protection. Variable on open stands.",
+        "walkability": "Low to moderate - Woodmead Retail Park accessible.",
+        "investmentPotential": "Good entry point for first-time buyers. Steady rental demand.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Woodmead office and retail park (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "fourways",
+        "rivonia",
+        "sandton-cbd"
+      ]
+    },
+    {
+      "slug": "benmore-gardens",
+      "name": "Benmore Gardens",
+      "summary": "An upmarket residential area adjacent to Benmore Gardens shopping centre, offering easy access to Sandton CBD and excellent amenities.",
+      "centroid": {
+        "lat": -26.095,
+        "lng": 28.04
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 2800000,
+          "max": 7500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "luxury apartments"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min)",
+          "Gautrain Sandton (10 min)",
+          "Benmore Gardens Mall (2 min)"
+        ],
+        "lifestyleTags": [
+          "upmarket",
+          "convenient",
+          "shopping",
+          "established"
+        ],
+        "schoolsNote": "Close to Redhill School and Crawford College Sandton.",
+        "safetyNote": "Well-maintained suburb with active security and boom access.",
+        "walkability": "High - Benmore Gardens centre offers shops, restaurants, and services.",
+        "investmentPotential": "Solid investment with consistent demand from professionals.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Benmore Gardens residential (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "sandown",
+        "morningside",
+        "bryanston"
+      ]
+    },
+    {
+      "slug": "river-club",
+      "name": "River Club",
+      "summary": "A secure, tree-lined enclave offering tranquil luxury living with strong investment returns, popular with families and young professionals seeking proximity to Sandton.",
+      "centroid": {
+        "lat": -26.0833,
+        "lng": 28.04
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 2200000,
+          "max": 14500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "apartments",
+          "luxury estates"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (10-15 min)",
+          "Gautrain Sandton (12 min)",
+          "Morningside (5 min)"
+        ],
+        "lifestyleTags": [
+          "secure",
+          "tranquil",
+          "family-friendly",
+          "golf estate"
+        ],
+        "schoolsNote": "Close to Redhill School, Crawford College, and St Stithians.",
+        "safetyNote": "Gated lifestyle estates with 24/7 security and boom-controlled access.",
+        "walkability": "Moderate - local amenities accessible, Rivonia Village nearby.",
+        "investmentPotential": "Strong rental yields (6-7%) and steady capital appreciation. Popular with buy-to-let investors.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandton Values",
+            "url": "https://www.property24.com/property-values/sandton/gauteng/109"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Tree-lined streets in River Club (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "morningside",
+        "sandown",
+        "rivonia"
+      ]
+    },
+    {
+      "slug": "atholl",
+      "name": "Atholl",
+      "summary": "Atholl remains Sandton's most accessible luxury suburb, attracting young families and professionals with its proximity to the financial district and established amenities.",
+      "centroid": {
+        "lat": -26.1050,
+        "lng": 28.0450
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 4900000,
+          "max": 18000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "luxury houses",
+          "sectional title",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min)",
+          "Rosebank (10 min)",
+          "Gautrain Sandton (8 min)"
+        ],
+        "lifestyleTags": [
+          "family",
+          "established",
+          "convenient",
+          "luxury"
+        ],
+        "schoolsNote": "Close to Crawford College Sandton and St David's Marist Inanda.",
+        "safetyNote": "Mix of boomed roads and gated estates with active residents' association.",
+        "walkability": "Moderate - Atholl Square and Bluebird Shopping Centre accessible.",
+        "investmentPotential": "Strong rental yields (10-14% sectional); freehold appreciating +2.1% YoY.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Atholl Values",
+            "url": "https://www.property24.com/property-values/atholl/sandton/gauteng/115"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Leafy street in Atholl, Sandton (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "morningside",
+        "sandown",
+        "hyde-park"
+      ]
+    },
+    {
+      "slug": "strathavon",
+      "name": "Strathavon",
+      "summary": "Strathavon remains a resilient micro-market 5–10 minutes from Sandton CBD, attracting professionals and investors who prioritise security and convenience over space.",
+      "centroid": {
+        "lat": -26.0950,
+        "lng": 28.0650
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 850000,
+          "max": 10900000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "clusters",
+          "apartments",
+          "townhouses",
+          "houses"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5-10 min)",
+          "Gautrain Sandton (8 min)",
+          "Grayston Drive (2 min)"
+        ],
+        "lifestyleTags": [
+          "lock-up-and-go",
+          "secure",
+          "investment",
+          "professional"
+        ],
+        "schoolsNote": "Immediate access to Redhill School, Crawford College, and Grayston Prep.",
+        "safetyNote": "100% boomed estates with 24-hour security and controlled access.",
+        "walkability": "Moderate - secure complexes, nearby shopping at Morningside.",
+        "investmentPotential": "Strong rental yields (11-16%); sectional title outperforming freehold.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Strathavon Values",
+            "url": "https://www.property24.com/property-values/strathavon/sandton/gauteng/116"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Secure cluster estate in Strathavon, Sandton (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "morningside",
+        "sandown",
+        "bryanston"
+      ]
+    },
+    {
+      "slug": "dunkeld",
+      "name": "Dunkeld",
+      "summary": "Dunkeld's ultra-premium market has plateaued, with the real growth in the mid-luxury R8M–R12M segment and sectional title apartments where institutional buyers and families seek security and capital appreciation.",
+      "centroid": {
+        "lat": -26.1350,
+        "lng": 28.0250
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 1800000,
+          "max": 18000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "luxury houses",
+          "apartments",
+          "clusters",
+          "estates"
+        ],
+        "commuteAnchors": [
+          "Rosebank (2 min)",
+          "Sandton CBD (5 km)",
+          "Gautrain Rosebank (5 min)"
+        ],
+        "lifestyleTags": [
+          "luxury",
+          "prestigious",
+          "executive",
+          "investment"
+        ],
+        "schoolsNote": "Immediate access to Kingsmead, St David's Marist, and Wanderers Club amenities.",
+        "safetyNote": "Boomed roads and gated clusters with 24-hour security throughout.",
+        "walkability": "Moderate - Rosebank Zone accessible, local amenities within reach.",
+        "investmentPotential": "Strong rental yields (11-14%); sectional title outperforming stagnant luxury freehold.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Dunkeld Values",
+            "url": "https://www.property24.com/property-values/dunkeld/sandton/gauteng/117"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Luxury estate in Dunkeld, Johannesburg (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "hyde-park",
+        "rosebank",
+        "sandown"
+      ]
+    },
+    {
+      "slug": "sandhurst",
+      "name": "Sandhurst",
+      "summary": "Sandhurst has plateaued at R16.5M average but remains South Africa's 7th most expensive suburb, with interest rate cuts driving renewed investor interest in this ultra-secure address.",
+      "centroid": {
+        "lat": -26.1100,
+        "lng": 28.0600
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 1080000,
+          "max": 150000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "luxury estates",
+          "mansions",
+          "luxury apartments",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min)",
+          "Gautrain Sandton (8 min)",
+          "OR Tambo (25 min)"
+        ],
+        "lifestyleTags": [
+          "ultra-luxury",
+          "secure",
+          "executive",
+          "prestigious"
+        ],
+        "schoolsNote": "Near Crawford College, Redhill School, and St David's Marist.",
+        "safetyNote": "Boomed roads with private patrols; ultra-high security throughout the suburb.",
+        "walkability": "Low - car-dependent luxury suburb with private amenities.",
+        "investmentPotential": "Strong rental yields (11-16%); flat capital appreciation but rate cuts driving optimism.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Sandhurst Values",
+            "url": "https://www.property24.com/property-values/sandhurst/sandton/gauteng/118"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Luxury mansion in Sandhurst, Sandton (placeholder)"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "hyde-park",
+        "morningside",
+        "sandown"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+    "agents": [
+        {
+            "agentId": "agent-001",
+            "name": "Sarah van der Merwe",
+            "agency": "Pam Golding Properties",
+            "phone": "+27 82 123 4567",
+            "email": "sarah.vdm@pamgolding.co.za",
+            "suburbsServed": [
+                "sandton-cbd",
+                "sandown",
+                "morningside",
+                "hyde-park",
+                "benmore-gardens"
+            ],
+            "verification": {
+                "ffcStatus": "verified",
+                "ffcNumber": "FFC12345",
+                "ffcExpiry": "2025-12-31",
+                "verifiedAt": "2024-01-15T10:30:00Z"
+            }
+        },
+        {
+            "agentId": "agent-002",
+            "name": "Michael Nkosi",
+            "agency": "Seeff Properties",
+            "phone": "+27 83 234 5678",
+            "email": "michael.n@seeff.com",
+            "suburbsServed": [
+                "bryanston",
+                "fourways",
+                "rivonia",
+                "woodmead",
+                "inanda"
+            ],
+            "verification": {
+                "ffcStatus": "verified",
+                "ffcNumber": "FFC23456",
+                "ffcExpiry": "2025-06-30",
+                "verifiedAt": "2024-02-20T14:15:00Z"
+            }
+        },
+        {
+            "agentId": "agent-003",
+            "name": "Priya Govender",
+            "agency": "Lew Geffen Sotheby's",
+            "phone": "+27 84 345 6789",
+            "email": "priya.g@sothebysrealty.co.za",
+            "suburbsServed": [
+                "hyde-park",
+                "sandown",
+                "hurlingham",
+                "craighall-park",
+                "morningside"
+            ],
+            "verification": {
+                "ffcStatus": "verified",
+                "ffcNumber": "FFC34567",
+                "ffcExpiry": "2026-03-15",
+                "verifiedAt": "2024-03-01T09:00:00Z"
+            }
+        },
+        {
+            "agentId": "agent-004",
+            "name": "James Thompson",
+            "agency": "RE/MAX Premier",
+            "phone": "+27 72 456 7890",
+            "email": "james.t@remax.co.za",
+            "suburbsServed": [
+                "fourways",
+                "bryanston",
+                "woodmead",
+                "rivonia"
+            ],
+            "verification": {
+                "ffcStatus": "unverified",
+                "ffcNumber": null,
+                "ffcExpiry": null,
+                "verifiedAt": null
+            }
+        },
+        {
+            "agentId": "agent-005",
+            "name": "Lindiwe Mthembu",
+            "agency": "Wakefields Real Estate",
+            "phone": "+27 79 567 8901",
+            "email": "lindiwe.m@wakefields.co.za",
+            "suburbsServed": [
+                "sandton-cbd",
+                "morningside",
+                "rivonia",
+                "benmore-gardens",
+                "sandown",
+                "hurlingham"
+            ],
+            "verification": {
+                "ffcStatus": "verified",
+                "ffcNumber": "FFC45678",
+                "ffcExpiry": "2025-09-30",
+                "verifiedAt": "2024-01-05T11:45:00Z"
+            }
+        }
+    ],
+    "fallbackAgentPool": [
+        "agent-001",
+        "agent-003",
+        "agent-005"
+    ]
+}
