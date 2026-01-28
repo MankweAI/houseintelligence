@@ -18,7 +18,6 @@ import { SellerFAQs } from '@/components/seller/SellerFAQs';
 import { DataMethodology } from '@/components/seller/DataMethodology';
 import { PrintPlaybookButton } from '@/components/seller/PrintPlaybookButton';
 import { getSuburbHeroImage, getSuburbMarketingImages } from '@/lib/images';
-import { MarketingCarousel } from '@/components/seller/MarketingCarousel';
 
 // Inside the component return:
 
@@ -32,7 +31,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps) {
     const { suburbSlug } = await params;
-    const suburb = getSuburbBySlug(suburbSlug);
+    const suburb = await getSuburbBySlug(suburbSlug);
     if (!suburb) return { title: 'Suburb Not Found' };
 
     return {
@@ -45,8 +44,8 @@ export default async function SuburbSellerPage({ params }: PageProps) {
     const { suburbSlug } = await params;
 
     // 1. Fetch Data
-    const suburb = getSuburbBySlug(suburbSlug);
-    const sellerData = getSellerData(suburbSlug);
+    const suburb = await getSuburbBySlug(suburbSlug);
+    const sellerData = await getSellerData(suburbSlug);
     const agents = getAgentsForSuburb(suburbSlug);
     const marketingImages = getSuburbMarketingImages(suburbSlug);
 
@@ -302,8 +301,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         {/* Smart Context Comparator */}
                         <SuburbComparator data={sellerData} suburbName={suburb.name} />
 
-                        {/* Marketing Carousel - Visual POV */}
-                        <MarketingCarousel suburbName={suburb.name} images={marketingImages} />
+
 
                         {/* Recommended Agents */}
                         <section>

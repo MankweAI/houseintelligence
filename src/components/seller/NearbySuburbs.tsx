@@ -1,27 +1,41 @@
 import Link from "next/link";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Suburb, getSuburbBySlug } from "@/lib/data";
-import { hasSellerData } from "@/lib/seller-data";
+
 import { getSuburbHeroImage } from "@/lib/images";
 
 interface NearbySuburbsProps {
     currentSuburb: Suburb;
 }
 
-export function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
-    // 1. Get related suburbs
-    const neighbors = currentSuburb.relatedSuburbs
-        .map(slug => getSuburbBySlug(slug))
-        .filter((s): s is Suburb => s !== undefined)
-        // Strategic SEO: Prioritize Tier 1 suburbs (those with live seller data)
-        // This creates topic clusters for better topical authority
-        .sort((a, b) => {
-            const aLive = hasSellerData(a.slug);
-            const bLive = hasSellerData(b.slug);
-            if (aLive && !bLive) return -1;
-            if (!aLive && bLive) return 1;
-            return 0;
-        });
+import { getSellerData } from "@/lib/seller-data";
+
+export async function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
+    // Helper to check live status efficiently
+    const checkLive = async (slug: string) => {
+        const data = await getSellerData(slug);
+        return data !== null;
+    };
+
+    // Parallel fetch suburb details
+    const neighborsRaw = await Promise.all(
+        currentSuburb.relatedSuburbs.map(slug => getSuburbBySlug(slug))
+    );
+    const validNeighbors = neighborsRaw.filter((s): s is Suburb => s !== undefined);
+
+    // Parallel fetch live status
+    const liveStatus = await Promise.all(
+        validNeighbors.map(async (n) => ({
+            ...n,
+            isLive: await checkLive(n.slug)
+        }))
+    );
+
+    const neighbors = liveStatus.sort((a, b) => {
+        if (a.isLive && !b.isLive) return -1;
+        if (!a.isLive && b.isLive) return 1;
+        return 0;
+    });
 
     if (neighbors.length === 0) return null;
 
@@ -41,7 +55,7 @@ export function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {neighbors.map((neighbor) => {
-                        const isLive = hasSellerData(neighbor.slug);
+                        const isLive = neighbor.isLive;
 
                         const heroImage = getSuburbHeroImage(neighbor.slug);
                         const imgSrc = typeof heroImage === 'string' ? heroImage : heroImage.src;

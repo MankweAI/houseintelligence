@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
-import { getSuburbSlugs } from '@/lib/data';
+
 
 const suburbSlugs = [
     'hurlingham', 'bryanston', 'sandown', 'sandton-cbd', 'hyde-park', 'morningside',

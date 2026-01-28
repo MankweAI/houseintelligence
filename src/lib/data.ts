@@ -1,6 +1,4 @@
-import suburbsData from '@/data/suburbs.json';
-import agentsData from '@/data/agents.json';
-
+import { supabase } from './supabase';
 
 // Types
 export interface SourceNote {
@@ -20,7 +18,7 @@ export interface AmenityPlace {
     priceLevel?: string;
     distance?: string;
     description?: string;
-    image?: string; // Optional specific image for the place
+    image?: string;
 }
 
 export interface DataPoints {
@@ -47,8 +45,6 @@ export interface ImagePlan {
     };
     transportGalleryCount: number;
 }
-
-import { SuburbImages } from '@/types/images';
 
 export interface Suburb {
     slug: string;
@@ -90,25 +86,76 @@ export interface AgentsData {
 
 
 
-// Data getters
-export function getSuburbsData(): SuburbsData {
-    return suburbsData as SuburbsData;
+// Data getters - NOW ASYNC via Supabase
+
+export async function getAllSuburbs(): Promise<Suburb[]> {
+    const { data, error } = await supabase
+        .from('suburbs')
+        .select('*')
+        .order('name');
+
+    if (error) {
+        console.error('Error fetching suburbs:', error);
+        return [];
+    }
+
+    // Map DB schema to App Schema
+    return data.map(row => ({
+        slug: row.slug,
+        name: row.name,
+        summary: row.overview.summary,
+        centroid: row.centroid,
+        dataPoints: row.overview.dataPoints,
+        imagePlan: row.overview.imagePlan,
+        relatedSuburbs: row.related_suburbs
+    }));
 }
 
-export function getAllSuburbs(): Suburb[] {
-    return getSuburbsData().suburbs;
+export async function getSuburbBySlug(slug: string): Promise<Suburb | undefined> {
+    const { data, error } = await supabase
+        .from('suburbs')
+        .select('*')
+        .eq('slug', slug)
+        .single();
+
+    if (error) return undefined;
+
+    return {
+        slug: data.slug,
+        name: data.name,
+        summary: data.overview.summary,
+        centroid: data.centroid,
+        dataPoints: data.overview.dataPoints,
+        imagePlan: data.overview.imagePlan,
+        relatedSuburbs: data.related_suburbs
+    };
 }
 
-export function getSuburbBySlug(slug: string): Suburb | undefined {
-    return getAllSuburbs().find(s => s.slug === slug);
+export async function getSuburbSlugs(): Promise<string[]> {
+    const { data } = await supabase.from('suburbs').select('slug');
+    return data?.map(d => d.slug) || [];
 }
 
-export function getSuburbSlugs(): string[] {
-    return getAllSuburbs().map(s => s.slug);
-}
+import { recommendedAgents } from './agents';
 
 export function getAgentsData(): AgentsData {
-    return agentsData as AgentsData;
+    return {
+        agents: recommendedAgents.map(a => ({
+            agentId: a.id,
+            name: a.name,
+            agency: a.agency,
+            phone: a.contacts.phone,
+            email: a.contacts.email,
+            suburbsServed: a.areas,
+            verification: {
+                ffcStatus: 'verified',
+                ffcNumber: null,
+                ffcExpiry: null,
+                verifiedAt: null
+            }
+        })),
+        fallbackAgentPool: []
+    };
 }
 
 export function getAllAgents(): Agent[] {

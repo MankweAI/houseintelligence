@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { getAllSuburbs } from '@/lib/data';
 
-export function Footer() {
-    const suburbs = getAllSuburbs();
+export async function Footer() {
+    const suburbs = await getAllSuburbs();
 
     return (
         <footer className="bg-stone-900 text-stone-300">

@@ -10,8 +10,8 @@ export const metadata = {
     description: 'Don\'t just list. Execute a strategy. Get a data-backed selling plan and access to Sandton\'s top 3 vetted agents.',
 };
 
-export default function GlobalSellerHub() {
-    const suburbSlugs = getSuburbSlugs().slice(0, 12); // Show top 12
+export default async function GlobalSellerHub() {
+    const suburbSlugs = (await getSuburbSlugs()).slice(0, 12); // Show top 12
 
     return (
         <div className="bg-stone-50 min-h-screen">

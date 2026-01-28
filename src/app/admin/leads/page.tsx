@@ -20,7 +20,7 @@ export default async function AdminLeadsPage() {
 
     const repository = getLeadRepository();
     const leads = await repository.listLeads();
-    const suburbs = getAllSuburbs();
+    const suburbs = await getAllSuburbs();
 
     const getSuburbName = (slug: string) => {
         return suburbs.find(s => s.slug === slug)?.name || slug;

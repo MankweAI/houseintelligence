@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -21,7 +21,7 @@ import {
     CONSENT_TEXT,
     type LeadFormData,
 } from '@/lib/validation';
-import { getAllSuburbs } from '@/lib/data';
+import { getAllSuburbs, type Suburb } from '@/lib/data';
 import { Loader2, CheckCircle2, AlertCircle, Shield } from 'lucide-react';
 
 interface LeadFormProps {
@@ -36,7 +36,15 @@ export function LeadForm({
     variant = 'full'
 }: LeadFormProps) {
     const router = useRouter();
-    const allSuburbs = getAllSuburbs();
+    const [allSuburbs, setAllSuburbs] = useState<Suburb[]>([]);
+
+    useEffect(() => {
+        const fetchSuburbs = async () => {
+            const data = await getAllSuburbs();
+            setAllSuburbs(data);
+        };
+        fetchSuburbs();
+    }, []);
 
     const [formData, setFormData] = useState<Partial<LeadFormData>>({
         name: '',

@@ -1,11 +1,11 @@
 import { MetadataRoute } from 'next'
-import { sellerData } from '@/lib/seller-data'
+import { getSuburbSlugs } from '@/lib/data'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://houseintelligence.co.za'
 
     // Get all suburb slugs from the data source
-    const suburbSlugs = Object.keys(sellerData)
+    const suburbSlugs = await getSuburbSlugs()
 
     // Generate URLs for each suburb page
     const suburbRoutes = suburbSlugs.map((slug) => ({

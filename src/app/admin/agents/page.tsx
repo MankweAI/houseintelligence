@@ -18,7 +18,7 @@ export default async function AdminAgentsPage() {
     }
 
     const agents = getAllAgents();
-    const suburbs = getAllSuburbs();
+    const suburbs = await getAllSuburbs();
 
     const getSuburbName = (slug: string) => {
         return suburbs.find(s => s.slug === slug)?.name || slug;
