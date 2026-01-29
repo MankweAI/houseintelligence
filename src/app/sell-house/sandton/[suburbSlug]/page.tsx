@@ -18,6 +18,8 @@ import { SellerFAQs } from '@/components/seller/SellerFAQs';
 import { DataMethodology } from '@/components/seller/DataMethodology';
 import { PrintPlaybookButton } from '@/components/seller/PrintPlaybookButton';
 import { getSuburbHeroImage } from '@/lib/images';
+import { AgentSelectionMethodology } from '@/components/seller/AgentSelectionMethodology';
+
 
 // Inside the component return:
 
@@ -323,13 +325,16 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                             <StaggerContainer className="grid gap-6">
                                 {agents.map((agent) => (
                                     <StaggerItem key={agent.id}>
-                                        <AgentCard agent={agent} suburbName={suburb.name} />
+                                        <AgentCard agent={agent} suburbName={suburb.name} suburbSlug={suburbSlug} />
                                     </StaggerItem>
                                 ))}
                             </StaggerContainer>
-                            <p className="text-xs text-stone-400 mt-6 text-center">
+                            <p className="text-xs text-stone-400 mt-6 text-center mb-16">
                                 Disclaimer: We recommend these agents based on their proven track record in {suburb.name}, consistent sales performance, and client satisfaction. We are not employed by any specific agency.
                             </p>
+
+                            {/* Methodology Section - Trust Signal */}
+                            <AgentSelectionMethodology />
                         </section>
 
 
