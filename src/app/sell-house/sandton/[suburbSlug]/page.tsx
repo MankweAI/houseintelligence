@@ -17,7 +17,7 @@ import { ValuePropCards } from '@/components/seller/ValuePropCards';
 import { SellerFAQs } from '@/components/seller/SellerFAQs';
 import { DataMethodology } from '@/components/seller/DataMethodology';
 import { PrintPlaybookButton } from '@/components/seller/PrintPlaybookButton';
-import { getSuburbHeroImage, getSuburbMarketingImages } from '@/lib/images';
+import { getSuburbHeroImage } from '@/lib/images';
 
 // Inside the component return:
 
@@ -47,7 +47,6 @@ export default async function SuburbSellerPage({ params }: PageProps) {
     const suburb = await getSuburbBySlug(suburbSlug);
     const sellerData = await getSellerData(suburbSlug);
     const agents = getAgentsForSuburb(suburbSlug);
-    const marketingImages = getSuburbMarketingImages(suburbSlug);
 
     // 2. Guardrails
     if (!suburb || !sellerData) {
@@ -103,13 +102,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                     })
                 }}
             />
-            {/* Mobile-Friendly Navigation Back - Visible on all devices */}
-            <div className="fixed top-20 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-stone-200 py-2 px-4 md:hidden">
-                <Link href="/sell-house/sandton" className="flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-amber-700 transition-colors">
-                    <ArrowLeft className="h-4 w-4" />
-                    <span>All Sandton Suburbs</span>
-                </Link>
-            </div>
+
             {/* Desktop Navigation - Floating style */}
             <div className="fixed top-24 left-4 z-40 hidden md:block">
                 <Link href="/sell-house/sandton" className="flex items-center gap-2 text-sm font-medium text-stone-500 hover:text-stone-900 bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-sm transition-all border border-stone-200">
@@ -121,8 +114,8 @@ export default async function SuburbSellerPage({ params }: PageProps) {
             {/* 1. Hero */}
             <div className="-mt-20">
                 <CinematicHero
-                    title="Homes Here Sell 40% Faster"
-                    subtitle={`${sellerData.supplyDemand.estDaysOnMarket} days avg vs 180 Sandton-wide | ${sellerData.pricing.freehold.avgPrice} avg (Freehold)`}
+                    title="Your Home Will Sell 40% Faster"
+                    subtitle={`Sandton averages 180 days. We average ${sellerData.supplyDemand.estDaysOnMarket}. See what's driving the difference.`}
                     supertitle={`${suburb.name} Market Intel`}
                     imageSrc={getSuburbHeroImage(suburb.slug)}
                     imageAlt={`${suburb.name} property market`}
@@ -131,20 +124,16 @@ export default async function SuburbSellerPage({ params }: PageProps) {
 
             {/* E-E-A-T Signal Bar */}
             <div className="bg-stone-900 text-white relative z-20 -mt-20 py-4 border-b border-stone-800/50">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-6 items-center text-sm text-stone-400">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-0 items-center text-sm text-stone-400">
                     <div className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-emerald-500" />
-                        <span>Researched by <strong className="text-white">{sellerData.author.name}</strong></span>
+                        <span>Research by <strong className="text-white">{sellerData.author.name}</strong></span>
                     </div>
                     <div className="hidden sm:block w-1 h-1 bg-stone-700 rounded-full" />
                     <div>
                         Last Verified: <strong className="text-white">{sellerData.lastUpdated}</strong>
                     </div>
                     <div className="hidden sm:block w-1 h-1 bg-stone-700 rounded-full" />
-                    <div className="flex items-center gap-2">
-                        <Users className="h-4 w-4 text-indigo-400" />
-                        <span>{sellerData.supplyDemand.salesPerYear} verified sales analyzed</span>
-                    </div>
                     {/* Print/Download Button */}
                     <div className="ml-auto">
                         <PrintPlaybookButton suburbName={suburb.name} />
@@ -188,13 +177,8 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                             </p>
                         </div>
 
-                        {/* 0. Value Proposition Cards - NEW */}
-                        {sellerData.valueProp && (
-                            <ValuePropCards valueProp={sellerData.valueProp} />
-                        )}
-
-                        {/* 1. Market Intelligence Grid */}
-                        <FadeIn className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        {/* 1. Market Intelligence Grid - MOVED UP */}
+                        <FadeIn className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 mb-12">
                             <div className="flex items-center gap-3 mb-6">
                                 <TrendingUp className="h-6 w-6 text-emerald-600" />
                                 <h2 className="text-2xl font-serif font-bold text-slate-900">
@@ -285,6 +269,11 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                                 </div>
                             </div>
                         </FadeIn>
+
+                        {/* 2. Value Proposition Cards - MOVED DOWN */}
+                        {sellerData.valueProp && (
+                            <ValuePropCards valueProp={sellerData.valueProp} />
+                        )}
 
                         {/* Micro-Markets (New Layer of Defensibility) */}
                         {sellerData.microMarkets && sellerData.microMarkets.length > 0 && (

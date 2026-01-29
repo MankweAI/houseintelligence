@@ -49,42 +49,16 @@ export function InteractiveInsights({ data, suburbName }: InteractiveInsightsPro
 
     return (
         <div className="space-y-12">
-            {/* Context Toggle */}
-            <div className="flex justify-center mb-8">
-                <div className="bg-stone-100 p-1.5 rounded-full inline-flex relative">
-                    <button
-                        onClick={() => setContext("house")}
-                        className={cn(
-                            "px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 transition-all duration-300 relative z-10",
-                            context === "house" ? "bg-white text-amber-800 shadow-sm" : "text-stone-500 hover:text-stone-700"
-                        )}
-                    >
-                        <Home className="w-4 h-4" />
-                        Freehold House
-                    </button>
-                    <button
-                        onClick={() => setContext("sectional")}
-                        className={cn(
-                            "px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 transition-all duration-300 relative z-10",
-                            context === "sectional" ? "bg-white text-amber-800 shadow-sm" : "text-stone-500 hover:text-stone-700"
-                        )}
-                    >
-                        <Building2 className="w-4 h-4" />
-                        Apartment / Cluster
-                    </button>
-                </div>
-            </div>
+
 
             {/* 2. Buyer Profile */}
             <section>
                 <div className="flex items-center justify-between mb-6">
                     <h2 className="text-2xl font-serif font-bold text-stone-900 flex items-center gap-2">
                         <Users className="h-6 w-6 text-amber-600" />
-                        The {suburbName} Buyer Avatar
+                        The {suburbName} Buyer Profile
                     </h2>
-                    <span className="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-100">
-                        {context === "house" ? "House Buyers" : "Sectional Buyers"}
-                    </span>
+
                 </div>
 
                 <div className="bg-white p-8 rounded-3xl border border-stone-200 relative overflow-hidden transition-all duration-500">
@@ -145,7 +119,7 @@ export function InteractiveInsights({ data, suburbName }: InteractiveInsightsPro
             </section>
 
             {/* 4. Strategic Timeline */}
-            <section className="bg-stone-50 p-6 rounded-2xl border border-stone-200">
+            <section className="bg-stone-50 p-4 rounded-2xl border border-stone-200">
                 {/* Header */}
                 <div className="flex items-center gap-3 mb-8 pb-6 border-b border-stone-200">
                     <div className="h-10 w-10 rounded-lg bg-amber-600 flex items-center justify-center">

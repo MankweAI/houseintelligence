@@ -16,7 +16,7 @@ export function SuburbComparator({ data, suburbName }: SuburbComparatorProps) {
     const comp = data.comparison;
 
     return (
-        <section className="bg-stone-50 rounded-2xl p-8 border border-stone-200">
+        <section className="bg-stone-50 rounded-2xl p-4 border border-stone-200">
             {/* Header */}
             <div className="flex items-center gap-3 mb-6 pb-6 border-b border-stone-200">
                 <div className="h-10 w-10 rounded-lg bg-amber-600 flex items-center justify-center">

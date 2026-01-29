@@ -302,7 +302,7 @@ export function ValuationSimulator({ suburbName, pricingData }: ValuationSimulat
         <Dialog open={isOpen} onOpenChange={handleOpenChange}>
             <DialogTrigger asChild>
                 {/* Replaces the old static card trigger */}
-                <div className="bg-white p-6 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-200 cursor-pointer group hover:border-amber-500 transition-all duration-300 relative overflow-hidden">
+                <div className="bg-yellow-50 p-6 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-200 cursor-pointer group hover:border-amber-500 transition-all duration-300 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
                     <div className="relative z-10">
                         <div className="flex items-center gap-3 mb-4">
