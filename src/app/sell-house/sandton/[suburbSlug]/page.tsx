@@ -5,7 +5,7 @@ import { getAgentsForSuburb } from '@/lib/agents';
 import { getSuburbBySlug } from '@/lib/data';
 import { CinematicHero } from '@/components/CinematicHero';
 import { AgentCard } from '@/components/seller/AgentCard';
-import { ValuationForm } from '@/components/seller/ValuationForm';
+import { ValuationSimulator } from '@/components/seller/ValuationSimulator';
 import { InteractiveInsights } from '@/components/seller/InteractiveInsights';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
 import { ArrowLeft, CheckCircle, TrendingUp, Users } from 'lucide-react';
@@ -155,8 +155,22 @@ export default async function SuburbSellerPage({ params }: PageProps) {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-                    {/* LEFT COLUMN: Content */}
-                    <div className="lg:col-span-2 space-y-12">
+
+                    {/* RIGHT COLUMN: Simulator (First on Mobile, Right on Desktop) */}
+                    <div className="lg:col-span-1 lg:col-start-3 lg:row-start-1">
+                        <div className="sticky top-24" id="valuation-form">
+                            <ValuationSimulator
+                                suburbName={suburb.name}
+                                pricingData={{
+                                    freehold: { avgPrice: sellerData.pricing.freehold.avgPrice },
+                                    sectional: { avgPrice: sellerData.pricing.sectional.avgPrice }
+                                }}
+                            />
+                        </div>
+                    </div>
+
+                    {/* LEFT COLUMN: Content (Second on Mobile, Left on Desktop) */}
+                    <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 space-y-12">
 
                         {/* SEO Intro Paragraph */}
                         {/* SEO Intro Paragraph */}
@@ -331,15 +345,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
 
 
 
-                        {/* RIGHT COLUMN: Sticky CTA */}
-                        <div className="lg:col-span-1">
-                            <div className="sticky top-24" id="valuation-form">
-                                <ValuationForm
-                                    suburbSlug={suburb.name}
-                                    buyerProfile={sellerData.buyerProfile.dominant}
-                                />
-                            </div>
-                        </div>
+
 
                     </div>
                 </div>
