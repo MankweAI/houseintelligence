@@ -1,0 +1,164 @@
+{
+    "suburbSlug": "wendywood",
+    "name": "Wendywood",
+    "headline": "Affordable Sandton Hub With Strong Rental Demand",
+    "description": "Wendywood maintains its position as Sandton's most accessible middle-tier suburb, attracting families and investors seeking security and value. Rising rental yields (10-13% gross) and sustained sectional title demand underpin steady market momentum despite broader market cautiousness.",
+    "narrativeSummary": "Wendywood is where Sandton becomes affordable. At R2.5M average—with 6.3% growth—it outperforms premium neighbors on value metrics. The Foundry's R1.45-1.5M apartments command R13K+ monthly rents within 6-8 week sales cycles. Esprit Estate gives families 109 freestanding options between R2.5-3.5M with actual community. Gautrain Marlboro station is 10 minutes away; CBD is the same. Investors chase 10-13% yields while owner-occupiers find tree-lined boomed streets identical to Gallo Manor at 12% less.",
+    "lastUpdated": "January 2026",
+    "valueProp": {
+        "fast": {
+            "metric": "35-40%",
+            "context": "Well-priced sectional titles in secure complexes sell within 8-10 weeks"
+        },
+        "premium": {
+            "metric": "R2.5M",
+            "context": "Average sale price across all property types in 2025"
+        },
+        "growth": {
+            "metric": "+6.3%",
+            "context": "YoY appreciation from 2024 to 2025 (R2.35M to R2.50M)"
+        }
+    },
+    "pricing": {
+        "freehold": {
+            "avgPrice": "R2.7M",
+            "range": "R1.95M - R4.1M",
+            "trend": "UP",
+            "trendValue": "+4.8%"
+        },
+        "sectional": {
+            "avgPrice": "R1.2M",
+            "range": "R625K - R2.99M",
+            "trend": "UP",
+            "trendValue": "+6.5%"
+        }
+    },
+    "supplyDemand": {
+        "estDaysOnMarket": 90,
+        "temperature": "Balanced",
+        "stockLevel": "Moderate",
+        "insight": "Consistent supply of 80-100 active listings maintains balanced conditions; sectional titles moving faster than freehold houses, driven by investor interest and rental demand."
+    },
+    "buyerProfile": {
+        "dominant": "Middle-Class Families & Investment-Focused Professionals",
+        "motivations": [
+            "Proximity to Sandton business hub with lower entry price than neighbouring suburbs",
+            "Modern secure complexes with strong rental yield potential (10-13% gross)",
+            "Established tree-lined residential character with boomed-off family enclaves"
+        ],
+        "split": [
+            {
+                "label": "Owner-Occupier Families",
+                "percentage": 50
+            },
+            {
+                "label": "Buy-to-Let Investors",
+                "percentage": 30
+            },
+            {
+                "label": "Young Professionals (Sectional Title)",
+                "percentage": 20
+            }
+        ]
+    },
+    "sellerIntelligence": {
+        "premiumDrivers": [
+            "Boomed-off security enclosure location with 24-hour gate control",
+            "Modern backup power systems (solar/generator) and recently renovated kitchens",
+            "Complex amenities: gym, business centre, landscaped gardens (Esprit Estate model)"
+        ],
+        "pricingMistakes": [
+            "Overpricing by 15-18% relative to comparable suburbs; ask-vs-sell gap averages R300,000-R350,000",
+            "Failing to highlight rental yield potential; investors will pay premium for yield-generating units",
+            "Undervaluing security infrastructure; boomed enclosures command 8-12% premiums over non-boomed properties"
+        ],
+        "marketingAngles": [
+            "Highlight proximity to Gautrain Marlboro station and direct access to Sandton CBD (10 min commute)",
+            "Emphasize school catchment: Redhill, Crawford College, Wendywood High School in immediate radius",
+            "Position sectional titles as 'investor-ready' with documented rental demand (R12K-R13K/month quoted)"
+        ],
+        "timeline": {
+            "wellPriced": "Top 20% of listings achieve sale within 6-8 weeks when priced to market",
+            "negotiationRoom": "10-15% below initial asking price typical in current balanced market",
+            "bestSeason": "Spring (August-November) and early summer (December-January)"
+        }
+    },
+    "marketComposition": {
+        "activeListings": 85,
+        "dominantFeatures": "Mix of large older freehold homes on 1000-1500 sqm stands and modern sectional apartment/townhouse complexes with estate amenities",
+        "split": {
+            "freehold": 40,
+            "sectional": 60
+        }
+    },
+    "microMarkets": [
+        {
+            "name": "The Foundry Complex",
+            "sentiment": "Positive",
+            "insight": "Flagship modern complex with 24-hour security; 2-bed apartments R1.45M-R1.5M achieve strong rental demand (R13K+/month). Fastest-moving segment; 6-8 week sales cycles."
+        },
+        {
+            "name": "Esprit Estate",
+            "sentiment": "Positive",
+            "insight": "109 freestanding homes with estate amenities; established community; prices R2.5M-R3.5M for townhouses and houses. Lower inventory turnover than complexes but premium market positioning."
+        },
+        {
+            "name": "Tamaris Lodge & Entry-Level Complexes",
+            "sentiment": "Neutral",
+            "insight": "Sub-R850,000 2-bed apartments attract investors seeking 10%+ yields; higher vacancy risk during economic downturns; suitable for yield-focused, not owner-occupier buyers."
+        },
+        {
+            "name": "Boomed Enclosures (North/South)",
+            "sentiment": "Positive",
+            "insight": "Established family-oriented boomed sections; 3-4 bed houses R1.9M-R3M; strong owner-occupier demand; lower turnover but stable pricing; premium for gated security."
+        },
+        {
+            "name": "Wendywood Road/Main Road Exposure",
+            "sentiment": "Neutral",
+            "insight": "Properties facing Wendywood Road experience moderate traffic noise; 8-12% price discount vs. interior locations; suitable for investors; less attractive for families seeking tranquility."
+        }
+    ],
+    "comparison": {
+        "competitorName": "Gallo Manor",
+        "competitorSlug": "gallo-manor",
+        "priceDiff": "-12% Lower (Wendywood)",
+        "verdict": "Wendywood offers better affordability and Sandton CBD proximity, but Gallo Manor commands premium due to more established heritage, larger estates, and boomed-off security reputation. Wendywood better for investors; Gallo Manor better for luxury family living.",
+        "features": [
+            {
+                "label": "Average Freehold Price",
+                "us": "R2.7M",
+                "them": "R3.0M - R3.5M"
+            },
+            {
+                "label": "Average Land Size",
+                "us": "1200 sqm",
+                "them": "1500 sqm"
+            },
+            {
+                "label": "Avg Days to Sell (Freeholds)",
+                "us": "90-100 days",
+                "them": "75-85 days"
+            },
+            {
+                "label": "Security Profile",
+                "us": "Boomed (Mixed)",
+                "them": "Fully Boomed Enclosures"
+            },
+            {
+                "label": "Sectional Title Availability",
+                "us": "High (60% of stock)",
+                "them": "Lower (40% of stock)"
+            },
+            {
+                "label": "Proximity to CBD",
+                "us": "10 min via Jan Smuts/M1",
+                "them": "12-15 min via arterial routes"
+            },
+            {
+                "label": "Rental Yield (Sectional)",
+                "us": "10-13% gross",
+                "them": "8-11% gross"
+            }
+        ]
+    }
+}

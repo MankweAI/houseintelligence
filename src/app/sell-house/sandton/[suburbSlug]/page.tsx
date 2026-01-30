@@ -19,6 +19,7 @@ import { DataMethodology } from '@/components/seller/DataMethodology';
 import { PrintPlaybookButton } from '@/components/seller/PrintPlaybookButton';
 import { getSuburbHeroImage } from '@/lib/images';
 import { AgentSelectionMethodology } from '@/components/seller/AgentSelectionMethodology';
+import { MarketNarrative } from '@/components/seller/MarketNarrative';
 
 
 // Inside the component return:
@@ -129,7 +130,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-0 items-center text-sm text-stone-400">
                     <div className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-emerald-500" />
-                        <span>Research by <strong className="text-white">{sellerData.author.name}</strong></span>
+                        <span>Research by <strong className="text-white">Big Data Query</strong></span>
                     </div>
                     <div className="hidden sm:block w-1 h-1 bg-stone-700 rounded-full" />
                     <div>
@@ -165,19 +166,8 @@ export default async function SuburbSellerPage({ params }: PageProps) {
 
                         {/* SEO Intro Paragraph */}
                         {/* SEO Intro Paragraph */}
-                        <div className="text-center max-w-3xl mx-auto">
-                            <p className="text-lg text-stone-700 leading-relaxed">
-                                {sellerData.description ? (
-                                    <>
-                                        {sellerData.description}
-                                    </>
-                                ) : (
-                                    <>
-                                        Looking to <strong className="text-stone-900">sell your house in {suburb.name}</strong>? Our data shows homes here <strong className="text-amber-700">sell 40% faster</strong> than the Sandton average.
-                                    </>
-                                )}
-                            </p>
-                        </div>
+                        {/* SEO Intro Paragraph - Dynamic Narrative */}
+                        <MarketNarrative data={sellerData} suburbName={suburb.name} />
 
                         {/* 1. Market Intelligence Grid - MOVED UP */}
                         <FadeIn className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 mb-12">
@@ -363,6 +353,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                 suburbName={suburb.name}
                 avgPrice={sellerData.pricing.freehold.avgPrice}
                 daysOnMarket={sellerData.supplyDemand.estDaysOnMarket}
+                marketTemperature={sellerData.supplyDemand.temperature}
             />
 
         </div>

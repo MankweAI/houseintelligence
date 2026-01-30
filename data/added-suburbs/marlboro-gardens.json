@@ -1,0 +1,163 @@
+{
+    "suburbSlug": "marlboro-gardens",
+    "name": "Marlboro Gardens",
+    "headline": "Budget-Friendly Investment Hub With Rental Potential",
+    "description": "Marlboro Gardens is a mixed-use suburb experiencing moderate downward price pressure (-4% YoY), making it attractive for value investors and first-time buyers. Strong rental yield potential (10-14% gross) and Gautrain proximity support income-focused purchasing, though security concerns around the N3 offramp require factoring into pricing.",
+    "narrativeSummary": "Marlboro Gardens is the contrarian's play—-4% YoY decline means negotiating room, not doom. At R1.49M average and 10-14% rental yields, the math works for investors who see past the N3 noise. Bramley commands 38% more for similar returns. Flatlets generate dual income streams; the Gautrain station creates reliable tenant demand. It's a buyer's market with 100+ day cycles—advantage: those with cash and patience. Not for the prestige-conscious; perfect for the profit-focused.",
+    "lastUpdated": "January 2026",
+    "valueProp": {
+        "fast": {
+            "metric": "14%",
+            "context": "Gross rental yields for sectional title apartments significantly exceed national averages"
+        },
+        "premium": {
+            "metric": "R1.49M",
+            "context": "Current 2025 average sale price reflects value positioning vs. comparable suburbs"
+        },
+        "growth": {
+            "metric": "-4.1%",
+            "context": "Year-on-year price decline (2024 to 2025) creates buyer opportunity in soft market"
+        }
+    },
+    "pricing": {
+        "freehold": {
+            "avgPrice": "R1.8M",
+            "range": "R1.2M - R3.5M",
+            "trend": "DOWN",
+            "trendValue": "-4%"
+        },
+        "sectional": {
+            "avgPrice": "R1.1M",
+            "range": "R850K - R2M",
+            "trend": "DOWN",
+            "trendValue": "-4%"
+        }
+    },
+    "supplyDemand": {
+        "estDaysOnMarket": 105,
+        "temperature": "Buyers",
+        "stockLevel": "Moderate",
+        "insight": "Extended selling times (100+ days) and price declines indicate buyer advantage; mixed-income profile reduces competition from ultra-premium buyers elsewhere in Sandton"
+    },
+    "buyerProfile": {
+        "dominant": "Value Investors & Young Families Seeking Rental Income",
+        "motivations": [
+            "Strong rental yield potential (10-14% gross returns)",
+            "Affordable entry point vs. premium Sandton suburbs",
+            "Gautrain proximity for commuter convenience"
+        ],
+        "split": [
+            {
+                "label": "Investor/Rental Focus",
+                "percentage": 50
+            },
+            {
+                "label": "Family Owner-Occupiers",
+                "percentage": 35
+            },
+            {
+                "label": "First-Time Buyers",
+                "percentage": 15
+            }
+        ]
+    },
+    "sellerIntelligence": {
+        "premiumDrivers": [
+            "Flatlets/additional living units for rental income",
+            "Large stands (1500+ sqm) for expansion potential",
+            "Renovated kitchens and modern finishes",
+            "Boomed/fenced security features",
+            "Proximity to Gautrain station (within 2-3km)"
+        ],
+        "pricingMistakes": [
+            "Overpricing relative to comparable suburbs (Bramley R2.4M vs. Marlboro R1.49M)",
+            "Ignoring rental yield appeal to investor base—emphasize ROI over aesthetics",
+            "Underplaying income-generation potential of additional rooms/flatlets",
+            "Poor security framing when N3 proximity is actual strength (commercial potential)"
+        ],
+        "marketingAngles": [
+            "Position as 'Build-to-Rent Investment' with existing flatlet/cottage income streams",
+            "Emphasize Gautrain commuter access (lower travel costs vs. car-dependent suburbs)",
+            "Highlight mixed-use commercial opportunity for business owners in adjacent retail corridor",
+            "Target investor buyer persona with rental yield calculator and tenant demand data"
+        ],
+        "timeline": {
+            "wellPriced": "Top 25% (well-priced investor-friendly properties) sell in 60-75 days",
+            "negotiationRoom": "Typical 8-12% below asking price; 100+ day market favors buyers",
+            "bestSeason": "January-March (New Year investor appetite); avoid November-December"
+        }
+    },
+    "marketComposition": {
+        "activeListings": 12,
+        "dominantFeatures": "Mix of aging freehold family homes on large stands (1000-2500 sqm) and modern sectional title townhouse complexes; strong commercial/industrial footprint nearby",
+        "split": {
+            "freehold": 40,
+            "sectional": 60
+        }
+    },
+    "microMarkets": [
+        {
+            "name": "Marlboro Drive Corridor (North)",
+            "sentiment": "Positive",
+            "insight": "Proximity to Gautrain Marlboro Station and Greenstone Mall creates lifestyle/commuter appeal; newer townhouse complexes in this zone command modest premiums"
+        },
+        {
+            "name": "South Way/Marlboro Gardens Road (South)",
+            "sentiment": "Neutral",
+            "insight": "Older, larger-stand family homes dominate; mixed security (some boomed, some open); N3 offramp noise/safety concerns impact pricing by 5-8% on properties within 500m"
+        },
+        {
+            "name": "Industrial/Commercial Boundary (East)",
+            "sentiment": "Positive",
+            "insight": "Properties with commercial zoning or mixed-use potential (business owners converting homes to offices) see strong investor interest; less competition from end-user buyers"
+        },
+        {
+            "name": "Sandton Municipal Boundary (West)",
+            "sentiment": "Neutral",
+            "insight": "Transition zone between Marlboro Gardens and Kelvin; inconsistent security and maintenance standards; buyer preference for clearer boundaries/gated access"
+        }
+    ],
+    "comparison": {
+        "competitorName": "Bramley",
+        "competitorSlug": "bramley",
+        "priceDiff": "-38% Lower",
+        "verdict": "Marlboro Gardens offers 38% lower entry price for comparable freehold homes but trades off Bramley's stronger rental demand, premium positioning, and marginally better security profile. Ideal for value investors; Bramley better for aspirational owner-occupiers.",
+        "features": [
+            {
+                "label": "Avg. Sale Price (3-bed house)",
+                "us": "R1.23M",
+                "them": "R2.03M"
+            },
+            {
+                "label": "Avg. Land Size",
+                "us": "1200-1500 sqm",
+                "them": "1500 sqm+"
+            },
+            {
+                "label": "Rental Yield Potential",
+                "us": "10-14%",
+                "them": "8-11%"
+            },
+            {
+                "label": "Security Profile",
+                "us": "Mixed (boomed + open)",
+                "them": "Predominantly boomed"
+            },
+            {
+                "label": "Buyer Profile",
+                "us": "Investors + First-Time",
+                "them": "Families + Investors"
+            },
+            {
+                "label": "Days on Market",
+                "us": "100-110 days",
+                "them": "75-85 days"
+            },
+            {
+                "label": "Price Trend (YoY)",
+                "us": "DOWN (-4%)",
+                "them": "FLAT (+0.5%)"
+            }
+        ]
+    }
+}

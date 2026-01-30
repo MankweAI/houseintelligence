@@ -12,31 +12,55 @@ interface SellerFAQsProps {
     suburbName: string;
     avgPrice: string;
     daysOnMarket: number;
+    marketTemperature?: 'Sellers' | 'Buyers' | 'Balanced';
 }
 
-export function SellerFAQs({ suburbName, avgPrice, daysOnMarket }: SellerFAQsProps) {
+export function SellerFAQs({ suburbName, avgPrice, daysOnMarket, marketTemperature = 'Balanced' }: SellerFAQsProps) {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+    // Dynamic Answer Logic
+    const getTimeToSellAnswer = () => {
+        if (daysOnMarket < 80) {
+            return `Currently, ${suburbName} is outperforming the greater Sandton average. Homes here are selling rapidly, averaging just ${daysOnMarket} days on the market. This indicates strong buyer demand, so you can expect a quick process if priced correctly.`;
+        } else if (daysOnMarket > 150) {
+            return `The ${suburbName} market favors patience right now, with an average selling time of ${daysOnMarket} days. This suggests buyers are taking their time to compare options. Strategic pricing and immaculate presentation are critical to beating this average.`;
+        }
+        return `Based on recent data, homes in ${suburbName} take an average of ${daysOnMarket} days to sell. This is consistent with a balanced market where well-presented homes move steadily, but overpriced listings may sit for longer.`;
+    };
+
+    const getPriceAnswer = () => {
+        return `As of the latest data, the average freehold property price in ${suburbName} sits at ${avgPrice}. However, this varies by street and finish. We're seeing specific micro-pockets achieving premiums above this average, particularly for renovated homes with security upgrades.`;
+    };
+
+    const getTimingAnswer = () => {
+        if (marketTemperature === 'Sellers') {
+            return `Yes. The data indicates a Seller's Market in ${suburbName}, meaning demand currently exceeds supply. This is an optimal window to list, as you're more likely to receive competitive offers and sell faster than the yearly average.`;
+        } else if (marketTemperature === 'Buyers') {
+            return `It depends on your goals. We are currently in a Buyer's Market, meaning there is ample stock in ${suburbName}. To sell now, you need to stand out: ensure your home is priced sharply against the competition and styled to sell.`;
+        }
+        return `${suburbName} is showing consistent demand. It's a balanced market, meaning fair value transactions are happening regularly. If you are ready to move, the market conditions are stable enough to support a sale without needing to "time" a peak.`;
+    };
 
     const faqs: FAQ[] = [
         {
             question: `How long does it take to sell a house in ${suburbName}?`,
-            answer: `Based on recent market data, homes in ${suburbName} take an average of ${daysOnMarket} days to sell when priced correctly. Well-maintained properties in sought-after locations tend to sell even quicker, while properties that are overpriced or need updating may take significantly longer.`
+            answer: getTimeToSellAnswer()
         },
         {
             question: `What is the average house price in ${suburbName}?`,
-            answer: `The average freehold property price in ${suburbName} is ${avgPrice}. Prices vary significantly based on property type, size, condition, and specific location within the suburb. Sectional title properties typically offer a more accessible entry point into the area.`
+            answer: getPriceAnswer()
         },
         {
             question: `Should I sell my ${suburbName} property now?`,
-            answer: `${suburbName} shows consistent demand from buyers seeking quality properties in established Sandton neighborhoods. Current market conditions favor sellers who price competitively and present well-maintained homes. Consider consulting with a local agent to assess your specific property's market position and timing.`
+            answer: getTimingAnswer()
         },
         {
             question: `What are the biggest mistakes sellers make in ${suburbName}?`,
-            answer: `The three most common mistakes are: 1) Overpricing based on personal attachment rather than current market data, which leads to extended listing times and eventual price reductions, 2) Neglecting curb appeal and minor repairs that could significantly impact first impressions, and 3) Choosing an agent based solely on commission rates rather than local expertise, proven track record, and marketing strategy.`
+            answer: `The three most common mistakes are: 1) Overpricing based on personal attachment rather than the current ${avgPrice} benchmark, 2) Neglecting curb appeal, which is critical in this specific suburb's competitive landscape, and 3) Choosing an agent who doesn't understand the specific ${suburbName} buyer profile.`
         },
         {
             question: `How do I choose the best estate agent in ${suburbName}?`,
-            answer: `Look for agents with a proven track record of recent sales in ${suburbName}, strong knowledge of local micro-markets and property types, transparent communication throughout the sales process, and a data-driven pricing strategy. We recommend interviewing multiple agents to compare their market analysis, marketing plans, and understanding of your specific property's unique selling points.`
+            answer: `Look for agents with a proven track record of recent sales in ${suburbName}, not just listings. Because ${suburbName} has unique buyer demographics, you need an agent who actively markets to that specific audience rather than using a "spray and pray" approach.`
         }
     ];
 

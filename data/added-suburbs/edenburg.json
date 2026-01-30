@@ -1,0 +1,154 @@
+{
+    "suburbSlug": "edenburg",
+    "name": "Edenburg",
+    "headline": "Mixed-Use Hub with Strong Rental Yields",
+    "description": "Edenburg blends commercial vibrancy with residential convenience, attracting young professionals and buy-to-let investors. Market leans buyer-favorable with oversupply of sectional titles, though well-priced apartments under R1.5M sell within 8-12 weeks.",
+    "narrativeSummary": "Edenburg is where Sandton's workers actually live. First-time buyers dominate (47% of transactions) because a R1.29M apartment here puts them 5 minutes from the CBD, not 20. Investors salivate at 11-16% gross yields—nearly double premium Sandton. The catch? It's a buyer's market with room to negotiate 7-10% below asking. Smart sellers highlight Gautrain bus access and solar systems; those who don't price for the corporate commuter crowd watch listings linger.",
+    "lastUpdated": "January 2026",
+    "valueProp": {
+        "fast": {
+            "metric": "35-45% faster in boomed estates",
+            "context": "Well-priced sectional titles sell in 8-12 weeks vs. 12 weeks average"
+        },
+        "premium": {
+            "metric": "R4.4M",
+            "context": "Median house price for 4-bedroom freehold homes"
+        },
+        "growth": {
+            "metric": "+1.5%",
+            "context": "Year-on-year appreciation (conservative; Sandton-wide trending 2.17%)"
+        }
+    },
+    "pricing": {
+        "freehold": {
+            "avgPrice": "R4.4M",
+            "range": "R3.2M - R5.9M",
+            "trend": "FLAT",
+            "trendValue": "+1.5%"
+        },
+        "sectional": {
+            "avgPrice": "R1.29M",
+            "range": "R725K - R1.6M",
+            "trend": "UP",
+            "trendValue": "+1.66%"
+        }
+    },
+    "supplyDemand": {
+        "estDaysOnMarket": 84,
+        "temperature": "Buyers",
+        "stockLevel": "Moderate",
+        "insight": "Oversupply of older 2-bed apartments (R1.1-1.35M range) pressuring sectional prices; freehold homes near Bryanston/Morningside borders remain under-supplied and priced higher."
+    },
+    "buyerProfile": {
+        "dominant": "Young Professionals & First-Time Buyers",
+        "motivations": [
+            "Lock-up-and-go security for professionals commuting to Sandton CBD",
+            "Rental income opportunity (11-16% gross yields attracting buy-to-let investors)",
+            "Affordability compared to pure Sandton (sectional titles under R1.5M)"
+        ],
+        "split": [
+            {
+                "label": "First-Time Buyers",
+                "percentage": 47
+            },
+            {
+                "label": "Buy-to-Let Investors",
+                "percentage": 32
+            },
+            {
+                "label": "Corporate Families",
+                "percentage": 21
+            }
+        ]
+    },
+    "sellerIntelligence": {
+        "premiumDrivers": [
+            "Solar power & inverter backup (load shedding mitigation)",
+            "24-hour boomed security with access control (esp. Craighall Place, estates)",
+            "Renovated kitchens with modern appliances (stone counters, Defy stoves)"
+        ],
+        "pricingMistakes": [
+            "Overpricing freehold by 8-12% when comparable sales lag (Bryanston is stronger)",
+            "Ignoring Rivonia Road/Edenburg Road noise penalty (5-8% discount observed)",
+            "Not highlighting load shedding backup as baseline expectation post-2024"
+        ],
+        "marketingAngles": [
+            "Proximity to Gautrain bus stop (5-10min walk from central Edenburg)",
+            "Rivonia Boulevard retail/restaurants/Virgin Active Morningside within 10min",
+            "Short commute to Sandton CBD (5-10min) vs. Bryanston (15-20min)"
+        ],
+        "timeline": {
+            "wellPriced": "Top 20% sell in 6-8 weeks (sectional under R1.35M, boomed estates)",
+            "negotiationRoom": "7-10% below ask typical for buyer's market; some willing at 12% below",
+            "bestSeason": "Spring (September-November); January quieter due to holidays"
+        }
+    },
+    "marketComposition": {
+        "activeListings": 175,
+        "dominantFeatures": "Mixed freehold estates and older sectional title apartments; commercial presence on Rivonia Boulevard",
+        "split": {
+            "freehold": 38,
+            "sectional": 62
+        }
+    },
+    "microMarkets": [
+        {
+            "name": "Rivonia Boulevard Commercial Corridor",
+            "sentiment": "Neutral",
+            "insight": "Commercial hub (offices, retail, restaurants) attracts professionals but generates traffic/noise; residential properties within 200m experience 5-8% pricing discount vs. boomed estates."
+        },
+        {
+            "name": "Craighall Place & Boomed Estates",
+            "sentiment": "Positive",
+            "insight": "24-hour security, gated communities command 8-12% premium; strongest buyer demand in R3.5M-R5M range; faster sell-through (6-8 weeks for well-priced homes)."
+        },
+        {
+            "name": "Morningside/Bryanston Border Cluster",
+            "sentiment": "Positive",
+            "insight": "Quieter residential pockets near estate complexes; families/upsizers favor here over central Edenburg; pricing competitive with Bryanston due to superior schools proximity (Crawford Sandton, Redhill)."
+        },
+        {
+            "name": "Central Edenburg (Rivonia Axis)",
+            "sentiment": "Neutral",
+            "insight": "Highest apartment density; first-time buyers/investors active; slower DOM due to supply glut; expect 10-12% negotiation on sectional titles in R1.0-1.35M bracket."
+        }
+    ],
+    "comparison": {
+        "competitorName": "Bryanston",
+        "competitorSlug": "bryanston",
+        "priceDiff": "-8% Lower (sectional titles); similar freehold pricing",
+        "verdict": "Edenburg offers better affordability for apartments and rental yields; Bryanston offers stronger capital appreciation, more established family demographic, and higher school rankings. Choose Edenburg for investment or first-time buy; choose Bryanston for long-term family wealth-building.",
+        "features": [
+            {
+                "label": "Avg. Freehold Price",
+                "us": "R4.4M",
+                "them": "R4.3M"
+            },
+            {
+                "label": "Avg. Sectional Title",
+                "us": "R1.29M",
+                "them": "Higher (less sectional focus)"
+            },
+            {
+                "label": "Rental Yield",
+                "us": "12-15%",
+                "them": "11-14%"
+            },
+            {
+                "label": "Days on Market",
+                "us": "84 days",
+                "them": "70-75 days (stronger absorption)"
+            },
+            {
+                "label": "Noise/Traffic",
+                "us": "Moderate (Rivonia Rd)",
+                "them": "Low (tree-lined residential)"
+            },
+            {
+                "label": "Commercial Proximity",
+                "us": "5-10min to Rivonia Blvd",
+                "them": "Close to Nicolway Centre"
+            }
+        ]
+    }
+}

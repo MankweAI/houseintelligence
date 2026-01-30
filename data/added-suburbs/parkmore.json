@@ -1,0 +1,159 @@
+{
+    "suburbSlug": "parkmore",
+    "name": "Parkmore",
+    "headline": "Secure Suburban Living at Sandton Prices",
+    "description": "Parkmore is experiencing steady demand as families and investors seek mid-to-premium homes with strong security and proximity to Sandton CBD at a 25-40% discount to neighboring premium suburbs. Rate cuts and a buyer's market are slowing velocity, creating negotiation opportunities for well-positioned properties.",
+    "narrativeSummary": "Parkmore is Bryanston at a 23% discount. The same boomed streets, 3-minute armed response, and school catchments—just without the prestige tax. Families upgrading from sectional titles find 900-1,500sqm stands for R4.4M versus Bryanston's R5.5-6.5M. The Marina Vista and Parkmore Place complexes feed investor appetite at 10%+ yields. Parkmore Road noise? A 5-10% discount for exposure—but buyers get Sandton City in 5 minutes flat. It's the suburb where 8-12% negotiation room meets PCA security standards.",
+    "lastUpdated": "January 2026",
+    "valueProp": {
+        "fast": {
+            "metric": "8-10 weeks",
+            "context": "Top 10% of well-priced, renovated homes sell quickly in boomed access zones"
+        },
+        "premium": {
+            "metric": "R3.3M",
+            "context": "Average sale price for mixed freehold and sectional inventory (2025)"
+        },
+        "growth": {
+            "metric": "+3.5%",
+            "context": "Conservative YoY appreciation; Gauteng average 3.2-5.5% (H1 2025)"
+        }
+    },
+    "pricing": {
+        "freehold": {
+            "avgPrice": "R4.4M",
+            "range": "R2.9M - R9M+",
+            "trend": "UP",
+            "trendValue": "+3.5%"
+        },
+        "sectional": {
+            "avgPrice": "R1.9M",
+            "range": "R780k - R4M",
+            "trend": "UP",
+            "trendValue": "+4.2%"
+        }
+    },
+    "supplyDemand": {
+        "estDaysOnMarket": 92,
+        "temperature": "Balanced",
+        "stockLevel": "Moderate",
+        "insight": "Approximately 140 active listings (Jan 2025 baseline) with steady inflow; buyer's market conditions emerging as rate cuts improve affordability and reduce urgency to sell."
+    },
+    "buyerProfile": {
+        "dominant": "Family Renovators & Investor Purchasers",
+        "motivations": [
+            "Space for large families with 3-5 bedroom homes on 900m²+ stands",
+            "Renovation potential in mid-market homes (R2.9M - R4.5M range)",
+            "Lock-up-and-go sectional titles with managed security and convenience"
+        ],
+        "split": [
+            {
+                "label": "Families Upgrading",
+                "percentage": 45
+            },
+            {
+                "label": "Buy-to-Let Investors",
+                "percentage": 30
+            },
+            {
+                "label": "Young Professionals",
+                "percentage": 25
+            }
+        ]
+    },
+    "sellerIntelligence": {
+        "premiumDrivers": [
+            "Modern renovations: open-plan living, contemporary kitchens, stone finishes",
+            "Backup power & solar panels (8kW+ systems command 5-8% premium)",
+            "Boomed access with 24/7 armed response and road closures for security"
+        ],
+        "pricingMistakes": [
+            "Overpricing by 12-15% relative to Bryanston comparables (Parkmore trades 20-25% cheaper)",
+            "Underestimating Parkmore Road traffic noise impact (discount homes here by 5-10%)",
+            "Failing to highlight PCA security infrastructure and low crime statistics"
+        ],
+        "marketingAngles": [
+            "Emphasize 3-minute armed response time and gated boomed access vs. open suburbs",
+            "Highlight proximity to Sandton City (5 mins), CBD (5 mins), top schools, Benmore Centre",
+            "Position sectional titles as prime rental yield assets (10.92% Gauteng sectional average)"
+        ],
+        "timeline": {
+            "wellPriced": "Top decile (well-renovated, boomed access) sell within 6-8 weeks",
+            "negotiationRoom": "8-12% below ask price achievable in current buyer's market",
+            "bestSeason": "Spring (September-November); summer holidays also active"
+        }
+    },
+    "marketComposition": {
+        "activeListings": 140,
+        "dominantFeatures": "Large freehold stands (900-1500m²), older character homes requiring renovation, newer refurbished townhouses in secured complexes",
+        "split": {
+            "freehold": 65,
+            "sectional": 35
+        }
+    },
+    "microMarkets": [
+        {
+            "name": "Parkmore Central / Boomed Access Roads",
+            "sentiment": "Positive",
+            "insight": "Premium micro-market with gated road closures, highest security standards, and 24/7 surveillance; commands 10-15% premium over open-access properties. Dominates buyer enquiries for families prioritizing safety."
+        },
+        {
+            "name": "Marina Vista / Parkmore Place Sectional Complexes",
+            "sentiment": "Positive",
+            "insight": "Lock-up-and-go apartment/townhouse developments attracting investor and young professional segments; competitive rental yields (10%+) and low maintenance appeal offset smaller price appreciation vs. freehold."
+        },
+        {
+            "name": "Parkmore East / Mid-Range Streets (7th-12th Streets)",
+            "sentiment": "Neutral",
+            "insight": "Value-focused micro-market where older, unrefurbished 3-4 bedroom homes present renovation upside; slower sales velocity (100+ days) but better negotiation leverage for cash buyers and investors."
+        },
+        {
+            "name": "Parkmore Road Corridor",
+            "sentiment": "Negative",
+            "insight": "High traffic congestion and noise from arterial road impact pricing negatively; properties on Parkmore Road trade 5-10% below comparable homes on quieter streets, limiting appeal except for commuters accepting the trade-off."
+        }
+    ],
+    "comparison": {
+        "competitorName": "Bryanston",
+        "competitorSlug": "bryanston",
+        "priceDiff": "-23% Lower",
+        "verdict": "Parkmore offers superior value for mid-to-premium family homes; Bryanston commands premium due to scale, walkability of Bryanston Main Street, and higher-volume investor activity (900+ sales 2025 vs. Parkmore's ~130 listings). Parkmore's security infrastructure is comparable; Bryanston more diverse property types.",
+        "features": [
+            {
+                "label": "Average Freehold Price",
+                "us": "R4.4M",
+                "them": "R5.5M-R6.5M"
+            },
+            {
+                "label": "Avg Land Size",
+                "us": "991-1500 sqm",
+                "them": "1200-2000 sqm"
+            },
+            {
+                "label": "Sectional Title Options",
+                "us": "Limited (2-3 complexes)",
+                "them": "Extensive (15+ developments)"
+            },
+            {
+                "label": "Security Model",
+                "us": "Boomed access, gated roads, PCA-managed",
+                "them": "Mixed (secure estates + open streets)"
+            },
+            {
+                "label": "Traffic/Noise",
+                "us": "Moderate (Parkmore Road excepted)",
+                "them": "Low (wide leafy roads)"
+            },
+            {
+                "label": "School Proximity",
+                "us": "Top schools adjacent (Redhill, etc)",
+                "them": "Top schools embedded in suburb"
+            },
+            {
+                "label": "Price Appreciation (YoY)",
+                "us": "+3.5%",
+                "them": "+7-9% (trending higher)"
+            }
+        ]
+    }
+}

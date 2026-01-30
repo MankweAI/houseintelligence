@@ -21,6 +21,28 @@ export const suburbHeroImages: Record<string, any> = {
     'strathavon': '/images/hero-images/strathavon-hero.webp',
     'dunkeld': '/images/hero-images/dunkeld-hero.webp',
     'sandhurst': '/images/hero-images/sandhurst-hero.webp',
+    // Phase 1 Suburbs - Custom Generated
+    'douglasdale': '/images/douglasdale_hero.jpg',
+    'magaliessig': '/images/magaliessig_hero.jpg',
+    'edenburg': '/images/edenburg_hero.jpg',
+    // Phase 2 Suburbs - Custom Generated
+    'wierda-valley': '/images/wierda-valley_hero.jpg',
+    'kelvin': '/images/kelvin_hero.jpg',
+    'buccleuch': '/images/buccleuch_hero.jpg',
+    // Phase 3 Suburbs - Custom Generated
+    'kramerville': '/images/kramerville_hero.jpg',
+    'marlboro': '/images/marlboro_hero.jpg',
+    'marlboro-gardens': '/images/marlboro-gardens_hero.jpg',
+    'parkmore': '/images/parkmore_hero.jpg',
+    // Phase 4 Suburbs - Lifestyle Images
+    'craigavon': '/images/craigavon_hero.jpg',
+    'beverley': '/images/beverley_hero.jpg',
+    'dainfern': '/images/dainfern_hero.jpg',
+    'broadacres': '/images/broadacres_hero.jpg',
+    // Phase 5 Suburbs - Lifestyle Images
+    'gallo-manor': '/images/gallo-manor_hero.jpg',
+    'wendywood': '/images/wendywood_hero.jpg',
+    'illovo': '/images/illovo_hero.jpg',
 };
 
 // Marketing/Gallery Images (Public folder paths)

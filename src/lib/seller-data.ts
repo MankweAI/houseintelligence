@@ -126,6 +126,9 @@ export interface SuburbSellerData {
 
     // 9. Comparison (Optional)
     comparison?: ComparisonData;
+
+    // 10. Narrative Summary (Editorial Prose)
+    narrativeSummary?: string;
 }
 
 // --- Fetcher ---

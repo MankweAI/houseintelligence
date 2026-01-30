@@ -29,22 +29,17 @@ export function InteractiveInsights({ data, suburbName }: InteractiveInsightsPro
 
     // Hardcoded descriptions to map to the data points for richer UI (simplified for demo)
     const getStrategyDescription = (title: string, index: number) => {
-        if (context === "house") {
-            const descriptions = [
-                "Don't just sell security features; sell the lifestyle of total safety. Highlight the boomed access as a 'private estate' feel.",
-                "Convert the 4th bedroom or staff quarters into a high-spec WFH office. This is the #1 request from Sandton buyers.",
-                "List on private brokerage networks 7 days before Property24. Creating 'scarcity' drives higher initial offers."
-            ];
-            return descriptions[index] || "Maximize value by aligning with this key buyer driver.";
-        } else {
-            // Sectional descriptions
-            const descriptions = [
-                "Position the unit as the perfect secure base for high-travel executives. Lock-up-and-go is the primary value driver.",
-                "Investors are looking for yield. Explicitly calculate and show potential rental returns in your listing copy.",
-                "Emphasize the 'freedom' of low-maintenance living. Highlight the complex amenities (pool/gym) as personal extensions."
-            ];
-            return descriptions[index] || "Focus on the convenience and investment potential.";
-        }
+        const t = title.toLowerCase();
+
+        // Keyword matching for more relevant, non-duplicate feeling content
+        if (t.includes("security") || t.includes("boom")) return "Buyers in this price bracket prioritize safety above all else. Emphasize the layered security features.";
+        if (t.includes("school") || t.includes("education")) return `Proximity to top schools is a major driver for ${suburbName} families. Highlight the commute times.`;
+        if (t.includes("garden") || t.includes("outdoor")) return "Outdoor living space is a premium here. Ensure the garden and patio are strictly staged.";
+        if (t.includes("office") || t.includes("wfh")) return "With remote work remaining popular, a dedicated office space can increase perceived value by up to 5%.";
+        if (t.includes("price") || t.includes("value")) return "The market is price-sensitive. A competitive launch price often creates a bidding war environment.";
+
+        // Dynamic fallback
+        return `This strategy addresses a specific demand we're seeing from active buyers in ${suburbName} right now.`;
     };
 
     return (

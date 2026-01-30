@@ -1,0 +1,170 @@
+{
+    "suburbSlug": "dainfern",
+    "name": "Dainfern",
+    "headline": "Mature estate lifestyle with strong rental appeal",
+    "description": "Dainfern remains a sought-after premium residential estate with established demand from families, expats, and investors seeking secure, golf-centric living. The market demonstrates resilience with steady price appreciation and consistent rental demand driven by corporate leases and quality-of-life amenities.",
+    "narrativeSummary": "Dainfern is where the expat dollar lands. Corporate tenants pay R35-48K/month for fairway views and Gary Player course access—yields that make investors salivate. Families fleeing Bryanston's R4.3M+ averages find identical lifestyle here at R3.1M, 20% cheaper with better golf. The 1,235-home estate is built out; scarcity maintains pricing power. Premium villages command R7.5-13M while Dainfern Ridge offers the security without the golf premium at R2.6-4M. It's the only suburb where your neighbor might be a CEO on a 3-year Joburg posting.",
+    "lastUpdated": "January 2026",
+    "valueProp": {
+        "fast": {
+            "metric": "10-12 weeks",
+            "context": "Well-priced properties in golf-fronting positions sell faster than non-estate comparable"
+        },
+        "premium": {
+            "metric": "R7.5M - R13M",
+            "context": "Premium fairway-fronting and river-view homes command significant premiums over standard estate offerings"
+        },
+        "growth": {
+            "metric": "+3.5%",
+            "context": "Year-on-year appreciation (2020-2024), with estate homes outperforming traditional suburbs"
+        }
+    },
+    "pricing": {
+        "freehold": {
+            "avgPrice": "R3.1M",
+            "range": "R2.6M - R5.9M",
+            "trend": "UP",
+            "trendValue": "+3.5%"
+        },
+        "sectional": {
+            "avgPrice": "R1.2M",
+            "range": "R550K - R1.5M",
+            "trend": "UP",
+            "trendValue": "+2.8%"
+        }
+    },
+    "supplyDemand": {
+        "estDaysOnMarket": 95,
+        "temperature": "Balanced",
+        "stockLevel": "Low",
+        "insight": "Estate maturity (1,235 homes built) limits new supply; high rental demand from corporate tenants maintains steady buyer interest despite selective pricing power."
+    },
+    "buyerProfile": {
+        "dominant": "Corporate Families, Expat Tenants & Upwardly Mobile Professionals",
+        "motivations": [
+            "Secure gated lifestyle with family amenities and golf course access",
+            "Proximity to top-tier schools (Dainfern College, Crawford Lonehill)",
+            "Strong corporate rental yields for buy-to-let investors (8-10% gross)"
+        ],
+        "split": [
+            {
+                "label": "Families (Owner-Occupied)",
+                "percentage": 45
+            },
+            {
+                "label": "Buy-to-Let Investors (Corporate Leases)",
+                "percentage": 35
+            },
+            {
+                "label": "Young Professionals & First-Time Upgraders",
+                "percentage": 20
+            }
+        ]
+    },
+    "sellerIntelligence": {
+        "premiumDrivers": [
+            "Golf course proximity and fairway-fronting positions command 15-20% premiums",
+            "Solar panels, backup power systems, and load-shedding mitigation solutions",
+            "Renovated open-plan kitchens with high-end finishes (Caesarstone, German appliances)",
+            "River views and cul-de-sac positioning with reduced traffic impact",
+            "Well-maintained gardens with mature landscaping and automated irrigation"
+        ],
+        "pricingMistakes": [
+            "Over-pricing older properties at renovation-cost equivalence without factoring buyer cosmetic updates",
+            "Ignoring impact of rising levies (R3,000-R5,000 pm) on buyer affordability calculations",
+            "Undervaluing backup power solutions in load-shedding environment (worth 5-8% premium)",
+            "Setting ask-price 12-15% above market expectation; top 10% of homes still negotiate down 8-12%",
+            "Failing to highlight proximity to Dainfern College and medical facilities for families"
+        ],
+        "marketingAngles": [
+            "Position as 'lock-and-leave investment' with strong corporate rental demand (R35K-R48K/month)",
+            "Emphasize secure 24/7 gated community with 1,200+ established resident base",
+            "Highlight championship golf course access and nature trails for active lifestyle families",
+            "Showcase proximity to Dainfern Square shopping center and Fourways amenities (15-min drive)",
+            "Target expats on 3-5 year corporate contracts seeking ready-furnished, move-in-ready homes"
+        ],
+        "timeline": {
+            "wellPriced": "Top 10% of properties (premium positions, renovated) sell in 6-8 weeks",
+            "negotiationRoom": "Market average expecting 8-12% negotiation from asking price",
+            "bestSeason": "Spring/Summer (Sep-Nov) and early Q1 (Jan-Mar) show strongest buyer activity"
+        }
+    },
+    "marketComposition": {
+        "activeListings": 175,
+        "dominantFeatures": "Mature golf estate with 1,235 homes built out; large stands (790-1,600 sqm), majority refurbished or recently renovated; mix of architectural styles; river/golf course integration",
+        "split": {
+            "freehold": 50,
+            "sectional": 50
+        }
+    },
+    "microMarkets": [
+        {
+            "name": "Dainfern Golf Estate (Premium Villages)",
+            "sentiment": "Positive",
+            "insight": "Largest segment with fairway-fronting and river-view homes commanding R7.5M-R13M+; strong demand from expat families; limited supply of prime positions maintains pricing power"
+        },
+        {
+            "name": "Dainfern Ridge",
+            "sentiment": "Neutral",
+            "insight": "Value alternative positioned R2.6M-R4M; quieter precinct with fewer sales activity; appeals to budget-conscious families seeking estate security without golf course premium"
+        },
+        {
+            "name": "Dainfern Valley Estate",
+            "sentiment": "Neutral",
+            "insight": "Mid-tier pricing R2.5M-R5M; mixed sentiment with moderate activity; landscaping and amenities not quite matching Golf Estate standard but solid family positioning"
+        },
+        {
+            "name": "The William & Paddocks (Sectional Title Focus)",
+            "sentiment": "Positive",
+            "insight": "Emerging as rental-focused micro-market with apartments R700K-R1.5M; strong institutional investor interest; proximity to Dainfern Square shopping center adds convenience appeal"
+        },
+        {
+            "name": "Dainfern Square Precinct",
+            "sentiment": "Positive",
+            "insight": "New mixed-use shopping center acting as lifestyle anchor; increased foot traffic and amenity density driving rental demand in surrounding residential estate; young professional appeal rising"
+        }
+    ],
+    "comparison": {
+        "competitorName": "Bryanston",
+        "competitorSlug": "bryanston",
+        "priceDiff": "-20% Lower (Dainfern is more affordable)",
+        "verdict": "Dainfern offers better value for estate living and golf amenities; Bryanston commands premium for proximity to Sandton CBD and larger freehold stands. Dainfern stronger for expat tenants; Bryanston stronger for owner-occupied family homes.",
+        "features": [
+            {
+                "label": "Average Freehold Price",
+                "us": "R3.1M",
+                "them": "R4.3M+"
+            },
+            {
+                "label": "Average Stand Size",
+                "us": "1,100-1,400 sqm",
+                "them": "1,500-2,500 sqm"
+            },
+            {
+                "label": "Security Model",
+                "us": "Boomed & Gated Estate",
+                "them": "Mixed (Freehold & Boomed Enclaves)"
+            },
+            {
+                "label": "Rental Demand",
+                "us": "Strong (8-10% yields)",
+                "them": "Moderate (6-8% yields)"
+            },
+            {
+                "label": "Golf/Recreation",
+                "us": "Premium Gary Player Course + Facilities",
+                "them": "Bryanston Country Club Nearby"
+            },
+            {
+                "label": "Traffic Impact",
+                "us": "Moderate (Estate Entry Points)",
+                "them": "High (Proximity to CBD arterials)"
+            },
+            {
+                "label": "Target Buyer",
+                "us": "Expats & Investors",
+                "them": "Owner-Occupied Families"
+            }
+        ]
+    }
+}

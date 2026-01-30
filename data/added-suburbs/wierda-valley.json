@@ -1,0 +1,155 @@
+{
+    "suburbSlug": "wierda-valley",
+    "name": "Wierda Valley",
+    "headline": "Commercial Hub with Shrinking Residential Inventory",
+    "description": "Wierda Valley has undergone significant transformation from residential to commercial and mixed-use development. Limited residential stock now available as office parks and retail dominate. Buyer interest remains strong for modern apartments due to CBD proximity and security, but supply constraints are pushing sellers' favour in available properties.",
+    "narrativeSummary": "Wierda Valley is Sandton's vanishing residential frontier. As office parks devour the landscape, the few modern apartments left command seller advantage and corporate premium. Walk 5 minutes to Gautrain, 3 minutes to the CBD—commuters pay handsomely for that. Only 18 listings compete for corporate professionals who value MIELE kitchens and backup power over garden space. This isn't the suburb for families; it's for executives who work where they live and demand fortress-level security.",
+    "lastUpdated": "January 2026",
+    "valueProp": {
+        "fast": {
+            "metric": "70-90 days",
+            "context": "Modern sectional titles in secure complexes sell faster than broader Sandton average"
+        },
+        "premium": {
+            "metric": "R2.2M - R3.5M",
+            "context": "Average for modern 1-2 bed apartments in established secure complexes"
+        },
+        "growth": {
+            "metric": "+1.5%",
+            "context": "Modest sectional title growth; freehold limited by commercial zoning"
+        }
+    },
+    "pricing": {
+        "freehold": {
+            "avgPrice": "R4.2M",
+            "range": "R3.0M - R7.5M",
+            "trend": "FLAT",
+            "trendValue": "+0.5%"
+        },
+        "sectional": {
+            "avgPrice": "R2.3M",
+            "range": "R1.5M - R3.8M",
+            "trend": "UP",
+            "trendValue": "+1.8%"
+        }
+    },
+    "supplyDemand": {
+        "estDaysOnMarket": 82,
+        "temperature": "Sellers",
+        "stockLevel": "Low",
+        "insight": "Commercial development has reduced residential supply significantly. Wierda Valley Road commercial transformation limits freehold availability. Seller advantage for correctly-priced modern apartments in secure complexes due to scarcity and CBD proximity."
+    },
+    "buyerProfile": {
+        "dominant": "Corporate Professionals & Lifestyle-Focused Downsizers",
+        "motivations": [
+            "CBD proximity and Gautrain access for work commute",
+            "Lock-up-and-go security-first lifestyle appeal",
+            "Modern finishes and low-maintenance apartments"
+        ],
+        "split": [
+            {
+                "label": "Young Professionals (25-35)",
+                "percentage": 42
+            },
+            {
+                "label": "Corporate Executives (35-50)",
+                "percentage": 35
+            },
+            {
+                "label": "Downsizers & Retirees",
+                "percentage": 23
+            }
+        ]
+    },
+    "sellerIntelligence": {
+        "premiumDrivers": [
+            "Modern kitchens with quality finishes (MIELE/premium brands)",
+            "Backup power and solar installations (critical for power security)",
+            "24-hour security and boomed/access-controlled complexes",
+            "Fibre connectivity and high-speed internet ready",
+            "Proximity to Gautrain (within 1.4km adds 8-12% premium)",
+            "Basement or secure parking"
+        ],
+        "pricingMistakes": [
+            "Overvaluing older freehold properties—commercial zoning limits appeal",
+            "Underestimating apartment demand—lock-up-and-go lifestyle commands premium",
+            "Ignoring power security—solar/backup no longer nice-to-have, now essential",
+            "Assuming Sandton CBD pricing parity—Wierda Valley trades at 5-10% discount due to noise and commercial character"
+        ],
+        "marketingAngles": [
+            "Highlight Gautrain proximity ('sub-5-minute walk to station')",
+            "Emphasize security and boomed status ('Fortress living, CBD convenience')",
+            "Spotlight modern amenities and power resilience ('Load-shedding proof, solar-equipped')",
+            "Position as investor opportunity ('Strong rental demand from corporate market')",
+            "Feature Inanda Greens proximity and corporate ecosystem appeal"
+        ],
+        "timeline": {
+            "wellPriced": "Top 15% of apartments priced below R2.2M sell within 6-8 weeks",
+            "negotiationRoom": "Buyer leverage: 5-8% below ask for slower-moving units; seller advantage on trophy apartments",
+            "bestSeason": "Spring (Sep-Nov) and early summer (Dec-Jan); back-to-work corporate relocations drive demand"
+        }
+    },
+    "marketComposition": {
+        "activeListings": 18,
+        "dominantFeatures": "Modern sectional title apartments and townhouses in secure complexes; limited freestanding homes; mixed-use commercial-residential developments",
+        "split": {
+            "freehold": 25,
+            "sectional": 75
+        }
+    },
+    "microMarkets": [
+        {
+            "name": "Inanda Greens Precinct / Wierda Road West",
+            "sentiment": "Positive",
+            "insight": "Premium office park location with 40,700m² A-grade offices. Residential nearby benefits from commercial prestige and amenity halo. Corporate tenant concentration (Discovery, Bidvest, Sasol, Heineken) anchors area stability. Office rents R150-R160/m² support property values."
+        },
+        {
+            "name": "Hunts End / Mixed-Use Corridor",
+            "sentiment": "Neutral",
+            "insight": "Transition zone with older residential converting to office and retail. Modern apartments attract professionals; ageing freehold homes depreciating. Developer interest remains but residential scarcity limits stock."
+        },
+        {
+            "name": "Wierda Valley Road / Central Precinct",
+            "sentiment": "Negative",
+            "insight": "Heavy vehicular traffic and noise from Rivonia Road corridor. Freehold properties here suffer noise discount (8-12% below comparable quiet suburbs). Sectional titles insulated by building design. Not ideal for sound-sensitive buyers."
+        }
+    ],
+    "comparison": {
+        "competitorName": "Benmore Gardens",
+        "competitorSlug": "benmore-gardens",
+        "priceDiff": "-12% Lower",
+        "verdict": "Wierda Valley apartments trade at significant discount to Benmore despite CBD proximity. Benmore's boomed residential character and larger stands command premium. Wierda Valley compensates with modern finishes and Gautrain access. Freehold comparison heavily favors Benmore (larger plots, quieter).",
+        "features": [
+            {
+                "label": "Avg. Freehold Price",
+                "us": "R4.2M",
+                "them": "R5.2M"
+            },
+            {
+                "label": "Avg. Land Size (Freehold)",
+                "us": "800-1,100 sqm",
+                "them": "1,000-1,250 sqm"
+            },
+            {
+                "label": "Avg. Sectional Title",
+                "us": "R2.3M",
+                "them": "R2.6M"
+            },
+            {
+                "label": "Traffic Noise",
+                "us": "High (Wierda Road)",
+                "them": "Low to Moderate"
+            },
+            {
+                "label": "Security",
+                "us": "Boomed complexes + 24hr security",
+                "them": "Boomed estates + 24hr security"
+            },
+            {
+                "label": "Gautrain Access",
+                "us": "1.4km (strong advantage)",
+                "them": "2.5km (moderate)"
+            }
+        ]
+    }
+}

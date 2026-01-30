@@ -1221,6 +1221,1129 @@
         "morningside",
         "sandown"
       ]
+    },
+    {
+      "slug": "douglasdale",
+      "name": "Douglasdale",
+      "summary": "Young Professionals' Entry Point Near Sandton - steady demand from first-time buyers seeking affordability within reach of Sandton's CBD.",
+      "centroid": {
+        "lat": -26.0589,
+        "lng": 28.0528
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 600000,
+          "max": 5000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "townhouses",
+          "clusters",
+          "houses"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (13km, 20 min)",
+          "Fourways (5 min)",
+          "Bryanston (8 min)"
+        ],
+        "lifestyleTags": [
+          "affordable",
+          "young professionals",
+          "lock-up-and-go",
+          "family-friendly"
+        ],
+        "schoolsNote": "Close to Crawford College, Redhill School, and St Stithians.",
+        "safetyNote": "Secure lifestyle estates with 24-hour security and boomed access in modern complexes.",
+        "walkability": "Moderate - Douglasdale Village and shops accessible.",
+        "investmentPotential": "Strong rental yields (8-10% gross) with steady absorption from young professionals.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Douglasdale Values",
+            "url": "https://www.property24.com/property-values/douglasdale/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Modern lifestyle estate in Douglasdale"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "fourways",
+        "bryanston",
+        "rivonia"
+      ]
+    },
+    {
+      "slug": "magaliessig",
+      "name": "Magaliessig",
+      "summary": "Value & Security in Fourways' Prime Node - established family homes at 20-30% lower prices than comparable Bryanston properties.",
+      "centroid": {
+        "lat": -26.0203,
+        "lng": 28.0186
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 550000,
+          "max": 4000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "apartments",
+          "clusters",
+          "estates"
+        ],
+        "commuteAnchors": [
+          "Fourways Mall (5 min)",
+          "Sandton CBD (15 min)",
+          "Design Quarter (3 min)"
+        ],
+        "lifestyleTags": [
+          "family",
+          "value",
+          "secure",
+          "established"
+        ],
+        "schoolsNote": "Proximity to Redhill, St. Peter's, and top-tier Fourways schools.",
+        "safetyNote": "Secure, boomed community with 24/7 access control and low crime perception.",
+        "walkability": "Moderate - Fourways Mall and Design Quarter nearby.",
+        "investmentPotential": "Strong corporate rental demand and family appeal with 10-12% gross yields.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Magaliessig Values",
+            "url": "https://www. property24.com/property-values/magaliessig/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Family homes in Magaliessig with large stands"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "fourways",
+        "bryanston",
+        "broadacres"
+      ]
+    },
+    {
+      "slug": "edenburg",
+      "name": "Edenburg",
+      "summary": "Mixed-Use Hub with Strong Rental Yields - blends commercial vibrancy with residential convenience for young professionals and investors.",
+      "centroid": {
+        "lat": -26.0825,
+        "lng": 28.0702
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 725000,
+          "max": 5900000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "townhouses",
+          "houses",
+          "estates"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min)",
+          "Gautrain (10 min walk)",
+          "Rivonia Boulevard (2 min)"
+        ],
+        "lifestyleTags": [
+          "lock-up-and-go",
+          "young professionals",
+          "investment",
+          "commercial proximity"
+        ],
+        "schoolsNote": "Close to Crawford Sandton, Redhill School, and Morningside schools.",
+        "safetyNote": "24-hour boomed security with access control in estates; commercial presence adds activity.",
+        "walkability": "High - Rivonia Boulevard retail/restaurants within walking distance.",
+        "investmentPotential": "Exceptional rental yields (11-16% gross) with CBD proximity driving demand.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Edenburg Values",
+            "url": "https://www.property24.com/property-values/edenburg/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Modern sectional title apartments in Edenburg"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "morningside",
+        "bryanston",
+        "rivonia"
+      ]
+    },
+    {
+      "slug": "wierda-valley",
+      "name": "Wierda Valley",
+      "summary": "Commercial Hub with Shrinking Residential Inventory - limited residential stock commands seller advantage due to CBD proximity and security.",
+      "centroid": {
+        "lat": -26.1042,
+        "lng": 28.0614
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 1500000,
+          "max": 7500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "townhouses",
+          "mixed-use"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (3 min)",
+          "Gautrain Sandton (5 min walk)",
+          "Benmore Gardens (5 min)"
+        ],
+        "lifestyleTags": [
+          "corporate",
+          "lock-up-and-go",
+          "Gautrain access",
+          "executive"
+        ],
+        "schoolsNote": "Close to Crawford College, Redhill School, and Benmore primary schools.",
+        "safetyNote": "24-hour boomed security in secure complexes with access control.",
+        "walkability": "High - Gautrain station and Inanda Greens office parks walkable.",
+        "investmentPotential": "Strong rental demand from corporate professionals; limited supply supports seller pricing.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Wierda Valley Values",
+            "url": "https://www.property24.com/property-values/wierda-valley/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Ultra-premium residential estate in Wierda Valley"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "benmore-gardens",
+        "sandown",
+        "morningside"
+      ]
+    },
+    {
+      "slug": "kelvin",
+      "name": "Kelvin",
+      "summary": "Mid-Income Haven With Gautrain Access - large stands and established family living at accessible prices.",
+      "centroid": {
+        "lat": -26.0756,
+        "lng": 28.0892
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 950000,
+          "max": 4500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (16 min)",
+          "Marlboro Gautrain (4 min walk)",
+          "N1 Highway (5 min)"
+        ],
+        "lifestyleTags": [
+          "family",
+          "Gautrain access",
+          "large stands",
+          "value"
+        ],
+        "schoolsNote": "Proximity to Redhill School, Wendywood Primary, and Sandown High.",
+        "safetyNote": "Boomed estates and active community policing; mix of security options.",
+        "walkability": "Moderate - Marlboro Gautrain station easily walkable.",
+        "investmentPotential": "Strong rental yields (11-13% gross) with buy-to-let investor demand.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Kelvin Values",
+            "url": "https://www.property24.com/property-values/kelvin/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Established family homes in Kelvin suburb"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "morningside",
+        "marlboro",
+        "buccleuch"
+      ]
+    },
+    {
+      "slug": "buccleuch",
+      "name": "Buccleuch",
+      "summary": "Affordable Sectional Title Gateway to Sandton Living - strong rental yields of 12-14% attract investors and first-time buyers.",
+      "centroid": {
+        "lat": -26.0567,
+        "lng": 28.1024
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 565000,
+          "max": 18000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "townhouses",
+          "houses",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (15 min)",
+          "Gautrain Marlboro (10 min)",
+          "M1/N1 Interchange (2 min)"
+        ],
+        "lifestyleTags": [
+          "affordable",
+          "investment",
+          "rental yields",
+          "first-time buyer"
+        ],
+        "schoolsNote": "Access to local primary schools and proximity to Wendywood area schools.",
+        "safetyNote": "Active Residents Association with varied security levels across complexes.",
+        "walkability": "Low to Moderate - Modderfontein Nature Reserve nearby for trails.",
+        "investmentPotential": "Exceptional rental yields (12-14% gross); buyers' market favors investors.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Buccleuch Values",
+            "url": "https://www.property24.com/property-values/buccleuch/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Golf course views and residential homes in Buccleuch"
+        },
+        "snapshotTiles": [
+          "Coffee shops",
+          "Shopping",
+          "Parks",
+          "Schools",
+          "Clinics",
+          "Transport"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "kelvin",
+        "marlboro",
+        "paulshof"
+      ]
+    },
+    {
+      "slug": "kramerville",
+      "name": "Kramerville",
+      "summary": "Premium design district with rare residential opportunities - primarily commercial showrooms and creative industry hub.",
+      "centroid": {
+        "lat": -26.0892,
+        "lng": 28.0850
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 5500000,
+          "max": 34000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "commercial conversions",
+          "lofts",
+          "mixed-use"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min)",
+          "M1 Highway (2 min)",
+          "Gautrain Marlboro (8 min)"
+        ],
+        "lifestyleTags": [
+          "design district",
+          "commercial",
+          "creative industry",
+          "investment"
+        ],
+        "schoolsNote": "Not primarily residential - limited school access in immediate vicinity.",
+        "safetyNote": "Commercial security presence; 24-hour patrols for business premises.",
+        "walkability": "High walkability to design showrooms and creative businesses.",
+        "investmentPotential": "Development-focused market; commercial conversion opportunities.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Kramerville Values",
+            "url": "https://www.property24.com/property-values/kramerville/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Design district showrooms and commercial hub in Kramerville"
+        },
+        "snapshotTiles": [
+          "Showrooms",
+          "Design Studios",
+          "Commercial",
+          "Investment"
+        ],
+        "lifestyleGalleryCount": 4,
+        "amenities": {
+          "schools": 0,
+          "clinics": 1,
+          "shopping": 5
+        },
+        "transportGalleryCount": 2
+      },
+      "relatedSuburbs": [
+        "morningside",
+        "marlboro",
+        "wendywood"
+      ]
+    },
+    {
+      "slug": "marlboro",
+      "name": "Marlboro",
+      "summary": "Emerging first-time buyer hub with Gautrain access and large affordable stands.",
+      "centroid": {
+        "lat": -26.0831,
+        "lng": 28.0914
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 900000,
+          "max": 3970000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (5 min via Gautrain)",
+          "Marlboro Gautrain Station (4 km)",
+          "OR Tambo (15 min via Gautrain)"
+        ],
+        "lifestyleTags": [
+          "affordable",
+          "first-time buyer",
+          "Gautrain access",
+          "large stands"
+        ],
+        "schoolsNote": "Marlboro Primary in area; access to Wendywood and northern corridor schools.",
+        "safetyNote": "Mixed security - some boomed estates, some open areas.",
+        "walkability": "Moderate - Gautrain proximity is key transport advantage.",
+        "investmentPotential": "Strong entry point with 11-16% rental yields; supply tightness creates seller advantage.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Marlboro Values",
+            "url": "https://www.property24.com/property-values/marlboro/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Residential homes with Gautrain access in Marlboro"
+        },
+        "snapshotTiles": [
+          "Gautrain",
+          "Schools",
+          "Shopping",
+          "Parks"
+        ],
+        "lifestyleGalleryCount": 6,
+        "amenities": {
+          "schools": 2,
+          "clinics": 1,
+          "shopping": 2
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "marlboro-gardens",
+        "kelvin",
+        "wendywood"
+      ]
+    },
+    {
+      "slug": "marlboro-gardens",
+      "name": "Marlboro Gardens",
+      "summary": "Budget-friendly investment hub with strong rental potential and Gautrain proximity.",
+      "centroid": {
+        "lat": -26.0795,
+        "lng": 28.0975
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 850000,
+          "max": 3500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "flats"
+        ],
+        "commuteAnchors": [
+          "Gautrain Marlboro (2-3 km)",
+          "Greenstone Mall (10 min)",
+          "N3 Highway (immediate access)"
+        ],
+        "lifestyleTags": [
+          "investment",
+          "rental yields",
+          "affordable",
+          "value"
+        ],
+        "schoolsNote": "Local primary schools; access to Edenvale and northern suburb schooling.",
+        "safetyNote": "Mixed security levels - boomed sections offer premium protection.",
+        "walkability": "Low to Moderate - car-dependent suburb with highway proximity.",
+        "investmentPotential": "Exceptional 10-14% gross yields; buyer's market with negotiation room.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Marlboro Gardens Values",
+            "url": "https://www.property24.com/property-values/marlboro-gardens/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Residential townhouses and family homes in Marlboro Gardens"
+        },
+        "snapshotTiles": [
+          "Shopping",
+          "Transport",
+          "Parks",
+          "Investment"
+        ],
+        "lifestyleGalleryCount": 5,
+        "amenities": {
+          "schools": 2,
+          "clinics": 1,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "marlboro",
+        "kelvin",
+        "buccleuch"
+      ]
+    },
+    {
+      "slug": "parkmore",
+      "name": "Parkmore",
+      "summary": "Secure suburban living at Sandton prices - 23% cheaper than Bryanston with comparable security.",
+      "centroid": {
+        "lat": -26.0983,
+        "lng": 28.0461
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 780000,
+          "max": 9000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "apartments"
+        ],
+        "commuteAnchors": [
+          "Sandton City (5 min)",
+          "Sandton CBD (5 min)",
+          "Benmore Centre (3 min)"
+        ],
+        "lifestyleTags": [
+          "secure",
+          "family",
+          "value",
+          "boomed access"
+        ],
+        "schoolsNote": "Top schools adjacent: Redhill, King David, St Stithians accessible.",
+        "safetyNote": "PCA-managed security with 3-minute armed response; boomed road closures.",
+        "walkability": "High walkability to Sandton City and major amenities.",
+        "investmentPotential": "Strong rental yields (10%+); renovation potential in mid-range homes.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Parkmore Values",
+            "url": "https://www.property24.com/property-values/parkmore/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Tree-lined streets and secure family homes in Parkmore"
+        },
+        "snapshotTiles": [
+          "Security",
+          "Schools",
+          "Shopping",
+          "Parks"
+        ],
+        "lifestyleGalleryCount": 7,
+        "amenities": {
+          "schools": 4,
+          "clinics": 2,
+          "shopping": 4
+        },
+        "transportGalleryCount": 3
+      },
+      "relatedSuburbs": [
+        "bryanston",
+        "morningside",
+        "benmore-gardens"
+      ]
+    },
+    {
+      "slug": "craigavon",
+      "name": "Craigavon",
+      "summary": "Affordable urban living near Fourways growth hub - first-time buyer gateway with strong solar premium.",
+      "centroid": {
+        "lat": -26.0223,
+        "lng": 28.0122
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 715000,
+          "max": 3950000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Fourways Mall (8 min)",
+          "N1/N14 Interchange (10 min)",
+          "Lanseria Airport (20 min)"
+        ],
+        "lifestyleTags": [
+          "first-time buyer",
+          "affordable",
+          "family",
+          "secure estates"
+        ],
+        "schoolsNote": "Broadacres Academy, Beaulieu College nearby; strong primary school network.",
+        "safetyNote": "Boomed estates command premium; Springwood and established sectional complexes offer best security.",
+        "walkability": "Low - car-dependent but close to Fourways retail corridor.",
+        "investmentPotential": "45% first-time buyers; entry prices 20-30% below Fourways.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Craigavon Values",
+            "url": "https://www.property24.com/property-values/craigavon/randburg/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Modern family home with solar panels in Craigavon secure estate"
+        },
+        "snapshotTiles": [
+          "Schools",
+          "Shopping",
+          "Security",
+          "Solar"
+        ],
+        "lifestyleGalleryCount": 6,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 3
+      },
+      "relatedSuburbs": [
+        "broadacres",
+        "fourways",
+        "lonehill"
+      ]
+    },
+    {
+      "slug": "beverley",
+      "name": "Beverley",
+      "summary": "Value-rich secure urban living - 8-12% cheaper than Lonehill with comparable lifestyle estates.",
+      "centroid": {
+        "lat": -26.0178,
+        "lng": 28.0189
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 760000,
+          "max": 6900000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "townhouses",
+          "clusters",
+          "houses"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (10 km)",
+          "Fourways Mall (5 min)",
+          "N1 Highway (8 min)"
+        ],
+        "lifestyleTags": [
+          "secure estates",
+          "young professionals",
+          "family",
+          "value"
+        ],
+        "schoolsNote": "Broadacres Academy, Dainfern College, Beaulieu accessible.",
+        "safetyNote": "Premium estates (The Stables, Tanglewood, Castello) with 24-hour security.",
+        "walkability": "Moderate in estate areas; car needed for broader amenities.",
+        "investmentPotential": "Solar-equipped homes see 50-65 day sales vs 90+ for grid-only.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Beverley Values",
+            "url": "https://www.property24.com/property-values/beverley/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Young couple at luxury townhouse estate entrance in Beverley"
+        },
+        "snapshotTiles": [
+          "Security",
+          "Estates",
+          "Schools",
+          "Lifestyle"
+        ],
+        "lifestyleGalleryCount": 7,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 4
+        },
+        "transportGalleryCount": 3
+      },
+      "relatedSuburbs": [
+        "lonehill",
+        "paulshof",
+        "fourways"
+      ]
+    },
+    {
+      "slug": "dainfern",
+      "name": "Dainfern",
+      "summary": "Premium golf estate lifestyle with strong expat rental demand - 20% below comparable Bryanston estates.",
+      "centroid": {
+        "lat": -26.0011,
+        "lng": 28.0075
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 2600000,
+          "max": 13000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "luxury homes",
+          "golf estates"
+        ],
+        "commuteAnchors": [
+          "Fourways Mall (10 min)",
+          "Sandton CBD (20 min)",
+          "Lanseria Airport (15 min)"
+        ],
+        "lifestyleTags": [
+          "golf estate",
+          "expat",
+          "luxury",
+          "corporate rental"
+        ],
+        "schoolsNote": "Dainfern College on-site; Crawford and Beaulieu nearby.",
+        "safetyNote": "24-hour manned security estate with controlled access; one of Johannesburg's most secure.",
+        "walkability": "High within estate; trails, golf course, clubhouse accessible.",
+        "investmentPotential": "Corporate tenants pay R35-48K/month; strong rental yields for premium homes.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Dainfern Values",
+            "url": "https://www.property24.com/property-values/dainfern/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Family dining on golf estate patio in Dainfern"
+        },
+        "snapshotTiles": [
+          "Golf",
+          "Security",
+          "Schools",
+          "Lifestyle"
+        ],
+        "lifestyleGalleryCount": 8,
+        "amenities": {
+          "schools": 2,
+          "clinics": 1,
+          "shopping": 2
+        },
+        "transportGalleryCount": 2
+      },
+      "relatedSuburbs": [
+        "fourways-gardens",
+        "lonehill",
+        "bryanston"
+      ]
+    },
+    {
+      "slug": "broadacres",
+      "name": "Broadacres",
+      "summary": "Lock-up-and-go hotspot with strong rental yields - 15% below Fourways for first-time buyers.",
+      "centroid": {
+        "lat": -26.0156,
+        "lng": 28.0089
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 595000,
+          "max": 9000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "townhouses",
+          "clusters",
+          "houses"
+        ],
+        "commuteAnchors": [
+          "Fourways Mall (5 min)",
+          "Life Fourways Hospital (5 min)",
+          "N1 Highway (10 min)"
+        ],
+        "lifestyleTags": [
+          "first-time buyer",
+          "rental yields",
+          "lock-up-and-go",
+          "investment"
+        ],
+        "schoolsNote": "Broadacres Academy, Crawford College, Dainfern College accessible.",
+        "safetyNote": "Mixed security - Cedar Lakes Estate offers premium; complexes vary.",
+        "walkability": "Low to Moderate - car-dependent with some walkable estate areas.",
+        "investmentPotential": "8-10% gross yields; 38% first-time buyers escaping rental cycle.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Broadacres Values",
+            "url": "https://www.property24.com/property-values/broadacres/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Young professionals at pool and clubhouse in Broadacres complex"
+        },
+        "snapshotTiles": [
+          "Pool",
+          "Gym",
+          "Security",
+          "Investment"
+        ],
+        "lifestyleGalleryCount": 6,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 4
+        },
+        "transportGalleryCount": 3
+      },
+      "relatedSuburbs": [
+        "craigavon",
+        "fourways",
+        "beverley"
+      ]
+    },
+    {
+      "slug": "gallo-manor",
+      "name": "Gallo Manor",
+      "summary": "Sandton's hidden gem with 11% price growth - secure family homes at 20-30% below neighboring premiums.",
+      "centroid": {
+        "lat": -26.0856,
+        "lng": 28.0728
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 1200000,
+          "max": 5500000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "houses",
+          "townhouses",
+          "clusters"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (12 min)",
+          "Morning Glen Mall (5 min)",
+          "M1 Highway (8 min)"
+        ],
+        "lifestyleTags": [
+          "family",
+          "secure",
+          "hidden gem",
+          "value"
+        ],
+        "schoolsNote": "Wendywood schools, Redhill, Crawford College accessible.",
+        "safetyNote": "Boomed enclaves with HOA governance; Tugela Crescent commands premium.",
+        "walkability": "Moderate - Morning Glen Mall walkable; car needed for broader access.",
+        "investmentPotential": "11.4% YoY growth outperforming neighbors; 10-12% rental yields.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Gallo Manor Values",
+            "url": "https://www.property24.com/property-values/gallo-manor/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Family home with children playing on lawn in Gallo Manor"
+        },
+        "snapshotTiles": [
+          "Security",
+          "Schools",
+          "Family",
+          "Value"
+        ],
+        "lifestyleGalleryCount": 7,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 3
+      },
+      "relatedSuburbs": [
+        "wendywood",
+        "morningside",
+        "marlboro"
+      ]
+    },
+    {
+      "slug": "wendywood",
+      "name": "Wendywood",
+      "summary": "Sandton's most accessible middle-tier suburb - 10-13% rental yields with 6.3% price growth.",
+      "centroid": {
+        "lat": -26.0892,
+        "lng": 28.0789
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 625000,
+          "max": 4100000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "townhouses",
+          "houses"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (10 min)",
+          "Gautrain Marlboro (10 min)",
+          "M1/Jan Smuts (5 min)"
+        ],
+        "lifestyleTags": [
+          "affordable",
+          "rental yields",
+          "family",
+          "investment"
+        ],
+        "schoolsNote": "Wendywood High, Redhill, Crawford College in catchment.",
+        "safetyNote": "Boomed enclosures with 24-hour gate control; Esprit Estate premium.",
+        "walkability": "Moderate within estates; car needed for broader access.",
+        "investmentPotential": "10-13% gross yields; The Foundry complex sells in 6-8 weeks.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Wendywood Values",
+            "url": "https://www.property24.com/property-values/wendywood/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Professional walking dog in tree-lined Wendywood complex"
+        },
+        "snapshotTiles": [
+          "Lifestyle",
+          "Security",
+          "Schools",
+          "Investment"
+        ],
+        "lifestyleGalleryCount": 7,
+        "amenities": {
+          "schools": 3,
+          "clinics": 2,
+          "shopping": 3
+        },
+        "transportGalleryCount": 4
+      },
+      "relatedSuburbs": [
+        "gallo-manor",
+        "marlboro",
+        "buccleuch"
+      ]
+    },
+    {
+      "slug": "illovo",
+      "name": "Illovo",
+      "summary": "Sandton's apartment capital - 82% sectional title with young professional dominance.",
+      "centroid": {
+        "lat": -26.1256,
+        "lng": 28.0567
+      },
+      "dataPoints": {
+        "priceBand": {
+          "min": 800000,
+          "max": 10000000,
+          "currency": "ZAR"
+        },
+        "propertyTypes": [
+          "apartments",
+          "lofts",
+          "penthouses",
+          "houses"
+        ],
+        "commuteAnchors": [
+          "Sandton CBD (10 min)",
+          "Rosebank (5 min)",
+          "Wanderers Club (adjacent)"
+        ],
+        "lifestyleTags": [
+          "young professional",
+          "urban",
+          "trendy",
+          "executive"
+        ],
+        "schoolsNote": "Urban location; primary schools in adjacent suburbs.",
+        "safetyNote": "Building security varies; premium complexes offer 24-hour access control.",
+        "walkability": "High - Thrupps, cafés, Wanderers Club walkable; vibrant mixed-use precinct.",
+        "investmentPotential": "49% young professionals; backup power now essential for sales velocity.",
+        "sourceNotes": [
+          {
+            "label": "Property24 Illovo Values",
+            "url": "https://www.property24.com/property-values/illovo/sandton/gauteng"
+          }
+        ]
+      },
+      "imagePlan": {
+        "hero": {
+          "alt": "Executive enjoying coffee on apartment balcony overlooking Sandton"
+        },
+        "snapshotTiles": [
+          "Urban",
+          "Lifestyle",
+          "Cafés",
+          "Executive"
+        ],
+        "lifestyleGalleryCount": 6,
+        "amenities": {
+          "schools": 1,
+          "clinics": 2,
+          "shopping": 5
+        },
+        "transportGalleryCount": 3
+      },
+      "relatedSuburbs": [
+        "sandhurst",
+        "morningside",
+        "rosebank"
+      ]
     }
   ]
 }

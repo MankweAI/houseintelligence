@@ -1,0 +1,162 @@
+{
+    "suburbSlug": "douglasdale",
+    "name": "Douglasdale",
+    "headline": "Young Professionals' Entry Point Near Sandton",
+    "description": "Douglasdale is experiencing steady demand from first-time buyers and young professionals seeking affordability within reach of Sandton's CBD, with a balanced supply-demand dynamic favoring well-priced properties. Lifestyle estates and secure lock-up-and-go apartments continue attracting investors seeking rental yields and families valuing convenience over prestige.",
+    "narrativeSummary": "Douglasdale defies Sandton's premium reputation—here, young professionals outnumber wealthy retirees 3-to-1. The secret? Lock-up-and-go security at prices 30% below Fourways, just 13km from high-paying CBD jobs. Sectional titles under R1.05M fly off the market in 6 weeks, while investors chase gross yields of 8-10%. Sellers staging for the Instagram generation—not retired executives—are winning the listing wars.",
+    "lastUpdated": "January 2026",
+    "valueProp": {
+        "fast": {
+            "metric": "77 days",
+            "context": "Average time on market for well-priced sectional titles; top 10% sell in <6 weeks"
+        },
+        "premium": {
+            "metric": "R2.23M",
+            "context": "Average cluster/house sale price; strong value for 3-4 bed family homes"
+        },
+        "growth": {
+            "metric": "+3.5%",
+            "context": "Year-on-year price appreciation; modest but stable growth trajectory"
+        }
+    },
+    "pricing": {
+        "freehold": {
+            "avgPrice": "R3.19M",
+            "range": "R2.0M - R5.0M",
+            "trend": "UP",
+            "trendValue": "+3.5%"
+        },
+        "sectional": {
+            "avgPrice": "R1.05M",
+            "range": "R600K - R1.5M",
+            "trend": "FLAT",
+            "trendValue": "+0.5%"
+        }
+    },
+    "supplyDemand": {
+        "estDaysOnMarket": 77,
+        "temperature": "Balanced",
+        "stockLevel": "Moderate",
+        "insight": "Supply of sectional titles remains moderate with oversupply of older units creating mild price pressure, while well-located and renovated properties absorb inventory quickly. Demand from young professionals (51% aged 18-35) maintains steady absorption."
+    },
+    "buyerProfile": {
+        "dominant": "Young Professionals, First-Time Buyers & Savvy Investors",
+        "motivations": [
+            "Affordability within striking distance of Sandton CBD (13km, under 20 mins drive)",
+            "Strong rental yields on sectional titles (8-10% gross yield potential)",
+            "Secure lifestyle estates with modern amenities appeal to safety-conscious families"
+        ],
+        "split": [
+            {
+                "label": "First-Time Buyers & Young Professionals",
+                "percentage": 51
+            },
+            {
+                "label": "Buy-to-Let Investors",
+                "percentage": 28
+            },
+            {
+                "label": "Families Trading Up/Downsize",
+                "percentage": 21
+            }
+        ]
+    },
+    "sellerIntelligence": {
+        "premiumDrivers": [
+            "Solar panels with backup battery systems (load-shedding mitigation is gold)",
+            "Renovated kitchens and bathrooms with modern finishes",
+            "Boomed estate access with 24-hour security and communal facilities",
+            "Entertainment-ready features: pools, braais, covered patios with views"
+        ],
+        "pricingMistakes": [
+            "Overpricing older apartments at R1.3M+ when market ceiling for sectional titles is R1.2M",
+            "Ignoring traffic/noise impact from Douglasdale Road—proximity is discount-worthy",
+            "Failing to highlight rental yield potential (8-10% gross achievable) to investor buyers",
+            "Underestimating cosmetic updates (paint, lighting) that move sectional titles in <60 days"
+        ],
+        "marketingAngles": [
+            "For families: 'Your Sandton lifestyle without the Sandton price tag—13km to CBD'",
+            "For investors: 'Lock-up-and-go rentals attracting 18-35 demographic—8-10% gross yields'",
+            "For young pros: 'Secure estates, modern complexes, walking distance to shops and restaurants'",
+            "Premium homes: Emphasize 'exclusive estates with entertainment infrastructure' (see The Dales model)"
+        ],
+        "timeline": {
+            "wellPriced": "Top 10% of sectional titles (R900K-R1.1M) sell within 6 weeks; new developments absorb quickly",
+            "negotiationRoom": "8-12% below asking for sectional titles; 5-8% for well-maintained houses in estates",
+            "bestSeason": "Spring (September-November) shows 20% lift in buyer activity; January-February typically soft"
+        }
+    },
+    "marketComposition": {
+        "activeListings": 336,
+        "dominantFeatures": "Mix of 1990s-2010s freehold suburban homes on larger stands, newer lifestyle estate clusters, and modern sectional-title complexes (Kalgaro, Savannah Sands, Douglas Gate dominance)",
+        "split": {
+            "freehold": 45,
+            "sectional": 55
+        }
+    },
+    "microMarkets": [
+        {
+            "name": "Kalgaro Estate & Savannah Sands Complexes",
+            "sentiment": "Positive",
+            "insight": "Highly sought-after modern lifestyle estates commanding premium within Douglasdale. Kalgaro in particular draws repeat investor demand; 2-bed apartments holding R995K-R1.1M range with quick absorption. Security and communal amenities (pools, gyms) justify 5-8% price premium over older complexes."
+        },
+        {
+            "name": "Crawford Drive / Boomed Estate Homes",
+            "sentiment": "Positive",
+            "insight": "Premium freehold segment attracting affluent buyers. Homes on larger stands (1500m²+) with exclusive estate access (The Dales development, heritage estates) drawing R4M-R7M+ transactions. Strong seasonal uptick when trophy buyers enter market."
+        },
+        {
+            "name": "Douglasdale Road Corridor (Entry-Level Sectional)",
+            "sentiment": "Neutral",
+            "insight": "Older apartment complexes and townhouses showing 0-2% price growth. Traffic noise from main road affects buyer perception; however, proximity to Woolworths, Douglasdale Village, and highway access maintains steady investor interest at R700K-R950K price band."
+        },
+        {
+            "name": "Leslie Avenue & Niven Road Estates",
+            "sentiment": "Positive",
+            "insight": "Established residential estates attracting families and empty-nesters. Mix of older 3-4 bed houses and modern cluster developments. Steady sales momentum; less flashy than The Dales but offers genuine family appeal and value retention."
+        }
+    ],
+    "comparison": {
+        "competitorName": "Fourways",
+        "competitorSlug": "fourways",
+        "priceDiff": "+15-20% Higher (Fourways Premium)",
+        "verdict": "Douglasdale offers superior affordability for first-time buyers while Fourways targets affluent families and corporate buyers seeking mall/entertainment proximity. Douglasdale's 77-day DOM matches Fourways' liquidity; rental yields favour Douglasdale (8-10% vs 8-9% Fourways). However, Fourways' infrastructure investment (Fourways Mall R400M upgrade) may outpace Douglasdale in 2026-2028.",
+        "features": [
+            {
+                "label": "Avg. Sectional Title Price",
+                "us": "R1.05M",
+                "them": "R1.15M"
+            },
+            {
+                "label": "Avg. Freehold House Price",
+                "us": "R3.19M",
+                "them": "R3.8M+"
+            },
+            {
+                "label": "Days on Market",
+                "us": "77 days",
+                "them": "70-80 days"
+            },
+            {
+                "label": "Traffic / Accessibility",
+                "us": "Moderate (peak congestion on main road)",
+                "them": "Heavy (mall/office node congestion)"
+            },
+            {
+                "label": "Buyer Age Profile",
+                "us": "51% age 18-35",
+                "them": "40% age 18-35; 45% age 35-50"
+            },
+            {
+                "label": "Lifestyle Appeal",
+                "us": "Security, value, rising young professional hub",
+                "them": "Retail/entertainment proximity, premium positioning"
+            },
+            {
+                "label": "Development Momentum",
+                "us": "Moderate (new estates like The Dales emerging)",
+                "them": "High (infrastructure projects, office towers)"
+            }
+        ]
+    }
+}
