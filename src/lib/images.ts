@@ -22,27 +22,27 @@ export const suburbHeroImages: Record<string, any> = {
     'dunkeld': '/images/hero-images/dunkeld-hero.webp',
     'sandhurst': '/images/hero-images/sandhurst-hero.webp',
     // Phase 1 Suburbs - Custom Generated
-    'douglasdale': '/images/douglasdale_hero.jpg',
-    'magaliessig': '/images/magaliessig_hero.jpg',
-    'edenburg': '/images/edenburg_hero.jpg',
+    'douglasdale': '/images/hero-images/douglasdale_hero.jpg',
+    'magaliessig': '/images/hero-images/magaliessig_hero.jpg',
+    'edenburg': '/images/hero-images/edenburg_hero.jpg',
     // Phase 2 Suburbs - Custom Generated
-    'wierda-valley': '/images/wierda-valley_hero.jpg',
-    'kelvin': '/images/kelvin_hero.jpg',
-    'buccleuch': '/images/buccleuch_hero.jpg',
+    'wierda-valley': '/images/hero-images/wierda-valley_hero.jpg',
+    'kelvin': '/images/hero-images/kelvin_hero.jpg',
+    'buccleuch': '/images/hero-images/buccleuch_hero.jpg',
     // Phase 3 Suburbs - Custom Generated
-    'kramerville': '/images/kramerville_hero.jpg',
-    'marlboro': '/images/marlboro_hero.jpg',
-    'marlboro-gardens': '/images/marlboro-gardens_hero.jpg',
-    'parkmore': '/images/parkmore_hero.jpg',
+    'kramerville': '/images/hero-images/kramerville_hero.jpg',
+    'marlboro': '/images/hero-images/marlboro_hero.jpg',
+    'marlboro-gardens': '/images/hero-images/marlboro-gardens_hero.jpg',
+    'parkmore': '/images/hero-images/parkmore_hero.jpg',
     // Phase 4 Suburbs - Lifestyle Images
-    'craigavon': '/images/craigavon_hero.jpg',
-    'beverley': '/images/beverley_hero.jpg',
-    'dainfern': '/images/dainfern_hero.jpg',
-    'broadacres': '/images/broadacres_hero.jpg',
+    'craigavon': '/images/hero-images/craigavon_hero.jpg',
+    'beverley': '/images/hero-images/beverley_hero.jpg',
+    'dainfern': '/images/hero-images/dainfern_hero.jpg',
+    'broadacres': '/images/hero-images/broadacres_hero.jpg',
     // Phase 5 Suburbs - Lifestyle Images
-    'gallo-manor': '/images/gallo-manor_hero.jpg',
-    'wendywood': '/images/wendywood_hero.jpg',
-    'illovo': '/images/illovo_hero.jpg',
+    'gallo-manor': '/images/hero-images/gallo-manor_hero.jpg',
+    'wendywood': '/images/hero-images/wendywood_hero.jpg',
+    'illovo': '/images/hero-images/illovo_hero.jpg',
 };
 
 // Marketing/Gallery Images (Public folder paths)

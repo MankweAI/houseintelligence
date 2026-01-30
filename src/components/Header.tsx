@@ -27,7 +27,7 @@ export function Header() {
                             <div className="relative w-10 h-10 shadow-lg group-hover:scale-105 transition-transform rounded-xl overflow-hidden bg-white/10">
                                 {/* Using standard img tag to bypass potential next/image server-cache issues with new files */}
                                 <img
-                                    src="/images/logo/hi-logo.png"
+                                    src="/images/logo/property-intelligence-logo.png"
                                     alt="PropertyIntelligence Logo"
                                     className="object-cover w-full h-full"
                                 />

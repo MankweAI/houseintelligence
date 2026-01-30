@@ -69,7 +69,7 @@ export default async function GlobalSellerHub() {
                                 <div className="absolute -inset-4 bg-gradient-to-r from-amber-500 to-amber-600 rounded-3xl opacity-20 blur-2xl" />
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
                                     <Image
-                                        src="/images/seller_hero.png"
+                                        src="/images/hero-images/seller_hero.png"
                                         alt="Successful home sale in Sandton"
                                         width={600}
                                         height={400}
