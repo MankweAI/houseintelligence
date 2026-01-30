@@ -3,7 +3,7 @@
 import { Agent } from "@/lib/agents";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, ShieldCheck } from "lucide-react";
+import { Star, ShieldCheck, ExternalLink } from "lucide-react";
 import { PlaceholderImage } from "../PlaceholderImage";
 import { Button } from "../ui/button";
 import { ValuationModal } from "@/components/seller/ValuationModal";
@@ -71,11 +71,20 @@ export function AgentCard({ agent, suburbName, suburbSlug }: AgentCardProps) {
 
                     <div className="mb-6">
                         <p className="text-xs font-bold uppercase tracking-wider text-stone-400 mb-2">Why We Recommend</p>
-                        <ul className="space-y-2">
-                            {/* If we have a suburb-specific quote/why, use it? For now, stick to general whyRecommended */}
-                            {agent.whyRecommended.slice(0, 3).map((reason, i) => (
-                                <li key={i} className="text-sm text-stone-700 flex items-start gap-2">
-                                    <span className="text-amber-500 mt-1">✓</span>
+
+                        {/* 1. The Hunger Signal (Primary Insight) */}
+                        {agent.hungerSignal && (
+                            <div className="mb-3 p-3 bg-amber-50 border border-amber-100 rounded-md text-sm text-stone-800 italic relative">
+                                <span className="absolute -top-2 -left-1 text-amber-200 text-2xl font-serif">"</span>
+                                {agent.hungerSignal}
+                            </div>
+                        )}
+
+                        {/* 2. Supported Bullet Points */}
+                        <ul className="space-y-1">
+                            {agent.whyRecommended.slice(0, 2).map((reason, i) => (
+                                <li key={i} className="text-xs text-stone-600 flex items-start gap-2">
+                                    <span className="text-emerald-500 mt-0.5">✓</span>
                                     {reason}
                                 </li>
                             ))}
@@ -84,10 +93,22 @@ export function AgentCard({ agent, suburbName, suburbSlug }: AgentCardProps) {
 
                     <div className="flex gap-3 mt-auto">
                         <ValuationModal suburbName={suburbName} agentName={agent.name}>
-                            <Button variant="outline" className="w-full border-stone-300 text-stone-700 hover:bg-stone-50">
-                                Contact Just {agent.name.split(' ')[0]}
+                            <Button className="flex-1 bg-stone-900 hover:bg-stone-800 text-white">
+                                Contact {agent.name.split(' ')[0]}
                             </Button>
                         </ValuationModal>
+
+                        {agent.social?.profileLink && (
+                            <a
+                                href={agent.social.profileLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 border border-stone-200 rounded-md text-stone-600 hover:bg-stone-50 hover:text-stone-900 transition-colors flex items-center justify-center"
+                            >
+                                <span className="sr-only">View Profile</span>
+                                <ExternalLink className="h-4 w-4" />
+                            </a>
+                        )}
                     </div>
                 </CardContent>
             </div>
