@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getSuburbSlugs } from '@/lib/data';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
+import { SuburbFilterGrid } from '@/components/seller/SuburbFilterGrid';
 import { ArrowRight, CheckCircle2, TrendingUp, ShieldAlert, Users, MapPin, BarChart3, Award, Clock, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -11,7 +12,7 @@ export const metadata = {
 };
 
 export default async function GlobalSellerHub() {
-    const suburbSlugs = (await getSuburbSlugs()).slice(0, 12); // Show top 12
+    const suburbSlugs = await getSuburbSlugs(); // Show all suburbs
 
     return (
         <div className="bg-stone-50 min-h-screen">
@@ -28,7 +29,7 @@ export default async function GlobalSellerHub() {
                         <FadeIn>
                             <div>
                                 <span className="inline-block py-1.5 px-4 bg-amber-500/10 border border-amber-500/20 rounded-full text-sm font-bold text-amber-400 mb-6">
-                                    🏆 HouseIntelligence
+                                    🏆 PropertyIntelligence
                                 </span>
                                 <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">
                                     Sell Your Sandton Home
@@ -42,7 +43,7 @@ export default async function GlobalSellerHub() {
                                 {/* Stats Row */}
                                 <div className="grid grid-cols-3 gap-4 mb-8">
                                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-                                        <div className="text-3xl font-bold text-amber-400">12</div>
+                                        <div className="text-3xl font-bold text-amber-400">34</div>
                                         <div className="text-xs text-stone-400 uppercase tracking-wider mt-1">Suburbs</div>
                                     </div>
                                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10">
@@ -206,7 +207,7 @@ export default async function GlobalSellerHub() {
                     <FadeIn>
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-5xl font-serif font-bold text-stone-900 mb-4">
-                                12 Sandton Suburbs
+                                34 Sandton Suburbs
                             </h2>
                             <p className="text-xl text-stone-600 max-w-2xl mx-auto">
                                 Each playbook is tailored to your suburb's unique buyer profile and market dynamics.
@@ -214,26 +215,7 @@ export default async function GlobalSellerHub() {
                         </div>
                     </FadeIn>
 
-                    <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {suburbSlugs.map((slug) => (
-                            <StaggerItem key={slug}>
-                                <Link
-                                    href={`/sell-house/sandton/${slug}`}
-                                    className="group block bg-white border-2 border-stone-200 p-6 rounded-2xl hover:border-amber-500 hover:shadow-xl transition-all duration-300"
-                                >
-                                    <div className="flex items-center justify-between mb-2">
-                                        <span className="font-serif font-bold text-lg text-stone-900 capitalize group-hover:text-amber-600 transition-colors">
-                                            {slug.replace(/-/g, ' ')}
-                                        </span>
-                                        <ArrowRight className="h-4 w-4 text-stone-400 group-hover:text-amber-500 group-hover:translate-x-1 transition-all" />
-                                    </div>
-                                    <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 group-hover:text-amber-600">
-                                        View Playbook
-                                    </span>
-                                </Link>
-                            </StaggerItem>
-                        ))}
-                    </StaggerContainer>
+                    <SuburbFilterGrid suburbs={suburbSlugs} />
                 </section>
 
                 {/* 6. Methodology with Visual Enhancement */}

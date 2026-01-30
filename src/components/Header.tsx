@@ -28,7 +28,7 @@ export function Header() {
                                 {/* Using standard img tag to bypass potential next/image server-cache issues with new files */}
                                 <img
                                     src="/images/logo/hi-logo.png"
-                                    alt="HouseIntelligence Logo"
+                                    alt="PropertyIntelligence Logo"
                                     className="object-cover w-full h-full"
                                 />
                             </div>
@@ -36,7 +36,7 @@ export function Header() {
                         <div className="flex flex-col">
                             <Link href="/">
                                 <span className="font-serif font-bold text-xl leading-none tracking-tight text-stone-900">
-                                    HouseIntelligence
+                                    PropertyIntelligence
                                 </span>
                             </Link>
                             <span className="text-[10px] uppercase tracking-[0.15em] text-stone-500 font-medium">

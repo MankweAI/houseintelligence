@@ -4,8 +4,8 @@ import { ArrowRight, Database, Shield, TrendingUp, Users, CheckCircle } from 'lu
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-    title: 'About HouseIntelligence | Powered by BigDataQuery',
-    description: 'HouseIntelligence is a hyper-local property intelligence platform by BigDataQuery. We provide data-driven insights for Sandton property sellers.',
+    title: 'About PropertyIntelligence | Powered by BigDataQuery',
+    description: 'PropertyIntelligence is a hyper-local property intelligence platform by BigDataQuery. We provide data-driven insights for Sandton property sellers.',
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
                         Hyper-Local Property Intelligence
                     </h1>
                     <p className="text-xl text-stone-300 max-w-2xl mx-auto">
-                        HouseIntelligence is powered by <a href="https://www.bigdataquery.co.za" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 underline underline-offset-2">BigDataQuery</a> —
+                        PropertyIntelligence is powered by <a href="https://www.bigdataquery.co.za" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 underline underline-offset-2">BigDataQuery</a> —
                         South Africa's data research specialists.
                     </p>
                 </div>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-serif font-bold text-stone-900 mb-4">Our Mission</h2>
                         <p className="text-stone-600 leading-relaxed mb-6">
                             We believe every property seller deserves access to the same market intelligence that estate agents have.
-                            That's why we created HouseIntelligence — a free platform that provides suburb-specific data,
+                            That's why we created PropertyIntelligence — a free platform that provides suburb-specific data,
                             pricing insights, and demand indicators to help you make informed selling decisions.
                         </p>
                         <p className="text-stone-600 leading-relaxed">

@@ -19,7 +19,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
             '@type': 'ListItem',
             position: index + 1,
             name: item.label,
-            item: item.href ? `https://houseintelligence.co.za${item.href}` : undefined,
+            item: item.href ? `https://propertyintelligence.co.za${item.href}` : undefined,
         })),
     };
 

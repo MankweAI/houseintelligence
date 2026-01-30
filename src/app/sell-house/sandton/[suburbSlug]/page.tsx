@@ -76,14 +76,14 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                                         {
                                             "@type": "ListItem",
                                             "position": 1,
-                                            "name": "HouseIntelligence",
-                                            "item": "https://houseintelligence.co.za/sell-house"
+                                            "name": "PropertyIntelligence",
+                                            "item": "https://propertyintelligence.co.za/sell-house"
                                         },
                                         {
                                             "@type": "ListItem",
                                             "position": 2,
                                             "name": `Sell in ${suburb.name}`,
-                                            "item": `https://houseintelligence.co.za/sell-house/sandton/${suburb.slug}`
+                                            "item": `https://propertyintelligence.co.za/sell-house/sandton/${suburb.slug}`
                                         }
                                     ]
                                 }

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getSuburbSlugs } from '@/lib/data'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://houseintelligence.co.za'
+    const baseUrl = 'https://propertyintelligence.co.za'
 
     // Get all suburb slugs from the data source
     const suburbSlugs = await getSuburbSlugs()

@@ -27,7 +27,7 @@ export const timelineOptions = [
 // POPIA consent text - versioned for compliance
 export const CONSENT_TEXT_VERSION = 'v1.0-2024';
 export const CONSENT_PURPOSE = 'Match you with a vetted estate agent(s) for property buying in Sandton and contact you about your enquiry.';
-export const CONSENT_TEXT = `I consent to HouseIntelligence sharing my information with vetted estate agents who can assist with my property search in Sandton. I understand my data will be used to: ${CONSENT_PURPOSE}`;
+export const CONSENT_TEXT = `I consent to PropertyIntelligence sharing my information with vetted estate agents who can assist with my property search in Sandton. I understand my data will be used to: ${CONSENT_PURPOSE}`;
 
 // Lead form schema
 export const leadFormSchema = z.object({

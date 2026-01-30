@@ -18,17 +18,17 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://houseintelligence.co.za'),
+  metadataBase: new URL('https://propertyintelligence.co.za'),
   title: {
-    default: "HouseIntelligence | Sandton Property Valuation Tool",
-    template: "%s | HouseIntelligence",
+    default: "PropertyIntelligence | Sandton Property Valuation Tool",
+    template: "%s | PropertyIntelligence",
   },
   description:
     "Data-driven property insights for Sandton sellers. Compare suburbs, find vetted agents, and maximize your sale price.",
-  applicationName: 'HouseIntelligence',
+  applicationName: 'PropertyIntelligence',
   appleWebApp: {
     capable: true,
-    title: 'HouseIntelligence',
+    title: 'PropertyIntelligence',
     statusBarStyle: 'default',
   },
   formatDetection: {
@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     'Hyde Park',
     'Morningside',
   ],
-  authors: [{ name: "HouseIntelligence" }],
+  authors: [{ name: "PropertyIntelligence" }],
   openGraph: {
     type: 'website',
     locale: 'en_ZA',
-    siteName: "HouseIntelligence",
+    siteName: "PropertyIntelligence",
   },
   robots: {
     index: true,
@@ -65,18 +65,18 @@ const websiteSchema = {
   '@graph': [
     {
       '@type': 'WebSite',
-      name: "HouseIntelligence",
-      url: 'https://houseintelligence.co.za',
+      name: "PropertyIntelligence",
+      url: 'https://propertyintelligence.co.za',
       description: 'Data-driven property insights for Sandton sellers.',
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://houseintelligence.co.za/sandton?q={search_term_string}',
+        target: 'https://propertyintelligence.co.za/sandton?q={search_term_string}',
         'query-input': 'required name=search_term_string',
       },
     },
     {
       '@type': 'SoftwareApplication',
-      name: 'HouseIntelligence Valuation Tool',
+      name: 'PropertyIntelligence Valuation Tool',
       applicationCategory: 'RealEstateApplication',
       operatingSystem: 'Any',
       offers: {

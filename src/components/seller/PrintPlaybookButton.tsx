@@ -12,7 +12,7 @@ export function PrintPlaybookButton({ suburbName, className = '' }: PrintPlayboo
     const handlePrint = () => {
         // Set document title for PDF filename
         const originalTitle = document.title;
-        document.title = `${suburbName} Seller Playbook - HouseIntelligence`;
+        document.title = `${suburbName} Seller Playbook - PropertyIntelligence`;
 
         // Trigger print dialog
         window.print();

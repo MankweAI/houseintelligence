@@ -20,7 +20,7 @@ export default function AppHome() {
                 <div className="absolute inset-0">
                     <Image
                         src="/images/hero-images/app-dashboard-hero.webp"
-                        alt="HouseIntelligence Market Dashboard"
+                        alt="PropertyIntelligence Market Dashboard"
                         fill
                         className="object-cover opacity-70"
                         priority
@@ -33,7 +33,7 @@ export default function AppHome() {
                         <div className="max-w-2xl">
                             <div className="flex items-center gap-2 mb-6">
                                 <span className="bg-amber-500/10 border border-amber-500/20 text-amber-500 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-                                    HouseIntelligence Suite
+                                    PropertyIntelligence Suite
                                 </span>
                             </div>
                             <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">

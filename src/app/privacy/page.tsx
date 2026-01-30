@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Privacy Policy | HouseIntelligence',
-    description: 'Privacy Policy for HouseIntelligence. Learn how we collect, use, and protect your data.',
+    title: 'Privacy Policy | PropertyIntelligence',
+    description: 'Privacy Policy for PropertyIntelligence. Learn how we collect, use, and protect your data.',
 };
 
 export default function PrivacyPage() {
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
                     <section className="mb-8">
                         <h2 className="text-xl font-bold text-stone-900 mb-4">1. Introduction</h2>
                         <p>
-                            HouseIntelligence ("we," "our," or "us") respects your privacy and is committed to protecting your personal data.
+                            PropertyIntelligence ("we," "our," or "us") respects your privacy and is committed to protecting your personal data.
                             This privacy policy will inform you as to how we look after your personal data when you visit our website
                             (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
                         </p>
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
                         <p>
                             If you have any questions about this privacy policy or our privacy practices, please contact us at:
                             <br />
-                            Email: hello@houseintelligence.co.za
+                            Email: hello@propertyintelligence.co.za
                         </p>
                     </section>
                 </div>

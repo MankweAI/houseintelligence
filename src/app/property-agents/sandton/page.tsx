@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { recommendedAgents } from '@/lib/agents';
 import { AgentSelectionMethodology } from '@/components/seller/AgentSelectionMethodology';
+import { AgentFilterGrid } from '@/components/seller/AgentFilterGrid';
 import { AgentCard } from '@/components/seller/AgentCard';
 import { Badge } from 'lucide-react';
 
@@ -78,23 +79,14 @@ export default function SandtonAgentsHubPage() {
             {/* The Directory Grid */}
             <section className="py-20 px-6">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-stone-900 mb-4 font-serif">Meet The 20</h2>
                         <p className="text-stone-600 max-w-2xl mx-auto">
                             Audited for speed, digital capability, and hunger. These agents don't just list homes; they campaign them.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {recommendedAgents.map((agent) => (
-                            <AgentCard
-                                key={agent.id}
-                                agent={agent}
-                                suburbName="Sandton" // Default context
-                                suburbSlug="sandton" // Default slug
-                            />
-                        ))}
-                    </div>
+                    <AgentFilterGrid agents={recommendedAgents} />
                 </div>
             </section>
 

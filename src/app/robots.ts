@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/admin/', '/api/'],
         },
-        sitemap: 'https://houseintelligence.co.za/sitemap.xml',
+        sitemap: 'https://propertyintelligence.co.za/sitemap.xml',
     }
 }

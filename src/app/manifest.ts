@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'HouseIntelligence',
-        short_name: 'HouseIntelligence',
+        name: 'PropertyIntelligence',
+        short_name: 'PropertyIntelligence',
         description: 'Data-driven property insights for Sandton sellers.',
         start_url: '/',
         display: 'standalone',

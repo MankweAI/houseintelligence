@@ -10,12 +10,12 @@ export async function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* About */}
                     <div>
-                        <h3 className="font-bold text-white text-lg mb-4">HouseIntelligence</h3>
+                        <h3 className="font-bold text-white text-lg mb-4">PropertyIntelligence</h3>
                         <p className="text-sm leading-relaxed mb-4">
                             Data-driven property insights for Sandton sellers. We match discerning sellers to vetted estate agents for maximum value.
                         </p>
                         <p className="text-xs text-stone-500">
-                            © {new Date().getFullYear()} HouseIntelligence. All rights reserved.
+                            © {new Date().getFullYear()} PropertyIntelligence. All rights reserved.
                         </p>
                     </div>
 

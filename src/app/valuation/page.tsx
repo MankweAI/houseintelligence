@@ -70,7 +70,7 @@ export default function ValuationPage() {
                             },
                             {
                                 "@type": "RealEstateAgent",
-                                "name": "HouseIntelligence - Property Valuation",
+                                "name": "PropertyIntelligence - Property Valuation",
                                 "areaServed": {
                                     "@type": "City",
                                     "name": "Sandton",
