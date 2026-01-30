@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { ValuationModal } from "@/components/seller/ValuationModal";
 import { Check, ChevronRight, ChevronLeft, Calculator, Sparkles, Home, User, Info, Sun, Lock } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -90,9 +91,10 @@ export function ValuationSimulator({ suburbName, pricingData }: ValuationSimulat
         if (features.pool && type === "freehold") estimate += 30000; // Pool maintenance logic? debatable, but generally +
         if (features.security) estimate *= 1.02; // 2% premium for good security
 
-        // 5. Generate Range (+/- 7.5% spread for accuracy buffer)
-        const minFn = estimate * 0.925;
-        const maxFn = estimate * 1.075;
+        // 5. Generate Ranges
+        // Public/Broad Range (+/- 15% - intentionally wide to drive "precision" desire)
+        const minFn = estimate * 0.85;
+        const maxFn = estimate * 1.15;
 
         setTimeout(() => {
             setResultRange({
@@ -250,36 +252,41 @@ export function ValuationSimulator({ suburbName, pricingData }: ValuationSimulat
 
     const renderStep4_Result = () => (
         <div className="text-center space-y-6 py-4">
-            <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                className="inline-block p-4 bg-emerald-50 rounded-full mb-2"
-            >
-                <Sparkles className="h-8 w-8 text-emerald-600" />
-            </motion.div>
+            {/* Warning Lock */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+                <Lock className="h-3 w-3" />
+                Unverified Estimate
+            </div>
 
             <div>
-                <p className="text-sm text-slate-500 uppercase tracking-widest font-semibold mb-2">Estimated Market Value</p>
-                <div className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-                    {resultRange?.min} <span className="text-slate-300 font-light text-3xl">-</span> {resultRange?.max}
+                <p className="text-sm text-slate-500 font-medium mb-1">Broad Market Indication</p>
+                <div className="text-3xl md:text-5xl font-black text-slate-400 tracking-tight opacity-70 blur-[1px] select-none">
+                    {resultRange?.min} <span className="text-slate-200 font-light">-</span> {resultRange?.max}
                 </div>
             </div>
 
-            <div className="bg-slate-50 p-4 rounded-xl text-sm text-slate-600 border border-slate-100">
-                <p>
-                    <strong>Note:</strong> This is a data-driven estimate based on {bedrooms} bed {type}s in {suburbName}.
-                    Actual sale price depends on specific finishes and buyer emotion.
+            {/* The Hook */}
+            <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-left relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-amber-400/10 rounded-full -mr-8 -mt-8" />
+
+                <h4 className="font-bold text-slate-900 flex items-center gap-2 mb-2">
+                    <Sparkles className="h-4 w-4 text-amber-600" />
+                    Want the exact number?
+                </h4>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                    Automated tools can't see your finishes. Get a <strong>verified human valuation</strong> from a top {suburbName} specialist.
                 </p>
+
+                <ValuationModal suburbName={suburbName} onComplete={() => setIsOpen(false)}>
+                    <Button className="w-full h-12 bg-stone-900 hover:bg-stone-800 text-white font-bold shadow-lg shadow-stone-200/50">
+                        Unlock Verified Valuation <Lock className="ml-2 h-4 w-4 opacity-70" />
+                    </Button>
+                </ValuationModal>
             </div>
 
-            <div className="space-y-3 pt-2">
-                <Button className="w-full h-12 bg-slate-900 text-white font-bold hover:bg-slate-800">
-                    Get Official Valuation Report <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" onClick={() => setStep(1)} className="w-full">
-                    Start Over
-                </Button>
-            </div>
+            <Button variant="ghost" onClick={() => setStep(1)} className="w-full text-slate-400 hover:text-slate-600">
+                Start Over
+            </Button>
         </div>
     );
 

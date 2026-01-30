@@ -19,9 +19,10 @@ interface ValuationModalProps {
     children: React.ReactNode;
     suburbName: string;
     agentName?: string;
+    onComplete?: () => void;
 }
 
-export function ValuationModal({ children, suburbName, agentName }: ValuationModalProps) {
+export function ValuationModal({ children, suburbName, agentName, onComplete }: ValuationModalProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [step, setStep] = useState(1);
@@ -44,6 +45,11 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
         }
     };
 
+    const handleClose = () => {
+        setIsOpen(false);
+        onComplete?.();
+    };
+
     return (
         <Dialog open={isOpen} onOpenChange={handleOpenChange}>
             <DialogTrigger asChild>
@@ -59,7 +65,7 @@ export function ValuationModal({ children, suburbName, agentName }: ValuationMod
                         <p className="text-stone-600 mb-6 text-sm">
                             {agentName ? `${agentName} will contact you shortly.` : `An expert in ${suburbName} will be in touch.`}
                         </p>
-                        <Button variant="outline" onClick={() => setIsOpen(false)} className="w-full">
+                        <Button variant="outline" onClick={handleClose} className="w-full">
                             Close
                         </Button>
                     </div>
