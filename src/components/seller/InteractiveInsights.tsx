@@ -186,16 +186,16 @@ export function InteractiveInsights({ data, suburbName }: InteractiveInsightsPro
                         {marketingAngles.map((angle, i) => (
                             <div
                                 key={i}
-                                className="flex gap-4 p-0 rounded-lg hover:bg-stone-50 transition-all group cursor-pointer border border-transparent hover:border-stone-200"
+                                className="flow-root p-2 rounded-lg hover:bg-stone-50 transition-all group cursor-pointer border border-transparent hover:border-stone-200"
                             >
-                                <div className="h-10 w-10 rounded-lg bg-stone-900 flex items-center justify-center shrink-0 group-hover:bg-amber-600 transition-colors">
+                                <div className="float-left h-10 w-10 mr-4 rounded-lg bg-stone-900 flex items-center justify-center shrink-0 group-hover:bg-amber-600 transition-colors">
                                     <span className="font-bold text-white text-sm">{i + 1}</span>
                                 </div>
-                                <div className="flex-1">
-                                    <h4 className="text-stone-900 font-semibold mb-1.5 text-sm">
+                                <div className="contents">
+                                    <h4 className="text-stone-900 font-semibold mb-1 text-sm pt-0.5 inline mr-2">
                                         {angle.replace(/['"]/g, '')}
                                     </h4>
-                                    <p className="text-sm text-stone-600 leading-relaxed">
+                                    <p className="text-sm text-stone-600 leading-relaxed inline">
                                         {getStrategyDescription(angle, i)}
                                     </p>
                                 </div>

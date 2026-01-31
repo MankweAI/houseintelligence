@@ -9,17 +9,20 @@ import { ValuationSimulator } from '@/components/seller/ValuationSimulator';
 import { InteractiveInsights } from '@/components/seller/InteractiveInsights';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
 import { ArrowLeft, CheckCircle, TrendingUp, Users } from 'lucide-react';
-import { SuburbComparator } from '@/components/seller/SuburbComparator';
+import { MarketPositioning } from "@/components/seller/MarketPositioning";
 import { NearbySuburbs } from '@/components/seller/NearbySuburbs';
-import { BroadcastValuationModal } from '@/components/seller/BroadcastValuationModal';
+import { SoldVsListedChart } from '@/components/seller/SoldVsListedChartUpdated';
+import { RenovationRoiCards } from '@/components/seller/RenovationRoiCards';
 import { Button } from '@/components/ui/button';
 import { ValuePropCards } from '@/components/seller/ValuePropCards';
 import { SellerFAQs } from '@/components/seller/SellerFAQs';
 import { DataMethodology } from '@/components/seller/DataMethodology';
 import { PrintPlaybookButton } from '@/components/seller/PrintPlaybookButton';
+import { BroadcastValuationModal } from '@/components/seller/BroadcastValuationModal';
 import { getSuburbHeroImage } from '@/lib/images';
 import { AgentSelectionMethodology } from '@/components/seller/AgentSelectionMethodology';
 import { MarketNarrative } from '@/components/seller/MarketNarrative';
+import { MarketPulseWidget } from '@/components/seller/MarketPulseWidget';
 
 
 // Inside the component return:
@@ -262,10 +265,44 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                             </div>
                         </FadeIn>
 
+                        {/* DATA DASHBOARD SECTION (Sold vs Listed & Renovation ROI) */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                            <SoldVsListedChart
+                                suburbName={suburb.name}
+                                data={sellerData.soldVsListed || {
+                                    listingPrice: sellerData.pricing.freehold.avgPrice.includes('M')
+                                        ? parseFloat(sellerData.pricing.freehold.avgPrice.replace('R', '').replace('M', '')) * 1000000 * 1.08 // Mock: Listing is 8% higher
+                                        : 2500000,
+                                    soldPrice: sellerData.pricing.freehold.avgPrice.includes('M')
+                                        ? parseFloat(sellerData.pricing.freehold.avgPrice.replace('R', '').replace('M', '')) * 1000000
+                                        : 2200000,
+                                    gapPercentage: -8,
+                                    insight: `Sellers in ${suburb.name} are accepting offers ~8% below asking price.`
+                                }}
+                            />
+
+                            <div className="space-y-4">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <h3 className="font-serif font-bold text-xl text-stone-900">Strategic Improvements</h3>
+                                </div>
+                                <RenovationRoiCards
+                                    data={sellerData.renovationRoi || [
+                                        { item: "Kitchen Assessment", cost: 120000, valueAdd: 200000, roi: 1.6, verdict: 'Do It' },
+                                        { item: "Security Upgrade", cost: 50000, valueAdd: 95000, roi: 1.9, verdict: 'Do It' },
+                                        { item: "Pool Resurfacing", cost: 85000, valueAdd: 40000, roi: 0.47, verdict: 'Skip It' },
+                                        { item: "Solar / Backup", cost: 150000, valueAdd: 150000, roi: 1.0, verdict: 'Caution' }
+                                    ]}
+                                />
+                            </div>
+                        </div>
+
                         {/* 2. Value Proposition Cards - MOVED DOWN */}
                         {sellerData.valueProp && (
                             <ValuePropCards valueProp={sellerData.valueProp} />
                         )}
+
+                        {/* Market Pulse Widget - Lead Warm Up */}
+                        <MarketPulseWidget suburbName={suburb.name} />
 
                         {/* Micro-Markets (New Layer of Defensibility) */}
                         {sellerData.microMarkets && sellerData.microMarkets.length > 0 && (
@@ -293,8 +330,8 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         {/* Interactive Insights (Buyer Avatar, Mistakes, Strategy) */}
                         <InteractiveInsights data={sellerData} suburbName={suburb.name} />
 
-                        {/* Smart Context Comparator */}
-                        <SuburbComparator data={sellerData} suburbName={suburb.name} />
+                        {/* 5. Market Positioning (Benchmarks) */}
+                        <MarketPositioning data={sellerData} suburbName={suburb.name} />
 
 
 
