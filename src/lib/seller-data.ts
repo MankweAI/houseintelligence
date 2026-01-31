@@ -160,6 +160,62 @@ export interface SuburbSellerData {
 
 // --- Fetcher ---
 
+// --- Helper: Infer Market Positioning from Existing Data ---
+function inferMarketPositioning(data: SuburbSellerData): MarketPositioning {
+    const SANDTON_BENCHMARK = 50; // All benchmarks are normalized to 50
+
+    // 1. PRICE POINT: Parse avgPrice string (e.g. "R4.2M") and normalize
+    // Sandton Ultra-Luxury ceiling ~R10M = 100, Entry ~R1M = 10
+    const parsePriceToNumber = (priceStr: string): number => {
+        const cleaned = priceStr.replace(/[^0-9.]/g, '');
+        const multiplier = priceStr.toLowerCase().includes('m') ? 1_000_000 : 1;
+        return parseFloat(cleaned) * multiplier || 0;
+    };
+    const avgPrice = parsePriceToNumber(data.pricing.freehold.avgPrice);
+    // Scale: R1M = 10, R5M = 50, R10M+ = 95 (logarithmic feel)
+    const priceScore = Math.min(95, Math.max(10, Math.round((avgPrice / 10_000_000) * 100)));
+    const priceLabel = priceScore >= 80 ? "Ultra Premium" : priceScore >= 60 ? "Premium" : priceScore >= 40 ? "Mid-Market" : "Entry";
+
+    // 2. VOLUME: Based on salesPerYear and estDaysOnMarket
+    // More sales + fewer days = higher velocity
+    const salesPerYear = data.supplyDemand.salesPerYear || 50; // Default if missing
+    const daysOnMarket = data.supplyDemand.estDaysOnMarket || 90;
+    // Score: Fast market (60 days, 100+ sales) = 90, Slow (180 days, <20 sales) = 20
+    const volumeScore = Math.min(95, Math.max(15, Math.round(
+        (salesPerYear / 150) * 50 + ((180 - daysOnMarket) / 180) * 50
+    )));
+    const volumeLabel = volumeScore >= 75 ? "High Velocity" : volumeScore >= 45 ? "Moderate" : "Quiet";
+
+    // 3. LIFESTYLE: Based on buyerProfile dominant type keywords
+    const lifestyleKeywords = {
+        cosmopolitan: ["professional", "executive", "young", "urban", "apartment", "lifestyle"],
+        suburban: ["family", "estate", "security", "golf", "privacy", "retiree", "downsizer"]
+    };
+    const profileText = `${data.buyerProfile.dominant} ${data.buyerProfile.secondary || ''} ${data.buyerProfile.motivations.join(' ')}`.toLowerCase();
+    let lifestyleScore = 50;
+    lifestyleKeywords.cosmopolitan.forEach(kw => { if (profileText.includes(kw)) lifestyleScore += 8; });
+    lifestyleKeywords.suburban.forEach(kw => { if (profileText.includes(kw)) lifestyleScore -= 5; });
+    lifestyleScore = Math.min(95, Math.max(15, lifestyleScore));
+    const lifestyleLabel = lifestyleScore >= 70 ? "Cosmopolitan" : lifestyleScore <= 35 ? "Suburban" : "Balanced";
+
+    // 4. INVESTOR APPEAL: Based on sectional trend and gapPercentage
+    // Yield-focused (sectional UP, small gap) = high, Growth (freehold focus, larger gap) = low
+    let investorScore = 50;
+    if (data.pricing.sectional.trend === 'UP') investorScore += 15;
+    if (data.pricing.sectional.trend === 'DOWN') investorScore -= 10;
+    if (data.marketComposition.dominantType === 'Sectional') investorScore += 10;
+    if (data.marketComposition.dominantType === 'Freehold') investorScore -= 5;
+    investorScore = Math.min(90, Math.max(20, investorScore));
+    const investorLabel = investorScore >= 65 ? "Yield Focus" : investorScore <= 40 ? "Capital Growth" : "Balanced";
+
+    return {
+        priceInfo: { value: priceScore, label: priceLabel, benchmark: SANDTON_BENCHMARK },
+        volumeInfo: { value: volumeScore, label: volumeLabel, benchmark: SANDTON_BENCHMARK },
+        lifestyleInfo: { value: lifestyleScore, label: lifestyleLabel, benchmark: SANDTON_BENCHMARK },
+        investorInfo: { value: investorScore, label: investorLabel, benchmark: SANDTON_BENCHMARK }
+    };
+}
+
 // --- Researched Data Bucket (Temporary until DB is populated) ---
 const RESEARCHED_DATA: Record<string, Partial<SuburbSellerData>> = {
     'bryanston': {
@@ -224,10 +280,10 @@ const RESEARCHED_DATA: Record<string, Partial<SuburbSellerData>> = {
     },
     'fourways': {
         soldVsListed: {
-            listingPrice: 1905000,
-            soldPrice: 1680000,
-            gapPercentage: -12,
-            insight: "Yield-focused investors driving sales. 12% average discount in 2024, but 2025 is tightening.",
+            listingPrice: 2000000,
+            soldPrice: 2000000,
+            gapPercentage: 0,
+            insight: "Example: Perfect alignment between seller expectations and market reality.",
         },
         renovationRoi: [
             { item: "Kitchen Remodel", cost: 150000, valueAdd: 120000, roi: 1.8, verdict: "Do It" },
@@ -679,15 +735,17 @@ export async function getSellerData(slug: string): Promise<SuburbSellerData | nu
     const baseData = data.seller_report as SuburbSellerData;
     const researched = RESEARCHED_DATA[slug];
 
-    if (researched) {
-        return {
-            ...baseData,
-            ...researched, // Overwrite with real data if exists
-            suburbSlug: slug // Ensure slug matches
-        };
+    // Merge researched data if available
+    const mergedData: SuburbSellerData = researched
+        ? { ...baseData, ...researched, suburbSlug: slug }
+        : { ...baseData, suburbSlug: slug };
+
+    // ALWAYS ensure marketPositioning exists (infer if missing)
+    if (!mergedData.marketPositioning) {
+        mergedData.marketPositioning = inferMarketPositioning(mergedData);
     }
 
-    return baseData;
+    return mergedData;
 }
 
 // Deprecated: Empty object to prevent immediate crash if something still imports it directly

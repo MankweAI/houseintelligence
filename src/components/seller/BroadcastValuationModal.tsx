@@ -58,9 +58,9 @@ export function BroadcastValuationModal({ children, suburbName, agents }: Broadc
                         <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                             <Sparkles className="h-8 w-8 text-amber-600" />
                         </div>
-                        <h3 className="text-xl font-bold text-amber-900 mb-2">Broadcast Sent!</h3>
+                        <h3 className="text-xl font-bold text-amber-900 mb-2">Request Started!</h3>
                         <p className="text-stone-600 mb-4 text-sm">
-                            Your request has been sent to <strong>{agentNames}</strong>.
+                            Your invitation to pitch has been sent to <strong>{agentNames}</strong>.
                         </p>
                         <p className="text-xs text-stone-500 mb-6">
                             Expect 2-3 responses within 24 hours. Each agent will contact you directly via WhatsApp.
@@ -74,7 +74,7 @@ export function BroadcastValuationModal({ children, suburbName, agents }: Broadc
                         <DialogHeader className="mb-6">
                             <DialogTitle className="text-2xl font-serif text-stone-900 flex items-center gap-2">
                                 <Users className="h-6 w-6 text-amber-600" />
-                                Compare Quotes from {agents.length} Agents
+                                Invite {agents.length} Verified Agents to Pitch
                             </DialogTitle>
                             <DialogDescription className="text-stone-500">
                                 One submission. Multiple expert opinions on your {suburbName} property.
@@ -84,7 +84,7 @@ export function BroadcastValuationModal({ children, suburbName, agents }: Broadc
                         {/* Agent Preview */}
                         <div className="bg-amber-50 p-4 rounded-xl mb-6 border border-amber-100">
                             <div className="text-xs font-bold uppercase tracking-wider text-amber-700 mb-2">
-                                📢 Broadcasting to:
+                                📢 Inviting:
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {agents.map((agent) => (
@@ -195,10 +195,10 @@ export function BroadcastValuationModal({ children, suburbName, agents }: Broadc
                                 {isSubmitting ? (
                                     <>
                                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                        Broadcasting...
+                                        Inviting Agents...
                                     </>
                                 ) : (
-                                    `Send to All ${agents.length} Agents`
+                                    `Invite All ${agents.length} Agents to Pitch`
                                 )}
                             </Button>
                         </div>

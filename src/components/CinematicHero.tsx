@@ -37,7 +37,7 @@ export function CinematicHero({ title, subtitle, imageSrc, imageAlt, supertitle 
                     fill
                     priority
                     className="object-cover object-center"
-                    quality={90}
+
                 />
                 <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />

@@ -97,18 +97,6 @@ export function AgentCard({ agent, suburbName, suburbSlug }: AgentCardProps) {
                                 Contact {agent.name.split(' ')[0]}
                             </Button>
                         </ValuationModal>
-
-                        {agent.social?.profileLink && (
-                            <a
-                                href={agent.social.profileLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-4 py-2 border border-stone-200 rounded-md text-stone-600 hover:bg-stone-50 hover:text-stone-900 transition-colors flex items-center justify-center"
-                            >
-                                <span className="sr-only">View Profile</span>
-                                <ExternalLink className="h-4 w-4" />
-                            </a>
-                        )}
                     </div>
                 </CardContent>
             </div>

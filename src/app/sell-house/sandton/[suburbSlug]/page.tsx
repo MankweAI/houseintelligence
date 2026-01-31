@@ -11,7 +11,7 @@ import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
 import { ArrowLeft, CheckCircle, TrendingUp, Users, Calendar } from 'lucide-react';
 import { MarketPositioning } from "@/components/seller/MarketPositioning";
 import { NearbySuburbs } from '@/components/seller/NearbySuburbs';
-import { SoldVsListedChart } from '@/components/seller/SoldVsListedChartUpdated';
+import { SoldVsListedChart } from '@/components/seller/SoldVsListedChart';
 import { RenovationRoiCards } from '@/components/seller/RenovationRoiCards';
 import { Button } from '@/components/ui/button';
 import { ValuePropCards } from '@/components/seller/ValuePropCards';
@@ -335,15 +335,17 @@ export default async function SuburbSellerPage({ params }: PageProps) {
 
                         {/* Recommended Agents Primary CTA */}
                         <section>
-                            <div className="flex justify-between items-end mb-6">
-                                <h2 className="text-2xl font-serif font-bold text-stone-900">Top {suburb.name} Real Estate Agents</h2>
-                                <span className="text-xs font-semibold uppercase tracking-wider text-stone-400">Curated Selection ({agents.length})</span>
+                            <div className="mb-8">
+                                <h2 className="text-3xl font-serif font-bold text-stone-900 mb-2">Top {suburb.name} Real Estate Agents</h2>
+                                <p className="text-stone-500 text-sm max-w-xl italic">
+                                    Vetted rising stars with a proven "hunger index" to outperform the market average and deliver your results faster.
+                                </p>
                             </div>
 
                             {/* Primary CTA - Broadcast to All */}
                             <BroadcastValuationModal suburbName={suburb.name} agents={agents}>
                                 <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white h-14 text-base font-bold mb-8 shadow-lg shadow-amber-200/50 hover:shadow-xl hover:shadow-amber-200/60 transition-all">
-                                    🎯 Request Quotes from All {agents.length} Agents
+                                    🎯 Get Valuation from All 3 Agents
                                 </Button>
                             </BroadcastValuationModal>
 
