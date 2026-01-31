@@ -46,7 +46,7 @@ export function CinematicHero({ title, subtitle, imageSrc, imageAlt, supertitle 
             {/* Content using Layout animations (since we're already using motion for parallax) */}
             <motion.div
                 style={{ opacity }}
-                className="relative z-10 text-center px-4 max-w-4xl mx-auto"
+                className="relative z-10 text-left px-4 max-w-4xl mx-auto"
             >
                 <FadeIn delay={0.2} direction="up">
                     <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-xs font-medium tracking-[0.2em] text-white/90 uppercase mb-8 backdrop-blur-sm">
@@ -67,14 +67,6 @@ export function CinematicHero({ title, subtitle, imageSrc, imageAlt, supertitle 
                 </FadeIn>
             </motion.div>
 
-            {/* Scroll Indicator */}
-            <motion.div
-                style={{ opacity }}
-                className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-            >
-                <span className="text-[10px] uppercase tracking-widest text-white/70">Scroll</span>
-                <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent opacity-50" />
-            </motion.div>
         </div>
     );
 }

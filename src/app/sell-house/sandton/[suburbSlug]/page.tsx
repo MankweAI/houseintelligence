@@ -8,7 +8,7 @@ import { AgentCard } from '@/components/seller/AgentCard';
 import { ValuationSimulator } from '@/components/seller/ValuationSimulator';
 import { InteractiveInsights } from '@/components/seller/InteractiveInsights';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
-import { ArrowLeft, CheckCircle, TrendingUp, Users } from 'lucide-react';
+import { ArrowLeft, CheckCircle, TrendingUp, Users, Calendar } from 'lucide-react';
 import { MarketPositioning } from "@/components/seller/MarketPositioning";
 import { NearbySuburbs } from '@/components/seller/NearbySuburbs';
 import { SoldVsListedChart } from '@/components/seller/SoldVsListedChartUpdated';
@@ -136,13 +136,12 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         <span>Research by <strong className="text-white">Big Data Query</strong></span>
                     </div>
                     <div className="hidden sm:block w-1 h-1 bg-stone-700 rounded-full" />
-                    <div>
-                        Last Verified: <strong className="text-white">{sellerData.lastUpdated}</strong>
-                    </div>
-                    <div className="hidden sm:block w-1 h-1 bg-stone-700 rounded-full" />
-                    {/* Print/Download Button */}
-                    <div className="ml-auto">
-                        <PrintPlaybookButton suburbName={suburb.name} />
+                    <div className="flex items-center gap-2">
+                        <Calendar className="h-4 w-4 text-emerald-500" />
+                        <span className="text-stone-400">Next Update:</span>
+                        <strong className="text-white">
+                            {new Date(new Date().getFullYear(), new Date().getMonth() + 1, 1).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                        </strong>
                     </div>
                 </div>
             </div>
@@ -172,7 +171,33 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         {/* SEO Intro Paragraph - Dynamic Narrative */}
                         <MarketNarrative data={sellerData} suburbName={suburb.name} />
 
-                        {/* 1. Market Intelligence Grid - MOVED UP */}
+                        {/* 1. THE HOOK: The Reality Gap (Loss Aversion) */}
+                        <div className="mb-12">
+                            <SoldVsListedChart
+                                suburbName={suburb.name}
+                                data={sellerData.soldVsListed || {
+                                    listingPrice: sellerData.pricing.freehold.avgPrice.includes('M')
+                                        ? parseFloat(sellerData.pricing.freehold.avgPrice.replace('R', '').replace('M', '')) * 1000000 * 1.08
+                                        : 2500000,
+                                    soldPrice: sellerData.pricing.freehold.avgPrice.includes('M')
+                                        ? parseFloat(sellerData.pricing.freehold.avgPrice.replace('R', '').replace('M', '')) * 1000000
+                                        : 2200000,
+                                    gapPercentage: -8,
+                                    insight: `Sellers in ${suburb.name} are accepting offers ~8% below asking price.`
+                                }}
+                            />
+                        </div>
+
+                        {/* 2. THE CONTEXT: Social Proof (Ego) */}
+                        <MarketPositioning data={sellerData} suburbName={suburb.name} />
+
+                        {/* 3. THE GUIDE: Empathy (Trust) */}
+                        <InteractiveInsights data={sellerData} suburbName={suburb.name} />
+
+                        {/* 4. MARKET PULSE: Urgency */}
+                        <MarketPulseWidget suburbName={suburb.name} />
+
+                        {/* 5. THE DATA: Logic (Justification) */}
                         <FadeIn className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 mb-12">
                             <div className="flex items-center gap-3 mb-6">
                                 <TrendingUp className="h-6 w-6 text-emerald-600" />
@@ -265,48 +290,9 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                             </div>
                         </FadeIn>
 
-                        {/* DATA DASHBOARD SECTION (Sold vs Listed & Renovation ROI) */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                            <SoldVsListedChart
-                                suburbName={suburb.name}
-                                data={sellerData.soldVsListed || {
-                                    listingPrice: sellerData.pricing.freehold.avgPrice.includes('M')
-                                        ? parseFloat(sellerData.pricing.freehold.avgPrice.replace('R', '').replace('M', '')) * 1000000 * 1.08 // Mock: Listing is 8% higher
-                                        : 2500000,
-                                    soldPrice: sellerData.pricing.freehold.avgPrice.includes('M')
-                                        ? parseFloat(sellerData.pricing.freehold.avgPrice.replace('R', '').replace('M', '')) * 1000000
-                                        : 2200000,
-                                    gapPercentage: -8,
-                                    insight: `Sellers in ${suburb.name} are accepting offers ~8% below asking price.`
-                                }}
-                            />
-
-                            <div className="space-y-4">
-                                <div className="flex items-center gap-2 mb-2">
-                                    <h3 className="font-serif font-bold text-xl text-stone-900">Strategic Improvements</h3>
-                                </div>
-                                <RenovationRoiCards
-                                    data={sellerData.renovationRoi || [
-                                        { item: "Kitchen Assessment", cost: 120000, valueAdd: 200000, roi: 1.6, verdict: 'Do It' },
-                                        { item: "Security Upgrade", cost: 50000, valueAdd: 95000, roi: 1.9, verdict: 'Do It' },
-                                        { item: "Pool Resurfacing", cost: 85000, valueAdd: 40000, roi: 0.47, verdict: 'Skip It' },
-                                        { item: "Solar / Backup", cost: 150000, valueAdd: 150000, roi: 1.0, verdict: 'Caution' }
-                                    ]}
-                                />
-                            </div>
-                        </div>
-
-                        {/* 2. Value Proposition Cards - MOVED DOWN */}
-                        {sellerData.valueProp && (
-                            <ValuePropCards valueProp={sellerData.valueProp} />
-                        )}
-
-                        {/* Market Pulse Widget - Lead Warm Up */}
-                        <MarketPulseWidget suburbName={suburb.name} />
-
-                        {/* Micro-Markets (New Layer of Defensibility) */}
+                        {/* Micro-Markets (Logic Continued) */}
                         {sellerData.microMarkets && sellerData.microMarkets.length > 0 && (
-                            <div className="border-t pt-6">
+                            <div className="border-t pt-6 mb-12">
                                 <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
                                     <Users className="h-4 w-4 text-slate-400" />
                                     Buying Pockets (Micro-Markets)
@@ -327,15 +313,27 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                             </div>
                         )}
 
-                        {/* Interactive Insights (Buyer Avatar, Mistakes, Strategy) */}
-                        <InteractiveInsights data={sellerData} suburbName={suburb.name} />
+                        {/* 6. THE SOLUTION: Action (Hope) */}
+                        <div className="space-y-4 mb-12">
+                            <div className="flex items-center gap-2 mb-2">
+                                <h3 className="font-serif font-bold text-xl text-stone-900">Strategic Improvements</h3>
+                            </div>
+                            <RenovationRoiCards
+                                data={sellerData.renovationRoi || [
+                                    { item: "Kitchen Assessment", cost: 120000, valueAdd: 200000, roi: 1.6, verdict: 'Do It' },
+                                    { item: "Security Upgrade", cost: 50000, valueAdd: 95000, roi: 1.9, verdict: 'Do It' },
+                                    { item: "Pool Resurfacing", cost: 85000, valueAdd: 40000, roi: 0.47, verdict: 'Skip It' },
+                                    { item: "Solar / Backup", cost: 150000, valueAdd: 150000, roi: 1.0, verdict: 'Caution' }
+                                ]}
+                            />
+                        </div>
 
-                        {/* 5. Market Positioning (Benchmarks) */}
-                        <MarketPositioning data={sellerData} suburbName={suburb.name} />
+                        {/* Value Proposition Cards */}
+                        {sellerData.valueProp && (
+                            <ValuePropCards valueProp={sellerData.valueProp} />
+                        )}
 
-
-
-                        {/* Recommended Agents */}
+                        {/* Recommended Agents Primary CTA */}
                         <section>
                             <div className="flex justify-between items-end mb-6">
                                 <h2 className="text-2xl font-serif font-bold text-stone-900">Top {suburb.name} Real Estate Agents</h2>

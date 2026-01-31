@@ -48,7 +48,7 @@ export function DataMethodology({ suburbName, salesAnalyzed, lastUpdated }: Data
                     <div>
                         <span className="font-semibold text-stone-900">Our Methodology</span>
                         <span className="text-xs text-stone-500 ml-2">
-                            {salesAnalyzed} sales analyzed • Updated {lastUpdated}
+                            • Updated {lastUpdated}
                         </span>
                     </div>
                 </div>
