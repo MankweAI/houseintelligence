@@ -150,18 +150,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
 
-                    {/* RIGHT COLUMN: Simulator (First on Mobile, Right on Desktop) */}
-                    <div className="lg:col-span-1 lg:col-start-3 lg:row-start-1">
-                        <div className="sticky top-24" id="valuation-form">
-                            <ValuationSimulator
-                                suburbName={suburb.name}
-                                pricingData={{
-                                    freehold: { avgPrice: sellerData.pricing.freehold.avgPrice },
-                                    sectional: { avgPrice: sellerData.pricing.sectional.avgPrice }
-                                }}
-                            />
-                        </div>
-                    </div>
+
 
                     {/* LEFT COLUMN: Content (Second on Mobile, Left on Desktop) */}
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 space-y-12">
@@ -190,6 +179,19 @@ export default async function SuburbSellerPage({ params }: PageProps) {
 
                         {/* 2. THE CONTEXT: Social Proof (Ego) */}
                         <MarketPositioning data={sellerData} suburbName={suburb.name} />
+
+                        {/* RIGHT COLUMN: Simulator (First on Mobile, Right on Desktop) */}
+                        <div className="lg:col-span-1 lg:col-start-3 lg:row-start-1">
+                            <div className="sticky top-24" id="valuation-form">
+                                <ValuationSimulator
+                                    suburbName={suburb.name}
+                                    pricingData={{
+                                        freehold: { avgPrice: sellerData.pricing.freehold.avgPrice },
+                                        sectional: { avgPrice: sellerData.pricing.sectional.avgPrice }
+                                    }}
+                                />
+                            </div>
+                        </div>
 
                         {/* 3. THE GUIDE: Empathy (Trust) */}
                         <InteractiveInsights data={sellerData} suburbName={suburb.name} />
