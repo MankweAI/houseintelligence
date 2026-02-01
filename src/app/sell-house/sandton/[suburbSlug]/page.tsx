@@ -41,8 +41,8 @@ export async function generateMetadata({ params }: PageProps) {
     if (!suburb) return { title: 'Suburb Not Found' };
 
     return {
-        title: `Sell Your House in ${suburb.name} | 2025 Seller's Playbook`,
-        description: `Maximize your sale price in ${suburb.name}. See what buyers are paying for, avoid common pricing mistakes, and meet practically vetted agents.`,
+        title: `Property Valuation & Selling in ${suburb.name} | 2025 Market Intel`,
+        description: `Get a free property valuation in ${suburb.name}. See real market data, sold prices, and how to sell 40% faster than the Sandton average.`,
     };
 }
 
@@ -70,8 +70,8 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                         "@graph": [
                             {
                                 "@type": "WebPage",
-                                "name": `Sell Your House in ${suburb.name}`,
-                                "description": `Expert guide to selling your property in ${suburb.name}. Market data, pricing strategies, and top-rated local agents.`,
+                                "name": `Property Valuation in ${suburb.name}`,
+                                "description": `Expert property valuation methodology and selling guide for ${suburb.name}.`,
                                 "url": `https://houseintelligence.co.za/sell-house/sandton/${suburb.slug}`,
                                 "breadcrumb": {
                                     "@type": "BreadcrumbList",
@@ -85,7 +85,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                                         {
                                             "@type": "ListItem",
                                             "position": 2,
-                                            "name": `Sell in ${suburb.name}`,
+                                            "name": `${suburb.name} Valuation`,
                                             "item": `https://propertyintelligence.co.za/sell-house/sandton/${suburb.slug}`
                                         }
                                     ]
@@ -93,7 +93,7 @@ export default async function SuburbSellerPage({ params }: PageProps) {
                             },
                             {
                                 "@type": "RealEstateAgent",
-                                "name": `${suburb.name} Market Intel`,
+                                "name": `${suburb.name} Valuation Services`,
                                 "areaServed": {
                                     "@type": "City",
                                     "name": suburb.name,
@@ -120,11 +120,11 @@ export default async function SuburbSellerPage({ params }: PageProps) {
             {/* 1. Hero */}
             <div className="-mt-20">
                 <CinematicHero
-                    title="Your Home Will Sell 40% Faster"
-                    subtitle={`Sandton averages 180 days. We average ${sellerData.supplyDemand.estDaysOnMarket}. See what's driving the difference.`}
-                    supertitle={`${suburb.name} Market Intel`}
+                    title="What is Your Home Worth?"
+                    subtitle={`Property valuation and sales intelligence for ${suburb.name}. See why well-priced homes sell 40% faster.`}
+                    supertitle={`${suburb.name} Valuation & Market Intel`}
                     imageSrc={getSuburbHeroImage(suburb.slug)}
-                    imageAlt={`${suburb.name} property market`}
+                    imageAlt={`${suburb.name} property valuation`}
                 />
             </div>
 

@@ -6,7 +6,7 @@ import { AgentCard } from '@/components/seller/AgentCard';
 import { Badge } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Top 20 Rising Star Agents in Sandton | Verified & Audited',
+    title: 'Top 20 Real Estate Agents in Sandton | Verified & Audited',
     description: 'We audited 9,400+ agents to find the "Sandton 20". These are the high-performance Rising Stars who are hungry, tech-enabled, and sell faster.',
 };
 

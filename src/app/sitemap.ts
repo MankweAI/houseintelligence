@@ -18,8 +18,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Define static routes
     const staticRoutes = [
         '', // Home page
-        '/valuation',
-        '/sell-house',
+        '/sell-house/sandton', // Hub page
+        // '/property-agents/sandton', // Agent Hub
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),

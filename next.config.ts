@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/agents/sandton',
+        destination: '/property-agents/sandton',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

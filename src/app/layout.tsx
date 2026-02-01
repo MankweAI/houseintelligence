@@ -64,27 +64,39 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'WebSite',
-      name: "PropertyIntelligence",
-      url: 'https://propertyintelligence.co.za',
-      description: 'Data-driven property insights for Sandton sellers.',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: 'https://propertyintelligence.co.za/sandton?q={search_term_string}',
-        'query-input': 'required name=search_term_string',
-      },
-    },
-    {
       '@type': 'SoftwareApplication',
-      name: 'PropertyIntelligence Valuation Tool',
+      name: 'PropertyIntelligence',
       applicationCategory: 'RealEstateApplication',
       operatingSystem: 'Any',
+      url: 'https://propertyintelligence.co.za',
+      image: 'https://propertyintelligence.co.za/images/logo/hi-logo.png',
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'ZAR',
       },
-      description: 'A tool for Sandton property sellers to analyze market conditions and estimate property value.',
+      description: 'Data-driven property insights for Sandton sellers. Analyze market conditions, compare suburbs, and find vetted agents.',
+      featureList: [
+        'Property Valuation',
+        'Market Trend Analysis',
+        'Agent Comparison',
+        'Suburb Data'
+      ],
+      author: {
+        '@type': 'Organization',
+        name: 'PropertyIntelligence',
+        url: 'https://propertyintelligence.co.za'
+      }
+    },
+    {
+      '@type': 'WebSite',
+      name: "PropertyIntelligence",
+      url: 'https://propertyintelligence.co.za',
+      description: 'Data-driven property insights for Sandton sellers.',
+      publisher: {
+        '@type': 'Organization',
+        name: 'PropertyIntelligence'
+      }
     }
   ]
 };
@@ -103,8 +115,8 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-stone-50 text-stone-900 min-h-screen flex flex-col">
-        {/* Placeholder for GA Measurement ID - should be environment variable in production */}
-        {/* <GoogleAnalytics GA_MEASUREMENT_ID="G-XXXXXXXXXX" /> */}
+        {/* Google Analytics - Measurement ID from environment or default placeholder */}
+        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'} />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
