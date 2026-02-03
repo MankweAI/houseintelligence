@@ -97,7 +97,7 @@ export async function NearbySuburbs({ currentSuburb }: NearbySuburbsProps) {
 
                                 {/* Link Wrapper (Conditional) */}
                                 {isLive && (
-                                    <Link href={`/sell-house/sandton/${neighbor.slug}`} className="absolute inset-0 z-10">
+                                    <Link href={`/property-valuation/sandton/${neighbor.slug}`} className="absolute inset-0 z-10">
                                         <span className="sr-only">View {neighbor.name} Seller Insights</span>
                                     </Link>
                                 )}

@@ -128,7 +128,7 @@ export default function AboutPage() {
                     <p className="text-stone-600 mb-6">
                         Explore our suburb-specific insights and get matched with top-performing agents.
                     </p>
-                    <Link href="/sell-house/sandton">
+                    <Link href="/property-valuation/sandton">
                         <Button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 h-auto font-bold">
                             Explore Sandton Suburbs <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>

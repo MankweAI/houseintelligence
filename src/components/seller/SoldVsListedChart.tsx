@@ -5,6 +5,8 @@ import { ArrowDown, Info, TrendingDown } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+import { UserIntent } from "@/components/IntentToggle";
+
 interface SoldVsListedChartProps {
     data: {
         listingPrice: number;
@@ -13,9 +15,10 @@ interface SoldVsListedChartProps {
         insight: string;
     };
     suburbName: string;
+    intent?: UserIntent;
 }
 
-export function SoldVsListedChart({ data, suburbName }: SoldVsListedChartProps) {
+export function SoldVsListedChart({ data, suburbName, intent = 'seller' }: SoldVsListedChartProps) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-50px" });
 
@@ -54,7 +57,14 @@ export function SoldVsListedChart({ data, suburbName }: SoldVsListedChartProps) 
     const calculatedGap = listing > 0 ? ((sold - listing) / listing) * 100 : null;
 
     const isPositive = calculatedGap !== null && calculatedGap > 0;
+    // For Buyers, a negative gap (discount) is POSITIVE news. For Sellers, it's NEGATIVE news.
+    const isGoodNews = intent === 'buyer' ? !isPositive : isPositive;
+
     const isNeutral = calculatedGap === null || Math.abs(calculatedGap) < 0.1;
+
+    // Dynamic Labels
+    const title = intent === 'buyer' ? "Negotiation Power" : intent === 'owner' ? "Valuation Reality" : "The Reality Gap";
+    const subtitle = intent === 'buyer' ? "Ask vs. Get: What offers are actually being accepted." : "Market expectation vs. actual transaction reality.";
 
     return (
         <div
@@ -71,7 +81,7 @@ export function SoldVsListedChart({ data, suburbName }: SoldVsListedChartProps) 
                 <div className="flex items-start justify-between">
                     <div>
                         <div className="flex items-center gap-2 mb-1">
-                            <h3 className="font-serif font-bold text-2xl text-stone-900">The Reality Gap</h3>
+                            <h3 className="font-serif font-bold text-2xl text-stone-900">{title}</h3>
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -87,7 +97,7 @@ export function SoldVsListedChart({ data, suburbName }: SoldVsListedChartProps) 
                             </motion.div>
                         </div>
                         <p className="text-sm text-stone-500/90 leading-relaxed max-w-[90%]">
-                            Market expectation vs. actual transaction reality.
+                            {subtitle}
                         </p>
                     </div>
                 </div>

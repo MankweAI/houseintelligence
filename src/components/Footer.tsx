@@ -26,7 +26,7 @@ export async function Footer() {
                             {suburbs.slice(0, 8).map(suburb => (
                                 <li key={suburb.slug}>
                                     <Link
-                                        href={`/sell-house/sandton/${suburb.slug}`}
+                                        href={`/property-valuation/sandton/${suburb.slug}`}
                                         className="hover:text-amber-400 transition-colors"
                                     >
                                         {suburb.name}
@@ -35,7 +35,7 @@ export async function Footer() {
                             ))}
                             <li>
                                 <Link
-                                    href="/sell-house/sandton"
+                                    href="/property-valuation/sandton"
                                     className="text-amber-400 hover:text-amber-300 transition-colors"
                                 >
                                     View all suburbs →
@@ -52,7 +52,7 @@ export async function Footer() {
                         <ul className="space-y-2 text-sm">
                             <li>
                                 <Link
-                                    href="/sell-house/sandton"
+                                    href="/property-valuation/sandton"
                                     className="hover:text-amber-400 transition-colors"
                                 >
                                     Sandton Seller Hub
@@ -60,7 +60,7 @@ export async function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/sell-house/sandton/hurlingham"
+                                    href="/property-valuation/sandton/hurlingham"
                                     className="hover:text-amber-400 transition-colors"
                                 >
                                     Example: Hurlingham

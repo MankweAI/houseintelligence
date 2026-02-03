@@ -22,7 +22,7 @@ export default function NotFound() {
                         Return Home
                     </Link>
                     <Link
-                        href="/sell-house"
+                        href="/property-valuation/sandton"
                         className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-white border border-stone-200 text-stone-700 rounded-lg hover:bg-stone-50 transition-colors font-medium"
                     >
                         <ArrowLeft className="h-4 w-4" />

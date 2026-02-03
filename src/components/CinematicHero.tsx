@@ -11,9 +11,10 @@ interface CinematicHeroProps {
     imageSrc: any; // StaticImageData or string
     imageAlt: string;
     supertitle?: string;
+    intent?: 'seller' | 'buyer' | 'owner';
 }
 
-export function CinematicHero({ title, subtitle, imageSrc, imageAlt, supertitle = "The Collection" }: CinematicHeroProps) {
+export function CinematicHero({ title, subtitle, imageSrc, imageAlt, supertitle = "The Collection", intent = 'seller' }: CinematicHeroProps) {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -23,6 +24,9 @@ export function CinematicHero({ title, subtitle, imageSrc, imageAlt, supertitle 
     const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
     const scale = useTransform(scrollYProgress, [0, 1], [1.1, 1]);
     const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
+    // Dynamic copy based on intent overrides props if needed, or we can just pass dynamic props from page
+    // Let's rely on props being passed dynamically from the parent, but we can add specific visual cues if needed.
 
     return (
         <div ref={ref} className="relative h-[90vh] w-full overflow-hidden flex items-center justify-center">
@@ -65,8 +69,9 @@ export function CinematicHero({ title, subtitle, imageSrc, imageAlt, supertitle 
                         {subtitle}
                     </p>
                 </FadeIn>
-            </motion.div>
 
+                {/* Intent-specific Call to Action could go here */}
+            </motion.div>
         </div>
     );
 }

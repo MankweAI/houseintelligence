@@ -54,7 +54,7 @@ export function Header() {
                             Home
                         </Link>
                         <Link
-                            href="/sell-house/sandton"
+                            href="/property-valuation/sandton"
                             className="text-sm font-medium transition-colors text-amber-700 font-bold uppercase tracking-wide"
                         >
                             Sell in Sandton
@@ -69,7 +69,7 @@ export function Header() {
 
                     {/* CTA */}
                     <Link
-                        href="/sell-house/sandton"
+                        href="/property-valuation/sandton"
                         className="hidden sm:inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-stone-800 hover:shadow-lg hover:shadow-stone-900/20 transition-all group"
                     >
                         <span>Get Selling Plan</span>

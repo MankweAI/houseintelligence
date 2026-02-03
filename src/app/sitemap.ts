@@ -9,7 +9,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Generate URLs for each suburb page
     const suburbRoutes = suburbSlugs.map((slug) => ({
-        url: `${baseUrl}/sell-house/sandton/${slug}`,
+        url: `${baseUrl}/property-valuation/sandton/${slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.8,
@@ -18,7 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Define static routes
     const staticRoutes = [
         '', // Home page
-        '/sell-house/sandton', // Hub page
+        '/property-valuation/sandton', // Hub page
         // '/property-agents/sandton', // Agent Hub
     ].map((route) => ({
         url: `${baseUrl}${route}`,

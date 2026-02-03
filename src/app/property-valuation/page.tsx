@@ -66,7 +66,7 @@ export default function ValuationPage() {
                                 "@type": "WebPage",
                                 "name": "Free Property Valuation Sandton",
                                 "description": "Get a free, data-backed property valuation for your Sandton home.",
-                                "url": "https://houseintelligence.co.za/valuation"
+                                "url": "https://propertyintelligence.co.za/valuation"
                             },
                             {
                                 "@type": "RealEstateAgent",
@@ -221,7 +221,7 @@ export default function ValuationPage() {
                                                 <span className="capitalize">{selectedSuburb.replace(/-/g, ' ')} selected</span>
                                             </div>
                                             <Link
-                                                href={`/sell-house/sandton/${selectedSuburb}`}
+                                                href={`/property-valuation/sandton/${selectedSuburb}`}
                                                 className="text-xs text-emerald-600 hover:underline mt-1 inline-block"
                                             >
                                                 View {selectedSuburb.replace(/-/g, ' ')} Market Intel →
@@ -389,7 +389,7 @@ export default function ValuationPage() {
                             {suburbSlugs.map((slug) => (
                                 <StaggerItem key={slug}>
                                     <Link
-                                        href={`/sell-house/sandton/${slug}`}
+                                        href={`/property-valuation/sandton/${slug}`}
                                         className="block p-4 bg-white border border-slate-200 rounded-xl text-center hover:border-emerald-500 hover:shadow-md transition-all"
                                     >
                                         <span className="font-medium text-slate-700 capitalize text-sm">

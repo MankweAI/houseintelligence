@@ -43,7 +43,7 @@ export function SuburbComparator({ data, suburbName }: SuburbComparatorProps) {
                         {suburbName}
                     </div>
                     <div className="col-span-3 p-4 text-center text-xs font-bold uppercase tracking-wider text-stone-600 group cursor-pointer hover:bg-stone-100 transition-colors">
-                        <Link href={`/sell-house/sandton/${comp.competitorSlug}`} className="flex items-center justify-center gap-2 w-full h-full">
+                        <Link href={`/property-valuation/sandton/${comp.competitorSlug}`} className="flex items-center justify-center gap-2 w-full h-full">
                             {comp.competitorName}
                             <ExternalLink className="h-3 w-3 opacity-40 group-hover:opacity-100" />
                         </Link>

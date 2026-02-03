@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
             disallow: '/',
             allow: [
                 '/$', // Home page
-                '/sell-house/sandton', // Hub + Suburbs
+                '/property-valuation/sandton', // Hub + Suburbs
                 '/property-agents/sandton', // Agent Hub
             ],
         },
